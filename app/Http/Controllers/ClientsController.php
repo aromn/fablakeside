@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Clients;
 use Illuminate\Http\Request;
+use App\Models\Category;
 
 class ClientsController extends Controller
 {
@@ -14,7 +15,7 @@ class ClientsController extends Controller
      */
     public function index()
     {
-        $clients = Clients::with("user")->paginate(10);
+        $clients = Clients::with("category")->get();
         return view("clients.index", compact("clients"));
     }
 
