@@ -28,19 +28,44 @@
         z-index: 3;   
     }
 </style>
+
+
+
+
 <div class="container">
 	<div class="row">
            <div id="custom-search-input" style="display: flex;">
-                            <div class="input-group col-md-8">
+                            <div class="input-group col-md-10">
                                 <input type="text" class="  search-query form-control" placeholder="Search" />
                             </div>
-							<div class="input-group col-md-2">
-								<button class="btn btn-primary" type="button">Search
+							<div class="input-group col-md-4">
+								<button class="btn btn-primary" style="width: 50%;" type="button">Search
                                         <span class=" glyphicon glyphicon-search"></span>
                                     </button>
 							</div>
                             
                         </div>
 	</div>
+	<div class="row mt-4">
+		<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Business name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Subcategories</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach($clients as $client)
+    <tr>
+    	<td>{{ $client->business_name }}</td>
+    	<td>{{ $client->business_category }}</td>
+    	<td>{{ $client->business_subcategories }}</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+	</div>
 </div>
+
 @endsection
