@@ -56,10 +56,11 @@
     </tr>
   </thead>
   <tbody>
+
     @foreach($clients as $client)
     <tr>
     	<td>{{ $client->business_name }}</td>
-    	<td>{{ $client->business_category }}</td>
+    	<td>{{ $client->category->name }}</td>
     	<td>{{ $client->business_subcategories }}</td>
     </tr>
     @endforeach
