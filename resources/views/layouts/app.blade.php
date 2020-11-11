@@ -58,7 +58,22 @@
           </form>
         </div>
       </nav>
-
+<div class="container">
+    <div class="row">
+        <form type="get" action="{{ url('/search') }}" style="width: 100%;">
+           <div id="custom-search-input" style="display: flex;">
+                            <div class="input-group col-md-10">
+                                <input type="search" name="query" class="  search-query form-control" placeholder="Search" />
+                            </div>
+                            <div class="input-group col-md-4">
+                                <button class="btn btn-primary" style="width: 50%;" type="submit">Search
+                                        <span class=" glyphicon glyphicon-search"></span>
+                                    </button>
+                            </div>
+                            
+                        </div>
+            </form>
+    </div>
     @yield('content')
 
 
