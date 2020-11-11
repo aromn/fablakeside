@@ -16,7 +16,8 @@ class ClientsController extends Controller
     public function index()
     {
         $clients = Clients::with("category")->get();
-        return view("clients.index", compact("clients"));
+        $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
+        return view("clients.index", ["clients" => $clients, "categories" => $categories]);
     }
 
     /**
