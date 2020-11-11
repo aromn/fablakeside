@@ -22,3 +22,4 @@ Route::get('/clients', 'App\Http\Controllers\ClientsController@index');
 
 
 Route::resource("clients", ClientsController::class);
+Route::get('/search', 'App\Http\Controllers\ClientsController@search');
