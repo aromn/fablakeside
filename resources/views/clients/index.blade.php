@@ -46,7 +46,35 @@
                             
                         </div>
 	</div>
-	<div class="row mt-4">
+    <div class="row mt-4">
+        <div class="col-md-2">
+            <div class="form-group">
+               <label for="sel1">Category</label>
+               <select class="form-control" id="sel2">
+                @foreach($categories as $category)
+                <option value="{{ $category->name }}">{{ $category->name }}</option>
+                @endforeach
+               </select>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <div class="form-group">
+               <label for="sel1">Subcategory</label>
+               <select class="form-control" id="sel2">
+                
+                @foreach($categories as $subcategory)
+                    @if($subcategory->childs->count() > 0)
+                        @foreach($subcategory->childs as $subcat)
+                            <option value="{{ $subcategory->name }}">{{ $subcat->name }}</option>
+                        @endforeach
+                    @endif
+                @endforeach
+               </select>
+            </div>
+        </div>
+	</div>
+
+    <div class="row mt-4">
 		<table class="table">
   <thead class="thead-dark">
     <tr>
@@ -61,7 +89,7 @@
     <tr>
     	<td>{{ $client->business_name }}</td>
     	<td>{{ $client->category->name }}</td>
-    	<td>{{ $client->business_subcategories }}</td>
+    	<td>{{ $client->subcategory1_id }}</td>
     </tr>
     @endforeach
   </tbody>
