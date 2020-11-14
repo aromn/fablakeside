@@ -9,6 +9,7 @@
       <th scope="col">Business name</th>
       <th scope="col">Category</th>
       <th scope="col">Subcategories</th>
+      <th scope="col">Location</th>
     </tr>
   </thead>
   <tbody>
@@ -18,6 +19,7 @@
     	<td>{{ $client->business_name }}</td>
     	<td>{{ $client->category->name }}</td>
     	<td>{{ $client->subcategory1_id }}</td>
+    	<td>{{ $client->location}}</td>
     </tr>
     @endforeach
   </tbody>
