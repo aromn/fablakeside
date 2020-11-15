@@ -84,6 +84,16 @@
 	       </select>
          </div>
       </div>
+      <div class="col-md-2">
+         <div class="form-group">
+               <select name="category" class="form-control" id="sel2">
+                  <option value="">Select a category</option>
+		  @foreach($categories as $category)
+                  <option value="{{ $category->id }}">{{ $category->name }}</option>
+		  @endforeach
+	       </select>
+         </div>
+      </div>
    </div>
             </form>
     </div>
