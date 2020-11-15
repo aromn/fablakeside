@@ -89,7 +89,8 @@ class ClientsController extends Controller
     public function search()
     {
         $search_text = $_GET['query'];
-        $clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')->with('category')->get();
+	$location = $_GET['location'];
+        $clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')->where('location', 'LIKE', '%'.$location.'%')->with('category')->get();
 
         return view("clients.search", compact('clients'));
     }
