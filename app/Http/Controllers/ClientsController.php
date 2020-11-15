@@ -90,8 +90,19 @@ class ClientsController extends Controller
     {
         $search_text = $_GET['query'];
 	$location = $_GET['location'];
-        $clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')->where('location', 'LIKE', '%'.$location.'%')->with('category')->get();
+	$category= $_GET['category'];
+        $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
 
-        return view("clients.search", compact('clients'));
+	if($category != '')
+		$clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')
+		   ->where('location', 'LIKE', '%'.$location.'%')
+		   ->where('category_id', '=', $category)
+		   ->with('category')->get();
+	else
+		$clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')
+		   ->where('location', 'LIKE', '%'.$location.'%')
+		   ->with('category')->get();
+
+        return view("clients.search", ['clients' => $clients, 'categories' => $categories]);
     }
 }
