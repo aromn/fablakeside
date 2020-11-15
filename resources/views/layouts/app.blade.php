@@ -72,6 +72,19 @@
                             </div>
                             
                         </div>
+<div class="row mt-4">
+      <div class="col-md-2">
+         <div class="form-group">
+               <select name="location" class="form-control" id="sel2">
+                  <option value="">Select a location</option>
+                  <option value="Ajijic">Ajijic</option>
+                  <option value="Chapala">Chapala</option>
+                  <option value="Ixtlahuacan">Ixtlahuacán de los M.</option>
+                  <option value="San Antonio">San Antonio</option>
+	       </select>
+         </div>
+      </div>
+   </div>
             </form>
     </div>
     @yield('content')
