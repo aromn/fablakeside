@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Route::get('/clients', 'App\Http\Controllers\ClientsController@index');
+Route::get('subcategories/{id}', 'App\Http\Controllers\CategoryController@subcategories');
 
 
 Route::resource("clients", ClientsController::class);
