@@ -89,10 +89,10 @@ class ClientsController extends Controller
 
     public function search()
     {
-        $search_text = $_GET['query'];
-    	$location = $_GET['location'];
-    	$category= $_GET['category'];
-    	$subcategory = $_GET['subcategory'];
+        $search_text = isset($_GET['query']) ? $_GET['query'] : '';
+    	$location = isset($_GET['location']) ? $_GET['location'] : '';
+    	$category = isset($_GET['category']) ? $_GET['category'] : '';
+    	$subcategory = isset($_GET['subcategory']) ? $_GET['subcategory'] : '';
         $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
         $subcategories = 'App\Models\Category'::with("childs")->where('parent_id', '!=', 0)->get(); 
 
