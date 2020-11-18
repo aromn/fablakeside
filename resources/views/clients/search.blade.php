@@ -16,9 +16,9 @@
 
     @foreach($clients as $client)
     <tr>
-    	<td>{{ $client->business_name }}</td>
-    	<td>{{ $client->category->name }}</td>
-    	<td>{{ $client->subcategory1_id }}</td>
+    	<td>{{ $client->name}}</td>
+    	<td>{{ $client->category }}</td>
+    	<td>{{ $client->subcategory }}</td>
     	<td>{{ $client->location}}</td>
     </tr>
     @endforeach

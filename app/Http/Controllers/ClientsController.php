@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Clients;
 use Illuminate\Http\Request;
 use App\Models\Category;
+use DB;
 
 class ClientsController extends Controller
 {
@@ -88,21 +89,60 @@ class ClientsController extends Controller
 
     public function search()
     {
-        $search_text = $_GET['query'];
-	$location = $_GET['location'];
-	$category= $_GET['category'];
+        $search_text = isset($_GET['query']) ? $_GET['query'] : '';
+    	$location = isset($_GET['location']) ? $_GET['location'] : '';
+    	$category = isset($_GET['category']) ? $_GET['category'] : '';
+    	$subcategory = isset($_GET['subcategory']) ? $_GET['subcategory'] : '';
         $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
+        $subcategories = 'App\Models\Category'::with("childs")->where('parent_id', '!=', 0)->get(); 
 
-	if($category != '')
-		$clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')
-		   ->where('location', 'LIKE', '%'.$location.'%')
-		   ->where('category_id', '=', $category)
-		   ->with('category')->get();
-	else
-		$clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')
-		   ->where('location', 'LIKE', '%'.$location.'%')
-		   ->with('category')->get();
+	// Display all clients.
+	if($category == '' && $subcategory == '' && $location == '') {
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+				->get();
+	} // Location filter with category and subcategory null.
+	elseif ($category == "" && $location != "" && $subcategory == "") {
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+				->where('location', '=', $location)
+				->get();
+        } // Category filter with location and subcategory null.
+    	elseif($category != '' && $location == '' && $subcategory == '') {
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+				->where('category_id', '=', $category)
+				->get();
+        } // Subcategory filter with category value and location  null.
+        elseif ($category == "" && $location == "" && $subcategory != "") {
+            $clients = Clients::where('business_name', 'LIKE', '%'.$search_text.'%')
+               ->where('location', 'LIKE', '%'.$location.'%')
+               ->where('subcategory_id', '=', $subcategory)
+               ->with('category')->get();
+        } // Lcation filter with category value and subcategory null.
+        elseif ($category != "" && $location != "" && $subcategory == "") {
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+				->where('category_id', '=', $category)
+               			->where('location', 'LIKE', '%'.$location.'%')
+				->get();
+        } // Lcation filter with category and subcategory value.
+        elseif ($category != "" && $location != "" && $subcategory != "") {
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+				->where('category_id', '=', $category)
+				->where('subcategory_id', '=', $subcategory)
+               			->where('location', 'LIKE', '%'.$location.'%')
+				->get();
+        }
+    	
 
-        return view("clients.search", ['clients' => $clients, 'categories' => $categories]);
+	
+        return view("clients.search", ['clients' => $clients, 'categories' => $categories, 'subcategories' => $subcategories]);
     }
 }
