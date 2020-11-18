@@ -86,7 +86,7 @@
       </div>
       <div class="col-md-2">
          <div class="form-group">
-               <select name="category" class="form-control" id="sel2">
+               <select name="category" class="form-control" id="categories">
                   <option value="">Select a category</option>
 		  @foreach($categories as $category)
                   <option value="{{ $category->id }}">{{ $category->name }}</option>
@@ -94,6 +94,42 @@
 	       </select>
          </div>
       </div>
+      <div class="col-md-2">
+         <div class="form-group">
+            <select name="subcategory" class="form-control" id="subcategories">
+                <option value="" default>Select a subcategory</option>
+               </select>
+            </div>
+        </div>
+	<script>
+	   $('#categories').change(function(){
+		   if($(this).val() == ""){
+			 $('#subcategories option').each(function(){
+			   $(this).remove();
+		         });
+			 $('#subcategories').append('<option value="">Select a subcategory</option>');
+			 $('#subcategories').prop("disabled", true);
+                	 return false;
+		   }
+
+		   $('#subcategories option').each(function(){
+			   $(this).remove();
+		   });
+
+		   $.ajax({
+		      url: 'subcategories/' + $(this).val(),
+	    	      type: 'GET',
+		      success: function(e){
+			 $('#subcategories').removeAttr("disabled");
+			    $('#subcategories').append('<option value="">Select a subcategory</option>');
+		         $.each(e, function(index, value){
+		            console.log(value);
+                            $('#subcategories').append('<option value="' + value.id + '">' + value.name + '</option>');
+		         });
+		      }
+	   	   });
+	   });
+	</script>
    </div>
             </form>
     </div>
