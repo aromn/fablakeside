@@ -28,38 +28,6 @@
         z-index: 3;   
     }
 </style>
-
-
-    <div class="row mt-4">
-        <div class="col-md-2">
-            <div class="dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Select category
-              </button>
-              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                 @foreach($categories as $category)
-                <a class="dropdown-item" href="{{ url('category/{id}', $category->id) }}" value="{{ $category->name }}">{{ $category->name }}</a>
-                @endforeach
-              </div>
-            </div>
-        </div>
-        <div class="col-md-2">
-            <div class="form-group">
-               <label for="sel1">Subcategory</label>
-               <select class="form-control" id="sel2">
-                
-                @foreach($categories as $subcategory)
-                    @if($subcategory->childs->count() > 0)
-                        @foreach($subcategory->childs as $subcat)
-                            <option value="{{ $subcategory->name }}">{{ $subcat->name }}</option>
-                        @endforeach
-                    @endif
-                @endforeach
-               </select>
-            </div>
-        </div>
-	</div>
-
     <div class="row mt-4">
 		<table class="table">
   <thead class="thead-dark">
