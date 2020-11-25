@@ -29,5 +29,20 @@
     
 </head>
 <body>
+
+  <!--SCRIPTS-->
+  <script src="{{ asset('js/app.js') }}"></script>
+
+   <!--Template Main JS File-->
+  <script src="{{ asset('js/main.js') }}"></script>
+
+  <!--BOOTSTRAP SCRIPT-->
+  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+
+  <!--AOS EFFECTS FADING AND MORE -->
+  <script src="{{ asset('vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+  <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.j') }}"></script>
 </body>
 </html>
