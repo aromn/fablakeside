@@ -30,6 +30,51 @@
 </head>
 <body>
 
+  <section alt="Top Header">
+    <div class="container-fluid bg-light position-fixed" style="z-index: 10;"> 
+      <!--TOP BAR LG SCREENS--> 
+      <div class="container topBar mt-3 d-none d-lg-block">
+        <div class="row">
+          <!-- BRAND LOGO -->
+          <div class="col-md-2">
+          <a class="navbar-brand" href="{{ route('home1') }}">
+            <img src="{{ asset('img/logo1.png') }}" style="width: 40%; height: auto;">
+          </a>
+          </div>
+          <!-- SEARCH FORM -->
+          <div class="col-md-8">
+            <div class="container-fluid">
+              <div class="row justify-content-md-center">
+                <!--Search Form--> 
+                <div class="col-md-12">
+                  <div class="input-group">
+                  <!--Search Form-->
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" id="search" placeholder="Search from all the Business">
+                  <!--Search Button--> 
+                    <button class="btn btn-default" type="button">
+                    <span><img src="{{ asset('vendor/bootstrap-icons-1.1.0/search.svg') }}"></span>
+                    </button>
+                    <span class="input-group-btn"></span>
+                </div>
+                </div>
+                <!--Search Form END--> 
+              </div>
+            </div>
+          </div>
+          <!--LENGUAGE-->
+          <div class="col-md-2 lenguage">
+            <ul>
+              <li><a href="{{ route('home1') }}"><p class="ActiveLink">ENG</p></a></li>
+              <li><a href="#"><p>ESP</p></a></li>
+            </ul> 
+          <!--LENGUAGE END-->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!--SCRIPTS-->
   <script src="{{ asset('js/app.js') }}"></script>
 
