@@ -72,6 +72,70 @@
           </div>
         </div>
       </div>
+
+      <!--MENU-->    
+    <!--Navbar-->
+    <div class="container menuBar mx-auto">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Menu -->
+        <div class="container-fluid">
+          
+        <!-- Search Form-->
+        <div class="d-sm-block d-md-none navbar-brand left-search">
+          <form class="form-inline input-group">
+            <input class="form-control mr-sm-1" type="search" placeholder="All business" aria-label="Search">
+            <button class="btn btn-default" type="submit">
+              <span>
+                <img src="{{ asset('vendor/bootstrap-icons-1.1.0/search.svg') }}">
+              </span>
+            </button>
+            <span class="input-group-btn"></span>
+          </form>
+        </div>
+
+        <button class="navbar-toggler navbar-toggler-right hamburguer" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+              <ul class="navbar-nav mx-auto text-center" id="menuLinks">
+                <li class="nav-item active" id="active">
+                  <a class="nav-link" href="{{ route('home1') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('specialBusiness1') }}">Business Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('ourTeam1') }}">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+                </li>
+              </ul>
+
+              <hr class="d-sm-block d-md-none">
+              
+              <!--LENGUAGE-->
+              <div class="d-sm-block d-md-none">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('home1') }}">ENG</a>
+                    <span class="sr-only">(current)</span>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ESP</a>
+                  </li>
+                </ul> 
+              </div>
+              <!--LENGUAGE END-->
+        </div>
+        </div>
+      </nav>
+    </div>
     </div>
   </section>
 
