@@ -1,1 +1,1 @@
-@extends('layouts.headerFooterMaster') 
+@extends('layouts.header-footer-master') 
