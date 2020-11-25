@@ -8,7 +8,7 @@ class CategoryController extends Controller
 {
 	public function index()
 	{
-		$categories = 'App\Models\Category'::all();
+        	$categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
 		return view("categories.index", ['categories' => $categories]);
 	}
 
