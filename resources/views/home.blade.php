@@ -94,7 +94,55 @@
                 </a>
             </div>
 
-        <!-- END COLUMN 1 | 4 ITEMS-->
+            <!-- END COLUMN 1 | 4 ITEMS-->
+
+            <!-- COLUMN 2 | 4 ITEMS-->
+
+            <!--Professional Massages-->
+            <div class="item healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Professional Massages</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_10.jpg">
+                </a>
+            </div>
+
+            <!--Le Club 4 / Oui Ou-->
+            <div class="item restaurants entertainment col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Le Club 4 / Oui Oui</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_14.jpeg">
+                </a>
+            </div>
+
+            <!--Rolo Hair-->
+            <div class="item healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Rolo Hair</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_9.jpg">
+                </a>
+            </div>
+
+            <!--Fusion Tactical-->
+            <div class="item shopping col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Fusion Tactical</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_8.jpg">
+                </a>
+            </div>
+
+        <!-- END COLUMN 2 | 4 ITEMS-->
         </div>
     </div>
 </section>
