@@ -96,6 +96,7 @@
 
             <!-- END COLUMN 1 | 4 ITEMS-->
 
+
             <!-- COLUMN 2 | 4 ITEMS-->
 
             <!--Professional Massages-->
@@ -143,6 +144,56 @@
             </div>
 
         <!-- END COLUMN 2 | 4 ITEMS-->
+
+
+        <!-- COLUMN 3 | 4 ITEMS-->
+
+        <!-- Media Luna -->
+        <div class="item restaurants healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Media Luna</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_7.jpg">
+            </a>
+        </div>
+
+        <!-- Laundry -->
+        <div class="item markets house col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Laundry</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_5.jpg">
+            </a>
+        </div>
+
+        <!-- Gardening Services -->
+        <div class="item house markets col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Gardening Services</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_6.jpg">
+            </a>
+        </div>
+
+        <!-- Laundry Amigos -->
+        <div class="item house col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Laundry Amigos</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_15.jpeg">
+            </a>
+        </div>
+
+        <!-- END COLUMN 3 | 4 ITEMS-->
+
         </div>
     </div>
 </section>
