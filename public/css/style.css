@@ -368,3 +368,68 @@ TOP BAR
     background-color: #477B9D;
   } 
   /*END BACK TO TOP*/
+
+  /*FOOTER*/
+
+  .footer{
+    margin-top: 4%;
+    padding: 3% 0 1% 0;
+    background-color: #1C3556;
+    color: #F2F7ED;
+  }
+
+  .footer h2{
+    color: #A9D9DB;
+  }
+
+  .footer a{
+    color: #F2F7ED;
+  }
+
+  .footer a:hover{
+    color: #A9D9DB;
+    text-decoration: none;
+  }
+
+  .copyRight p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 100;
+  }
+
+  .endColor{
+    background: #14253c;
+    color: #e8ebee;
+  }
+
+ .fabLakeSide{
+  background-image: url('../img/logo_white.png');
+  background-size: cover;
+  display: inline-block;
+  position: relative;
+  width: 161px;
+  height: 65px;
+ }
+
+ .fabLakeSide:hover{
+  background-image: url('../img/logo_hover.png');
+  background-size: cover;
+ }
+
+  .FaceIcon{
+    background-image: url('../img/icons/FB-white.png');
+  }
+
+  .FaceIcon:hover,
+  .FaceIcon:focus{
+    background-image: url('../img/icons/FB-hover.png');
+  }
+
+  .icon{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+  }
+
+  /**END FOOTER**/
