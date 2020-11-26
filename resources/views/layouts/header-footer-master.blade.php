@@ -144,6 +144,13 @@
     <img src="{{ asset('img/icons/upArrow.png') }}" style="width: 45%;">
   </a>
 
+  <main>
+    <!-- CONTENT -->
+  <div class="">
+    @yield('section')
+  </div>
+  </main>
+
   <!--SCRIPTS-->
   <script src="{{ asset('js/app.js') }}"></script>
 
