@@ -59,18 +59,19 @@
             <div class="container-fluid">
               <div class="row justify-content-md-center">
                 <!--Search Form--> 
+        	<form type="get" action="{{ url('/search') }}" style="width: 100%;">
                 <div class="col-md-12">
                   <div class="input-group">
                   <!--Search Form-->
-                    <input type="hidden" name="search_param" value="all" id="search_param">
-                    <input type="text" class="form-control" name="x" id="search" placeholder="Search from all the Business">
+                    <input type="search" class="form-control" name="query" id="search" placeholder="Search from all the Business">
                   <!--Search Button--> 
-                    <button class="btn btn-default" type="button">
+                    <button class="btn btn-default" type="submit">
                     <span><img src="{{ asset('vendor/bootstrap-icons-1.1.0/search.svg') }}"></span>
                     </button>
                     <span class="input-group-btn"></span>
                 </div>
                 </div>
+		</form>
                 <!--Search Form END--> 
               </div>
             </div>
