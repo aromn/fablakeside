@@ -257,4 +257,30 @@
     </div>
 </div>
 
+<!--INFO SECTION-->
+<div class="container imgRight">
+    <div class="row no-gutter">
+      <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
+      <div class="col-md-6 col-lg-8">
+        <div class="d-flex alig-items-center py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-11 mx-auto">
+                <h2>We Make it Easy for Both Businesses and Customers</h2>
+                <p>
+                  Have you been frustrated by the lack of businesses with webpages around Lakeside? 
+                  We list businesses and manage their pages to ensure they are up to date, and all in one 
+                  convenient location. You can search for businesses by category or look up a specific business 
+                  to view their own external page or their professionally managed webpage through our portal. 
+                </p>
+                <a href="#">Sing Up Your Business Today!</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--END INFO SECTION-->
+
 @endsection
