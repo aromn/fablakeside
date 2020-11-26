@@ -95,3 +95,31 @@ TOP BAR
   }
   
   /** END HAMBURGUER MENU**/
+
+  /*TITLE PAGE IMAGE BACKGROUND HOME*/
+
+.heroImg{
+    padding-top: 6%;
+  }
+  
+  .backImg{
+    background-image: url('../img/heroImage.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top; 
+    padding: 12%; 
+    color: #fff;
+  }
+  
+  .backImg h1{
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px #0b1522;
+  }
+  
+  .backImg p{
+    line-height: 25px;
+  }
+  
+  /*END TITLE PAGE IMAGE BACKGROUND HOME*/
