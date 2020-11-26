@@ -357,3 +357,14 @@ TOP BAR
   }
 
   /*END OF HOME INFO SECTION*/
+
+   /*BACK TO TOP*/
+   .back-to-top {
+    position: fixed;
+    bottom: 35px;
+    right: 20px;
+    display: none;
+    z-index: 10;
+    background-color: #477B9D;
+  } 
+  /*END BACK TO TOP*/
