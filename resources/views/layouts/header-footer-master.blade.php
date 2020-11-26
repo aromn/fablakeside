@@ -139,6 +139,11 @@
     </div>
   </section>
 
+  <!-- BACK TO TOP -->
+  <a id="back-to-top" href="#" class="btn btn-sm back-to-top" role="button">
+    <img src="{{ asset('img/icons/upArrow.png') }}" style="width: 45%;">
+  </a>
+
   <!--SCRIPTS-->
   <script src="{{ asset('js/app.js') }}"></script>
 
