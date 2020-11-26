@@ -44,6 +44,58 @@
         </div>
         <!--END CATEGORIES SELECTION-->
 
+        <!--BUSINESS PICTURE SECTION-->
+        <div id="portfolio-grid" class="row no-gutter" ><!--data-aos="fade-up" data-aos-delay="200"-->
+        <!--The Fade In Data AOS effect doesn't work, don't know why-->
+
+            <!-- COLUMN 1 | 4 ITEMS-->
+
+            <!--Casa Linda Restaurante-->
+            <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Casa Linda Restaurante</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_0.jpg">
+                </a>
+            </div>
+
+            <!--Dely Very Dely-->
+            <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Dely Very Dely</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_13.jpeg">
+                </a>
+            </div>
+
+            <!--The Art House-->
+            <div class="item arts shopping col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>The Art House</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_12.jpg">
+                </a>
+            </div>
+
+            <!--Casita de Muñecas-->
+            <div class="item shopping col-sm-6 col-md-4 col-lg-3 mb-4">
+                <a href="#" class="item-wrap fancybox">
+                    <div class="work-info">
+                        <h3>Casita de Muñecas</h3>
+                        <span>See More</span>
+                    </div>
+                    <img class="img-fluid" src="img/principalBusinessImg/img_11.jpg">
+                </a>
+            </div>
+
+        <!-- END COLUMN 1 | 4 ITEMS-->
+        </div>
     </div>
 </section>
 
