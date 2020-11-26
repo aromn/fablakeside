@@ -194,6 +194,54 @@
 
         <!-- END COLUMN 3 | 4 ITEMS-->
 
+        <!-- COLUMN 4 OF 4 ITEMS-->
+
+        <!-- Meson de Don Quijote -->
+        <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Meson de Don Quijote</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_4.jpg">
+            </a>
+        </div>
+
+        <!-- Mojo Dental -->
+        <div class="item healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Mojo Dental</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_3.jpg">
+            </a>
+        </div>
+
+        <!-- Casa Catrina -->
+        <div class="item shopping house col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Casa Catrina</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_2.jpg">
+            </a>
+        </div>
+
+        <!-- Luxury Homes -->
+        <div class="item insurance house col-sm-6 col-md-4 col-lg-3 mb-4">
+            <a href="#" class="item-wrap fancybox">
+                <div class="work-info">
+                    <h3>Luxury Homes</h3>
+                    <span>See More</span>
+                </div>
+                <img class="img-fluid" src="img/principalBusinessImg/img_1.jpg">
+            </a>
+        </div>
+
+      <!-- END COLUMN 4 OF 4 ITEMS-->
+
         </div>
     </div>
 </section>
