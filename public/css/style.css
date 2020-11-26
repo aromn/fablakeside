@@ -20,3 +20,78 @@ html, body{
     font-size: 20px;
     font-weight: 400;
   }
+
+  /*
+TOP BAR
+*/
+
+/*MENU*/
+.topBar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #menuLinks li{
+    margin: 10px;
+  }
+  
+  #menuLinks a{
+    color: #1C3556;
+    font-weight: 500;
+    font-size: 15px;
+  }
+  
+  #menuLinks a:hover{
+    color: #477B9D;
+    font-weight: 500;
+    text-decoration-line: underline;  
+  }
+  
+  #active a{
+      color: #477B9D;
+      font-weight: 500;
+      text-decoration-line: underline;
+    }
+  
+  #active a:hover{
+    color: #1C3556;
+    font-weight: 500;
+    text-decoration-line: none;
+  }
+  
+  .lenguage li{
+    display: inline;
+    float: right;
+    margin-right: 10%;
+  }
+  
+  .lenguage li a{
+    color: #1C3556;
+  }
+  
+  .lenguage li a:hover{
+    color: #E63947;
+    text-decoration: none;
+  }
+  
+  .ActiveLink{
+    color: #E63947;
+    text-decoration: none;
+  }
+  
+  /*END TOP BAR*/
+  
+  /**HAMBURGUER MENU**/
+  
+  .left-search{
+    margin-left: -10%;
+    margin-right: 2%;
+  }
+  
+  .hamburguer{
+    margin-left: -10%;
+    margin-right: 2%;
+  }
+  
+  /** END HAMBURGUER MENU**/
