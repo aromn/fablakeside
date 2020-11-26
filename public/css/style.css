@@ -122,4 +122,18 @@ TOP BAR
     line-height: 25px;
   }
   
-  /*END TITLE PAGE IMAGE BACKGROUND HOME*/
+ /*END TITLE PAGE IMAGE BACKGROUND HOME*/
+
+ /*SEARCH BUTTON BAR*/
+.subtitle {
+    position: relative;
+    z-index: 1;
+    margin-top: -2%;
+    background-color: aliceblue;
+  }
+  
+  .subtitle-link{
+    color: #477B9D;
+  }
+
+/*END SEARCH BUTTON BAR*/
