@@ -281,3 +281,38 @@ TOP BAR
   }
   
   /** END OF BUSINESS ITEM SECTION 1 BY 1 // INFO ON HOVER **/
+
+  /**CALL TO ACTION SECTION**/
+
+.callActionSection{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: left top; 
+    padding: 15%; 
+    color: #1C3556;
+  }
+  
+  .callActionSection h1{
+    margin-bottom: -1%;
+    color: #1C3556;
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  
+  .buttonList{
+    background-color: #1C3556;
+    padding: 1% 20%;
+    color: #F2F7ED !important; 
+    border-radius: 8px;
+  }
+  
+  .buttonList a{
+    margin-top: 4%;
+  }
+  
+  .buttonList:hover{
+    background-color: #477B9D;
+    text-decoration: none;
+  }
+  
+  /** END CALL TO ACTION SECTION**/
