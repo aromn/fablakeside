@@ -18,6 +18,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <!--EDGE NAVEGADOR-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--SCRIPTS-->
+
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+     <!--Template Main JS File-->
+    <script src="{{ asset('js/main.js') }}"></script>
+
+    <!--BOOTSTRAP SCRIPT-->
+    <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!--AOS EFFECTS FADING AND MORE -->
+    <script src="{{ asset('vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
 
     <!-- Vendor - Bootstrap CSS Files -->
     <link href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
@@ -46,18 +59,19 @@
             <div class="container-fluid">
               <div class="row justify-content-md-center">
                 <!--Search Form--> 
+        	<form type="get" action="{{ url('/search') }}" style="width: 100%;">
                 <div class="col-md-12">
                   <div class="input-group">
                   <!--Search Form-->
-                    <input type="hidden" name="search_param" value="all" id="search_param">
-                    <input type="text" class="form-control" name="x" id="search" placeholder="Search from all the Business">
+                    <input type="search" class="form-control" name="query" id="search" placeholder="Search from all the Business">
                   <!--Search Button--> 
-                    <button class="btn btn-default" type="button">
+                    <button class="btn btn-default" type="submit">
                     <span><img src="{{ asset('vendor/bootstrap-icons-1.1.0/search.svg') }}"></span>
                     </button>
                     <span class="input-group-btn"></span>
                 </div>
                 </div>
+		</form>
                 <!--Search Form END--> 
               </div>
             </div>
@@ -176,19 +190,5 @@
     </div>
   </footer>
 
-  <!--SCRIPTS-->
-  <script src="{{ asset('js/app.js') }}"></script>
-
-   <!--Template Main JS File-->
-  <script src="{{ asset('js/main.js') }}"></script>
-
-  <!--BOOTSTRAP SCRIPT-->
-  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-  <!--AOS EFFECTS FADING AND MORE -->
-  <script src="{{ asset('vendor/aos/aos.js') }}"></script>
-  <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.j') }}"></script>
-</body>
+  </body>
 </html>

@@ -15,8 +15,8 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('home');
+})->name('home1');
 
 Route::get('/clients', 'App\Http\Controllers\ClientsController@index');
 Route::get('subcategories/{id}', 'App\Http\Controllers\CategoryController@subcategories');
@@ -27,9 +27,6 @@ Route::resource("clients", ClientsController::class);
 Route::get('/search', 'App\Http\Controllers\ClientsController@search');
 
 /* Routes to HTML Pages */
-Route::get('home', function () {
-    return view('home');
-})->name('home1');
 
 Route::get('specialBusiness', function () {
     return view('specialBusiness');
