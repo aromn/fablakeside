@@ -245,5 +245,16 @@
         </div>
     </div>
 </section>
+<!-- End  Business Section -->
+
+<!--HOME ACTION IMAGE-->
+<div class="container ml-auto text-center">
+    <div class="callActionSection" style="background-image: url('img/infoSectionImg.png');">
+      <h1>ADD YOUR BUSINESS</h1>
+      <h4>Your business name could be here!</h4>
+      <br>
+      <a href="#" class="buttonList">Learn How</a>
+    </div>
+</div>
 
 @endsection
