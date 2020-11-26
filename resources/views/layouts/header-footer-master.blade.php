@@ -18,6 +18,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
     <!--EDGE NAVEGADOR-->
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--SCRIPTS-->
+
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+     <!--Template Main JS File-->
+    <script src="{{ asset('js/main.js') }}"></script>
+
+    <!--BOOTSTRAP SCRIPT-->
+    <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
+
+    <!--AOS EFFECTS FADING AND MORE -->
+    <script src="{{ asset('vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
 
     <!-- Vendor - Bootstrap CSS Files -->
     <link href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
@@ -176,19 +189,5 @@
     </div>
   </footer>
 
-  <!--SCRIPTS-->
-  <script src="{{ asset('js/app.js') }}"></script>
-
-   <!--Template Main JS File-->
-  <script src="{{ asset('js/main.js') }}"></script>
-
-  <!--BOOTSTRAP SCRIPT-->
-  <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
-  <script src="{{ asset('vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-
-  <!--AOS EFFECTS FADING AND MORE -->
-  <script src="{{ asset('vendor/aos/aos.js') }}"></script>
-  <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-  <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.j') }}"></script>
-</body>
+  </body>
 </html>
