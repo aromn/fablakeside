@@ -90,6 +90,26 @@ class ClientsController extends Controller
         //
     }
 
+    public function clientsByCategory(string $category_slug, string $subcategory_slug = '')
+    {
+	    if($subcategory_slug != '')
+	    	$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory, c1.slug as category_slug, c2.slug as subcategory_slug'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+               			->where('c1.slug', '=', $category_slug)
+               			->where('c2.slug', '=', $subcategory_slug)
+				->get();
+	    else
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory, c1.slug as category_slug, c2.slug as subcategory_slug'))
+				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+               			->where('c1.slug', '=', $category_slug)
+				->get();
+
+	    $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
+	    return view('categories.index', ['clients' => $clients, 'categories' => $categories]);
+    }
+
     public function search()
     {
         $search_text = isset($_GET['query']) ? $_GET['query'] : '';
