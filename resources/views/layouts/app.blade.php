@@ -32,7 +32,7 @@
     <div class="row mt-4">
         <form type="get" action="{{ url('/search') }}" style="width: 100%;">
            <div id="custom-search-input" style="display: flex;">
-                            <div class="input-group col-md-10">
+                            <div class="input-group col-md-10" style="padding-left: 0">
                                 <input type="search" name="query" class="  search-query form-control" placeholder="Search" />
                             </div>
                             <div class="input-group col-md-4">
@@ -43,7 +43,7 @@
                             
                         </div>
 <div class="row mt-4">
-      <div class="col-md-2">
+      <div class="col-md-4">
          <div class="form-group">
                <select name="location" class="form-control" id="sel2">
                   <option value="">Select a location</option>
@@ -54,7 +54,7 @@
 	       </select>
          </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-4">
          <div class="form-group">
                <select name="category" class="form-control" id="categories">
                   <option value="">Select a category</option>
@@ -64,7 +64,7 @@
 	       </select>
          </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-4">
          <div class="form-group">
             <select name="subcategory" class="form-control" id="subcategories">
                 <option value="" default>Select a subcategory</option>
