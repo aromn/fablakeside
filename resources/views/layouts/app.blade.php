@@ -44,37 +44,118 @@
 
 
 <body id="app-layout">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample09" aria-controls="navbarsExample09" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExample09">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="https://example.com" id="dropdown09" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-              <div class="dropdown-menu" aria-labelledby="dropdown09">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+  <section alt="Top Header">
+    <div class="container-fluid bg-light position-fixed" style="z-index: 10;"> 
+      <!--TOP BAR LG SCREENS--> 
+      <div class="container topBar mt-3 d-none d-lg-block">
+        <div class="row">
+          <!-- BRAND LOGO -->
+          <div class="col-md-2">
+          <a class="navbar-brand" href="{{ route('home1') }}">
+            <img src="{{ asset('img/logo1.png') }}" style="width: 40%; height: auto;">
+          </a>
+          </div>
+          <!-- SEARCH FORM -->
+          <div class="col-md-8">
+            <div class="container-fluid">
+              <div class="row justify-content-md-center">
+                <!--Search Form--> 
+        	<form type="get" action="{{ url('/search') }}" style="width: 100%;">
+                <div class="col-md-12">
+                  <div class="input-group">
+                  <!--Search Form-->
+                    <input type="search" class="form-control" name="query" id="search" placeholder="Search from all the Business">
+                  <!--Search Button--> 
+                    <button class="btn btn-default" type="submit">
+                    <span><img src="{{ asset('vendor/bootstrap-icons-1.1.0/search.svg') }}"></span>
+                    </button>
+                    <span class="input-group-btn"></span>
+                </div>
+                </div>
+		        </form>
+                <!--Search Form END--> 
               </div>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-md-0" _lpchecked="1">
-            <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </div>
+          <!--LENGUAGE-->
+          <div class="col-md-2 lenguage">
+            <ul>
+              <li><a href="{{ route('home1') }}"><p class="ActiveLink">ENG</p></a></li>
+              <li><a href="#"><p>ESP</p></a></li>
+            </ul> 
+          <!--LENGUAGE END-->
+          </div>
+        </div>
+      </div>
+
+    <!--MENU-->    
+    <!--Navbar-->
+    <div class="container menuBar mx-auto">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- Menu -->
+        <div class="container-fluid">
+          
+        <!-- Search Form-->
+        <div class="d-sm-block d-md-none navbar-brand left-search">
+          <form class="form-inline input-group">
+            <input class="form-control mr-sm-1" type="search" placeholder="All business" aria-label="Search">
+            <button class="btn btn-default" type="submit">
+              <span>
+                <img src="{{ asset('vendor/bootstrap-icons-1.1.0/search.svg') }}">
+              </span>
+            </button>
+            <span class="input-group-btn"></span>
           </form>
         </div>
+
+        <button class="navbar-toggler navbar-toggler-right hamburguer" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+
+              <ul class="navbar-nav mx-auto text-center" id="menuLinks">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('home1') }}">Home</a>
+                </li>
+                <li class="nav-item active" id="active">
+                  <a class="nav-link" href="{{ route('specialBusiness1') }}">Business Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('ourTeam1') }}">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+                </li>
+              </ul>
+
+              <hr class="d-sm-block d-md-none">
+              
+              <!--LENGUAGE-->
+              <div class="d-sm-block d-md-none">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="{{ route('home1') }}">ENG</a>
+                    <span class="sr-only">(current)</span>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ESP</a>
+                  </li>
+                </ul> 
+              </div>
+              <!--LENGUAGE END-->
+        </div>
+        </div>
       </nav>
+    </div>
+    </div>
+  </section>
+
+
 <div class="container">
     <div class="row">
         <form type="get" action="{{ url('/search') }}" style="width: 100%;">
