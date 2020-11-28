@@ -1,31 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <!-- Por defecto -->
+    <title>Find a Business Ajijic</title>
+    <!--Favicon-->
+    <link rel="icon" 
+      type="image/png" 
+      href="{{ asset('img/favicon.png')}}">
+
+    <!--DESCRIPCION PARA GOOGLE-->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="We Make it Easy for Both Businesses and Customers">
+    <meta name="author" content="FAB Ajijic by Alex Sealers">
 
-    <title>Laravel Quickstart - Intermediate</title>
+    <!--FONT :: Poppins-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <!--EDGE NAVEGADOR-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--SCRIPTS-->
 
-    <!-- Fonts -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700" rel='stylesheet' type='text/css'>
+    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('vendor/owl.carousel/owl.carousel.min.js') }}"></script>
+     <!--Template Main JS File-->
+    <script src="{{ asset('js/main.js') }}"></script>
 
-    <!-- Styles -->
-<link rel="stylesheet" href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}">
-    <script src="{{ asset('vendor/jquery/jquery.min.js') }}"></script> 
-        <script type="text/javascript" src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
-    {{-- <link href="{{ asset('css/app.css') }}" rel="stylesheet"> --}}
+    <!--BOOTSTRAP SCRIPT-->
+    <script src="{{ asset('vendor/bootstrap/dist/js/bootstrap.bundle.min.js') }}"></script>
 
-    <style>
-        body {
-            font-family: 'Lato';
-        }
-        .fa-btn {
-            margin-right: 6px;
-        }
-    </style>
-</head>
+    <!--AOS EFFECTS FADING AND MORE -->
+    <script src="{{ asset('vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+
+    <!-- Vendor - Bootstrap CSS Files -->
+    <link href="{{ asset('vendor/bootstrap/dist/css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('vendor/aos/aos.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('vendor/line-awesome/css/line-awesome.min.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" >
+    <!-- Propios estilos -->
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
+    
+  </head>
+
+
 <body id="app-layout">
     <nav class="navbar navbar-expand-lg navbar-light bg-light rounded">
         <a class="navbar-brand" href="#">Navbar</a>
