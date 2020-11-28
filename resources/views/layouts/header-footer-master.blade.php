@@ -6,7 +6,7 @@
     <!--Favicon-->
     <link rel="icon" 
       type="image/png" 
-      href="#">
+      href="{{ asset('img/favicon.png')}}">
 
     <!--DESCRIPCION PARA GOOGLE-->
     <meta charset="utf-8">
