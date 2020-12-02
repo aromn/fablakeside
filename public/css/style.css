@@ -361,6 +361,10 @@ TOP BAR
     background-color: #477B9D;
     text-decoration: none;
   }
+
+  .buttonList:active:hover{
+    box-shadow: inset 1px 1px 6px #14253c
+  }
   
   /** END CALL TO ACTION SECTION**/
 
@@ -393,7 +397,11 @@ TOP BAR
   .imgRight a:hover{
     background-color: #477B9D;
     text-decoration: none;
+  }
 
+  
+  .imgRight a:active:hover{
+    box-shadow: inset 1px 1px 6px #14253c
   }
   
   .bg-image {
