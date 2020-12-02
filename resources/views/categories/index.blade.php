@@ -23,13 +23,13 @@
   
   <!--CATEGORIES RESULTS-->
   <div class="container">
-  <div class="row align-items-center">
+  <div class="row">
     <!--SIDE BAR FOR SPECIFIC SEARCH-->
-   	<div class="col-lg-3">
+   	<div class="col-lg-3 col-sm-12 col-xs-12">
 
         <h5 class="my-4">Business Categories</h5>
         <span class="line"></span>
-        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="nav flex-column nav-pills searchList" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           @foreach($categories as $category)
 			      @if($category->parent_id == 0)
 			        <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#" aria-selected="true">
@@ -41,7 +41,7 @@
 
         <h5 class="my-4">More Specific</h5>
         <span class="line"></span>  
-        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+        <div class="nav flex-column nav-pills searchList" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           @foreach($categories as $category)
 			      @if($category->parent_id == 0)
 				      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#" aria-selected="true">
