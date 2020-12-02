@@ -5,8 +5,7 @@
   <!--HOME HERO IMAGE-->
   <div class="container ml-auto text-center">
     <div class="backImg-small">
-      <h1>FIND A BUSINESS AJIJIC</h1>
-      <p>Webpage Management for Business Owners <br> and One-Stop Portal Costumers</p>
+      <h1>SEARCH FOR THE BEST BUSINESS FOR YOU</h1>
     </div>
   </div>
  
