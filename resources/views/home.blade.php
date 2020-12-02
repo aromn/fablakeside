@@ -38,7 +38,7 @@
                     <a href="#" data-filter=".healthCare">HEALTH CARE</a>
                     <a href="#" data-filter=".autoSales">AUTO SALES</a>
                     <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-                    <a href="#" data-filter=".more">MORE</a>
+                    <a href="{{ route('specialBusiness1') }}" data-filter=".more">MORE</a>
                 </div>
             </div>
         </div>
