@@ -124,6 +124,26 @@ TOP BAR
   
  /*END TITLE PAGE IMAGE BACKGROUND HOME*/
 
+ /** TITLE PAGE IMAGE BACKGROUND CATEGORIES **/
+
+ .backImg-small{
+  background-image: url('../img/heroImage-small.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top; 
+  padding: 8%; 
+  color: #fff;
+}
+
+.backImg-small h1{
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-shadow: 2px 2px 6px #0b1522;
+}
+
+/** END TITLE PAGE IMAGE BACKGROUND CATEGORIES **/
+
  /*SEARCH BUTTON BAR*/
 .subtitle {
     position: relative;
