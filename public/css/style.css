@@ -14,7 +14,7 @@ html, body{
 
   h5{
     font-size: 20px;
-    color: #477B9D;
+    color: #0b1522
   }
 
   .line{
@@ -25,7 +25,7 @@ html, body{
     vertical-align: bottom;
     margin-top: -1%;
     width: 15vw;
-    border-top: 1px solid #477B9D;
+    border-top: 1px solid #0b1522
   }
   
   p{
