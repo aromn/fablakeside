@@ -317,6 +317,18 @@ TOP BAR
   
   /** END OF BUSINESS ITEM SECTION 1 BY 1 // INFO ON HOVER **/
 
+  /** BUSINESS CATEGORIES STYLES **/
+
+  .searchList a{
+    color: #477B9D;
+    font-size: 20px;
+  }
+
+  .searchList a:hover{
+    color: #14253c;
+  }
+
+
   /**CALL TO ACTION SECTION**/
 
 .callActionSection{
