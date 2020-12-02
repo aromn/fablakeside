@@ -245,5 +245,30 @@
 
 @yield('content')
 
+<footer>
+  <div class="container footer">
+    <div class="row">
+      <div class="col-sm-2 text-center align-self-center">
+        <a href="{{ route('home1') }}"><div class="fabLakeSide mx-4"></div></a>
+      </div>
+      <div class="col-sm-8 text-center align-self-center py-2">
+        <a href="#"><h2>(+52) 33 1347 8461</h2></a>
+        <p>&copy; 2020 by Find-A-Business Ajijic</p>
+      </div>
+      <div class="col-sm-2 text-center align-self-center">
+        <a href="#"><span class="icon FaceIcon"></span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container endColor text-center copyRight">
+    <div class="row">
+      <div class="col-12">
+        <p>An Alex Searles and Ajijic Business Enterprises Ltd. Product</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
