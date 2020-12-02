@@ -20,7 +20,8 @@ Route::get('/', function () {
 
 Route::get('/clients', 'App\Http\Controllers\ClientsController@index');
 Route::get('subcategories/{id}', 'App\Http\Controllers\CategoryController@subcategories');
-Route::get('/business_categories', 'App\Http\Controllers\CategoryController@index');
+Route::get('/business_categories', 'App\Http\Controllers\CategoryController@index')
+->name('specialBusiness1');
 
 
 Route::resource("clients", ClientsController::class);
@@ -30,7 +31,7 @@ Route::get('/search', 'App\Http\Controllers\ClientsController@search');
 
 Route::get('specialBusiness', function () {
     return view('specialBusiness');
-})->name('specialBusiness1');
+});
 
 Route::get('listBusiness', function () {
     return view('listBusiness');
