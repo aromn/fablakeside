@@ -11,7 +11,7 @@
  
   <!--CATEGORIES MENU-->
   <div class="section site-portfolio container">
-    <div class="row mb-5 align-items-center">
+    <div class="row align-items-center">
 	    <a href="#">All&nbsp;&nbsp;</a>
         @foreach($categories as $category)
 	        @if($category->parent_id == 0)
@@ -22,7 +22,8 @@
   </div>
   
   <!--CATEGORIES RESULTS-->
-  <div class="row">
+  <div class="section site-portfolio container">
+  <div class="row align-items-center">
     <!--SIDE BAR FOR SPECIFIC SEARCH-->
    	<div class="col-lg-3" style="padding-left: 0">
 
@@ -67,6 +68,7 @@
     </div>
 
   </div>
+</div>
 
   
   <script type="text/javascript"></script>
