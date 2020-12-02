@@ -11,13 +11,15 @@
  
   <!--CATEGORIES MENU-->
   <div class="container p-4">
-    <div class="row align-items-center">
+    <div class="row align-items-center filters">
+      <div col-md-12 col-lg-12 text-center text-lg-center>
 	    <a href="#">All&nbsp;&nbsp;</a>
         @foreach($categories as $category)
 	        @if($category->parent_id == 0)
 	          <a href="#"> {{$category->name }} &nbsp;&nbsp;</a>
 	        @endif
         @endforeach
+      </div>
     </div>
   </div>
   
