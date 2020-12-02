@@ -25,7 +25,7 @@
   <div class="container">
   <div class="row align-items-center">
     <!--SIDE BAR FOR SPECIFIC SEARCH-->
-   	<div class="col-lg-3" style="padding-left: 0">
+   	<div class="col-lg-3">
 
         <h5 class="my-4">Business Categories</h5>
         <span class="line"></span>
