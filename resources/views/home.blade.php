@@ -258,8 +258,8 @@
 </div>
 
 <!--INFO SECTION-->
-<div class="container imgRight">
-    <div class="row no-gutter">
+<div class="container">
+    <div class="row no-gutter imgRight">
       <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
       <div class="col-md-6 col-lg-8">
         <div class="d-flex alig-items-center py-5">
