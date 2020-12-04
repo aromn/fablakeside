@@ -31,7 +31,7 @@ Route::get('/search', 'App\Http\Controllers\ClientsController@search');
 
 Route::get('specialBusiness', function () {
     return view('specialBusiness');
-})->name('specialBusiness1');
+});
 
 Route::get('listBusiness', function () {
     return view('listBusiness');

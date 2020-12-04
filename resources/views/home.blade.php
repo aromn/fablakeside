@@ -14,7 +14,7 @@
 <div class="container subtitle w-75 shadow align-self-center">
     <div class="text-center py-2">
       <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-      <h5>SEARCH FOR <a href="#" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
+      <h5>SEARCH FOR <a href="{{ route('specialBusiness1') }}" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
     </div>
 </div>
 
@@ -38,7 +38,7 @@
                     <a href="#" data-filter=".healthCare">HEALTH CARE</a>
                     <a href="#" data-filter=".autoSales">AUTO SALES</a>
                     <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-                    <a href="#" data-filter=".more">MORE</a>
+                    <a href="{{ route('specialBusiness1') }}" data-filter=".more">MORE</a>
                 </div>
             </div>
         </div>
@@ -258,8 +258,8 @@
 </div>
 
 <!--INFO SECTION-->
-<div class="container imgRight">
-    <div class="row no-gutter">
+<div class="container">
+    <div class="row no-gutter imgRight">
       <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
       <div class="col-md-6 col-lg-8">
         <div class="d-flex alig-items-center py-5">

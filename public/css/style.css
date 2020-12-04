@@ -11,6 +11,22 @@ html, body{
   h3{
     font-size: 30px;
   }
+
+  h5{
+    font-size: 20px;
+    color: #0b1522
+  }
+
+  .line{
+    content:"";
+    display: inline-block;
+    position: absolute;
+    height: 0.5em;
+    vertical-align: bottom;
+    margin-top: -1%;
+    width: 15vw;
+    border-top: 1px solid #0b1522
+  }
   
   p{
     font-size: 20px;
@@ -123,6 +139,25 @@ TOP BAR
   }
   
  /*END TITLE PAGE IMAGE BACKGROUND HOME*/
+
+ /** TITLE PAGE IMAGE BACKGROUND CATEGORIES **/
+
+ .backImg-small{
+  background-image: url('../img/heroImage-small.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top; 
+  padding: 8%; 
+  color: #fff;
+}
+
+.backImg-small h1{
+  font-weight: bolder;
+  letter-spacing: 2px;
+  color: #1C3556;
+}
+
+/** END TITLE PAGE IMAGE BACKGROUND CATEGORIES **/
 
  /*SEARCH BUTTON BAR*/
 .subtitle {
@@ -282,6 +317,18 @@ TOP BAR
   
   /** END OF BUSINESS ITEM SECTION 1 BY 1 // INFO ON HOVER **/
 
+  /** BUSINESS CATEGORIES STYLES **/
+
+  .searchList a{
+    color: #477B9D;
+    font-size: 20px;
+  }
+
+  .searchList a:hover{
+    color: #14253c;
+  }
+
+
   /**CALL TO ACTION SECTION**/
 
 .callActionSection{
@@ -314,13 +361,17 @@ TOP BAR
     background-color: #477B9D;
     text-decoration: none;
   }
+
+  .buttonList:active:hover{
+    box-shadow: inset 1px 1px 6px #14253c
+  }
   
   /** END CALL TO ACTION SECTION**/
 
   /*HOME INFO SECTION*/
   .imgRight{
-    margin-top: 2%;
-    margin-left: 6%;
+    margin-top: 10%;
+    padding: 2%;
     color: #1C3556;
   }
 
@@ -346,7 +397,11 @@ TOP BAR
   .imgRight a:hover{
     background-color: #477B9D;
     text-decoration: none;
+  }
 
+  
+  .imgRight a:active:hover{
+    box-shadow: inset 1px 1px 6px #14253c
   }
   
   .bg-image {
