@@ -34,7 +34,7 @@
         <div class="nav flex-column nav-pills searchList" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           @foreach($categories as $category)
 			      @if($category->parent_id == 0)
-			        <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#" aria-selected="true">
+				<a class="nav-link" id="v-pills-home-tab" data-toggle="pills" href="{{ url('business_categories', $category->slug) }}" aria-selected="true">
 				        {{$category->name }}
 			        </a>
 		        @endif
@@ -46,7 +46,7 @@
         <div class="nav flex-column nav-pills searchList" id="v-pills-tab" role="tablist" aria-orientation="vertical">
           @foreach($categories as $category)
 			      @if($category->parent_id == 0)
-				      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#" aria-selected="true">
+				      <a class="nav-link" id="v-pills-home-tab" data-toggle="pills" href="{{ url('business_categories', $category->slug) }}" aria-selected="true">
 				        {{$category->name }}
 			        </a>
 		        @endif
@@ -55,19 +55,33 @@
 
     </div>
     <!--END SIDE BAR FOR SPECIFIC SEARCH-->
-
-    <!--SHOW RESULTS FROM SPECIFIC SEARCH-->
+<!--SHOW RESULTS FROM SPECIFIC SEARCH-->
     <div class="col-lg-9 mt-4">
    		<div class="row">
-
-   	  	@for($i = 0; $i < 15; $i++)
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card h-100">
-              <a href="#"><img class="card-img-top" src="http://placehold.it/700x400" alt=""></a>
-            </div>
-          </div>
-        @endfor
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Business name</th>
+      <th scope="col">Category</th>
+      <th scope="col">Subcategories</th>
+      <th scope="col">Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    @foreach($clients as $client)
+    <tr>
+    	<td>{{ $client->name}}</td>
+    	<td>{{ $client->category }}</td>
+    	<td>{{ $client->subcategory }}</td>
+    	<td>{{ $client->location}}</td>
+    </tr>
+    @endforeach
+  </tbody>
+</table>
+   	  
     </div>
+
+  </div>
 
   </div>
 </div>
