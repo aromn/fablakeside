@@ -106,8 +106,14 @@ class ClientsController extends Controller
                			->where('c1.slug', '=', $category_slug)
 				->get();
 
-	    $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
-	    return view('categories.index', ['clients' => $clients, 'categories' => $categories]);
+        if ($category_slug == 'All') {
+            $clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+            ->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+            ->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+            ->get();
+        }
+
+	    return $clients;
     }
 
     public function search()
