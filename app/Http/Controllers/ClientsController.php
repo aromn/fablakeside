@@ -90,30 +90,36 @@ class ClientsController extends Controller
         //
     }
 
-    public function clientsByCategory(string $category_slug, string $subcategory_slug = '')
+    public function clientsByCategory(string $category_id, string $subcategory_id = '')
     {
-	    if($subcategory_slug != '')
+	    if($subcategory_id != '') {
 	    	$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory, c1.slug as category_slug, c2.slug as subcategory_slug'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
-               			->where('c1.slug', '=', $category_slug)
-               			->where('c2.slug', '=', $subcategory_slug)
+               			->where('c1.id', '=', $category_id)
+               			->where('c2.id', '=', $subcategory_id)
 				->get();
-	    else
-		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory, c1.slug as category_slug, c2.slug as subcategory_slug'))
+                $subcategories = 'App\Models\Category'::where('parent_id', '=', $category_id)->get();
+        }
+	    else {
+	       $clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory, c1.slug as category_slug, c2.slug as subcategory_slug'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
-               			->where('c1.slug', '=', $category_slug)
+               			->where('c1.id', '=', $category_id)
 				->get();
+            $subcategories = 'App\Models\Category'::where('parent_id', '=', $category_id)->get();
+        }
 
-        if ($category_slug == 'All') {
+        if ($category_id == '0') {
             $clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
             ->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
             ->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
             ->get();
         }
-
-	    return $clients;
+        $result = [];
+        $result['clients'] = $clients;
+        $result['subcategories'] = $subcategories; 
+	    return $result;
     }
 
     public function search()
