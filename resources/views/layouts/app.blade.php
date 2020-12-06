@@ -39,7 +39,11 @@
     <link href="{{ asset('vendor/owl.carousel/assets/owl.carousel.min.css') }}" rel="stylesheet" type="text/css" >
     <!-- Propios estilos -->
     <link href="{{ asset('css/style.css') }}" rel="stylesheet" type="text/css">
-    
+
+    <!-- Datatable styles & script-->
+    <link href="{{ asset('vendor/datatables/css/jquery.dataTables.min.css') }}" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="{{ asset('vendor/datatables/js/jquery.dataTables.min.js') }}"></script>
+
   </head>
 
 
