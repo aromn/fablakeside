@@ -21,8 +21,7 @@ Route::get('/', function () {
 Route::get('/clients', 'App\Http\Controllers\ClientsController@index');
 Route::get('subcategories/{id}', 'App\Http\Controllers\CategoryController@subcategories');
 Route::get('/business_categories', 'App\Http\Controllers\CategoryController@index')->name('specialBusiness1');
-Route::get('/business_categories/{category_slug}/{subcategory_slug?}', 'App\Http\Controllers\ClientsController@clientsByCategory');
-
+Route::get('/business_categories/{category_id}/{subcategory_id?}', 'App\Http\Controllers\ClientsController@clientsByCategory');
 
 Route::resource("clients", ClientsController::class);
 Route::get('/search', 'App\Http\Controllers\ClientsController@search');
