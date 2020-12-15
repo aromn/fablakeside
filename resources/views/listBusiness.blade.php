@@ -332,5 +332,19 @@
     </div>
 </div>
 
+<!--ACTION IMAGE-->
+<div class="container text-center">
+    <div class="row callActionSectionDark" style="background-image: url('img/heroImageDark.png');">
+        <div class="col-lg-12 col-sm-12 align-self-center">
+            <h1>ADD YOUR BUSINESS</h1>
+            <h4>Your business name could be here!</h4>
+            <br>
+            <a href="#" class="buttonList">Call Us and Join</a>
+            <br>
+            <a href="#"><h3>(+52) 33 1347 8461</h3></a>
+            </div>
+    </div>
+</div>
+
 
 @endsection
