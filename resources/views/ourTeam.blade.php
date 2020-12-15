@@ -119,4 +119,14 @@
   </div>
 </div>
 
+<!--LIST YOUR BUSINESS-->
+<div class="container text-center">
+  <div class="callActionSection">
+    <h1>ADD YOUR BUSINESS</h1>
+    <h4>Your business name could be here!</h4>
+    <br>
+    <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
+  </div>
+</div>
+
 @endsection
