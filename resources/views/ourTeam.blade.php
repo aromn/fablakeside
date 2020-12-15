@@ -80,4 +80,36 @@
   </div>
 </div>
 
+<!--TEXT-->
+<div class="container p-5 text-justify">
+  <div class="row px-4">
+        <p>
+            The idea occurred to me while working on the Apollo 2020. 
+            Program to help support local business during the COVID-19 epidemic. 
+            I thoroughly enjoyed getting to know all the business owners 
+            I worked with and decided I should do something to help them during more normal times ass well.
+        </p>
+        <br>
+        <p>
+            Coming from the U.S. I was used to being able to find almost everything about a business 
+            online. A lot of businesses here don't have the time, money, or expertise to hire a 
+            professional to manage their web pages, so I figured the best way to economically allow 
+            themaccess to this tool was bundling everything together on one web page.
+        </p>
+        <br>
+        <p>
+            Now, instead of each individual business having to try to fight for a high search engine 
+            rank, by pooling our resources, we can ensure everyone has a place at the top through this site.
+        </p>
+        <br>
+        <p>
+            In addition to this business, I also am working on a business to help local artist in
+            the community sell their products online in the U.S. <br>
+            I participate in multiple community organizations and sell real estate with Fenix Real 
+            Estate as well.
+        </p>
+        <br>
+  </div>
+</div>
+
 @endsection
