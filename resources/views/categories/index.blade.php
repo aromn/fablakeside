@@ -2,13 +2,7 @@
 
 @section("content")
 
-  <!--HOME HERO IMAGE-->
-  <div class="container ml-auto text-center">
-    <div class="backImg-small">
-      <h1>SEARCH FOR THE BEST BUSINESS FOR YOU</h1>
-    </div>
-  </div>
- 
+   
   <!--CATEGORIES MENU-->
   <div class="container p-4">
     <div class="row align-items-center filters">
