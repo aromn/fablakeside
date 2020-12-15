@@ -166,5 +166,92 @@
         </div>
     </div>
 
+<!--TITLE
+        Custom Site Construction and Maintenance
+    -->
+    <div class="container titleListing mt-5 px-4">
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 text-center">
+                <img src="../FAB-Ajijic/img/acceptIcon.png" style="width: 64px; height: auto;">
+            </div>
+            <div class="col-lg-5">
+                <hr>
+            </div>
+            <div class="col-lg-6 col-sm-12 text-center text-lg-right">
+                <h3>Custom Site Construction and Maintenance</h3>
+                <p>We will build you</p>
+            </div>
+        </div>
+    </div>
+    <!--Content 
+        Custom Site Construction and Maintenance
+    -->
+    <div class="container contentListing mt-5 mb-5 px-4 d-flex">
+        <div class="row ">
+            <div class="col-lg-8 col-sm-12 text-center text-lg-left">
+                <ul>
+                    <li>
+                        <p>One-time fee for site construction</p>
+                    </li>
+                    <li>
+                        <p>More robust Site</p>
+                    </li>
+                    <li>
+                        <p>You need more than 1 page site? You got it</p>
+                    </li>
+                    <li>
+                        <p>Perfect for stores who want to sell online</p>
+                    </li>
+                    <li>
+                        <p>Monthly Maintenance</p>
+                    </li>
+                    <li>
+                        <p>You can list your business under 1 to 3 categories*</p>
+                    </li>
+                    <p style="font-size: 12px;">
+                        *Businesses that signed up with the Apollo 2020 program prior to June 15th, 
+                        2020 will receive their first 3 months free
+                    </p>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center align-self-end">
+                <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo-CustomSite">More Info</button>
+            </div>
+        </div>
+    </div>
+     <!--
+        More Info Custom Site Construction and Maintenance
+    -->
+    <div class="container">
+        <div class="row">
+            <div id="windowOver-CustomSite" class="windowOver" alt="Custom Site Construction and Maintenance">
+                <div class="p-5 text-center contentWindow">
+                    <span class="close-CustomSite">&times;</span>
+                    <br>
+                    <h3>Custom Site Construction and Maintenance</h3>
+                    <hr>
+                    <p>
+                        In addition to a basic listing service, we also offer a service to build 
+			a more robust custom website for you if your needs are greater than we can 
+			provide on one single page. 
+                    </p>
+                    <p>
+                        If you are a store interested in selling online or a medical practitioner 
+			who wants to provide the customers with the proper brand image before they even 
+			step into your office, this might be something for you.  
+                    </p>
+                    <p>
+                        We will custom build your webpage, host it on our site, and maintain it 
+			for $500 pesos a month (construction fees are an extra, one-time fee and 
+			vary depending on what you need from your webpage and the time it will take to construct).
+                    </p>
+                    <hr>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg text-center" style="width: 200px;">I want it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 @endsection
