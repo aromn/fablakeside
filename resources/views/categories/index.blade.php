@@ -19,61 +19,63 @@
  
   <!--CATEGORIES RESULTS-->
   <div class="container">
-  <div class="row">
-    <!--SIDE BAR FOR SPECIFIC SEARCH-->
-   	<div class="col-lg-3 col-sm-12 col-xs-12">
+    <div class="row">
+      <!--SIDE BAR FOR SPECIFIC SEARCH
+         <div class="col-lg-3 col-sm-12 col-xs-12">
+  
+          <h5 class="my-4">Business Categories</h5>
+          <span class="line"></span>
+          <div class="nav flex-column nav-pills searchList" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" category="0" id="v-pills-home-tab" data-toggle="pill" href="/business_categories/0" aria-selected="true">
+                  All
+                </a>
+            @foreach($categories as $category)
+                    @if($category->parent_id == 0)
+                  <a class="nav-link"  category="{{ $category->slug }}_{{$category->id}}" id="v-pills-home-tab" data-toggle="pill" href="{{ url('business_categories', $category->slug) }}" aria-selected="true">
+                          {{$category->name }}
+                      </a>
+                  @endif
+              @endforeach
+          </div>
+  
+          <h5 class="my-4">More Specific</h5>
+          <span class="line"></span>  
+          <div class="nav flex-column nav-pills searchList subcategories-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                       
+          </div>
+  
+      </div>
+      END SIDE BAR FOR SPECIFIC SEARCH-->
+      
+      <!--SHOW RESULTS FROM SPECIFIC SEARCH-->
+      <div class="col-12 mt-4">
+        
+        <table class="table table-clients">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">Business name</th>
+              <th scope="col">Category</th>
+              <th scope="col">Subcategories</th>
+              <th scope="col">Location</th>
+            </tr>
+          </thead>
 
-        <h5 class="my-4">Business Categories</h5>
-        <span class="line"></span>
-        <div class="nav flex-column nav-pills searchList" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" category="0" id="v-pills-home-tab" data-toggle="pill" href="/business_categories/0" aria-selected="true">
-                All
-              </a>
-          @foreach($categories as $category)
-			      @if($category->parent_id == 0)
-				<a class="nav-link"  category="{{ $category->slug }}_{{$category->id}}" id="v-pills-home-tab" data-toggle="pill" href="{{ url('business_categories', $category->slug) }}" aria-selected="true">
-				        {{$category->name }}
-			        </a>
-		        @endif
-      	  @endforeach
-        </div>
-
-        <h5 class="my-4">More Specific</h5>
-        <span class="line"></span>  
-        <div class="nav flex-column nav-pills searchList subcategories-menu" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-				     
-        </div>
-
+          <tbody>
+            @foreach($clients as $client)
+              <tr>
+                <td>{{ $client->name}}</td>
+                <td>{{ $client->category }}</td>
+                <td>{{ $client->subcategory }}</td>
+                <td>{{ $client->location}}</td>
+              </tr>
+            @endforeach
+          </tbody>
+        </table>
+           
+      
+  
     </div>
-    <!--END SIDE BAR FOR SPECIFIC SEARCH-->
-<!--SHOW RESULTS FROM SPECIFIC SEARCH-->
-    <div class="col-lg-9 mt-4">
-   		<div class="row">
-<table class="table table-clients">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">Business name</th>
-      <th scope="col">Category</th>
-      <th scope="col">Subcategories</th>
-      <th scope="col">Location</th>
-    </tr>
-  </thead>
-  <tbody>
-    @foreach($clients as $client)
-    <tr>
-    	<td>{{ $client->name}}</td>
-    	<td>{{ $client->category }}</td>
-    	<td>{{ $client->subcategory }}</td>
-    	<td>{{ $client->location}}</td>
-    </tr>
-    @endforeach
-  </tbody>
-</table>
-   	  
-    </div>
-
-  </div>
-
+  
   </div>
 </div>
 
