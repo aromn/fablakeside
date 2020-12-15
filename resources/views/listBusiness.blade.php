@@ -253,5 +253,20 @@
         </div>
     </div>
 
+<!--INFO TEXT-->
+<div class="container text-center infoTextSection">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 align-self-center">
+            <h2>
+                Featured Listing Fee
+            </h2>
+            <p>
+                500 pesos one-time payment to be listed in the first row, 
+                100 pesos less for each subsequent row with the final row costing 100 pesos.
+            </p>
+        </div>
+    </div>
+</div>
+
 
 @endsection
