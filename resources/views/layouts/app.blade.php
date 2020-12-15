@@ -103,7 +103,12 @@
 </div>
 <!-- end MENU TOP BAR-->
 
-
+<!--HOME HERO IMAGE-->
+<div class="container ml-auto text-center">
+  <div class="backImg-small">
+    <h1>SEARCH FOR THE BEST BUSINESS FOR YOU</h1>
+  </div>
+</div>
 
 <!--SERACH BAR WITH CATEGORIES AND SUB CATEGORIES-->
 <div class="container">
