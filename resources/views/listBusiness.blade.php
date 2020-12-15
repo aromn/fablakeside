@@ -80,5 +80,91 @@
     </div>
 </div>
 
+<!--LISTING SECTION-->
+
+    <!--TITLE
+        Basic Listing Package
+    -->
+    <div class="container titleListing mt-5 px-4">
+        <div class="row">
+            <div class="col-lg-1 col-sm-12 text-center">
+                <img src="../FAB-Ajijic/img/acceptIcon.png" style="width: 64px; height: auto;">
+            </div>
+            <div class="col-lg-7">
+                <hr>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-center text-lg-right">
+                <h3>Basic Listing Package</h3>
+                <p>We will build you</p>
+            </div>
+        </div>
+    </div>
+    <!--Content 
+        Basic Listing Package
+    -->
+    <div class="container contentListing mt-5 mb-5 px-2 d-flex">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12 text-center text-lg-left">
+                <ul>
+                    <li>
+                        <p>One-time fee for site construction</p>
+                    </li>
+                    <li>
+                        <p>Custom 1 page site</p>
+                    </li>
+                    <li>
+                        <p>Listing and Basic maintenece</p>
+                    </li>
+                    <li>
+                        <p>You can list your business under 1 to 3 categories*</p>
+                    </li>
+                </ul>
+                <p style="font-size: 12px;">
+                    *Businesses that signed up with the Apollo 2020 program prior to June 15th, 
+                    2020 will receive their first 3 months free
+                </p>
+            </div>
+            <div class="col-lg-4 col-sm-12 text-lg-right text-center align-self-end">
+                <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo">More Info</button>
+            </div>
+        </div>
+    </div>
+    <!--
+        More Info Basic Listing Package
+    -->
+    <div class="container">
+        <div class="row">
+            <div id="windowOver" class="windowOver" alt="infoBasicListing">
+                <div class="p-5 text-center contentWindow">
+                    <span class="close">&times;</span>
+                    <br>
+                    <h3>Basic Listing Package</h3>
+                    <hr>
+                    <p>
+                        Most businesses do not need a complicated,
+                        multipage website or the costs associated with one.
+                    </p>
+                    <p>
+                        We will build you a custom 1-page site that is listed under a category that is specific 
+                        to your business in our site's directory for the bargain price of $200 pesos a month, 
+                        and you won't be charged 1 centavo before we sign 100 businesses to our site, because 
+                        without the volume we really aren't providing you the service we sold you on. 
+                    </p>
+                    <p>
+                        If you can't pick just one category to list under we can help you there too. 
+                    </p>
+                    <p>
+                        List under two categories for 350 a month or three for 500 a month. 
+                        (Businesses that signed up with the Apollo 2020 program prior to June 15th, 
+                        2020 will receive their first 3 months free).
+                    </p>
+                    <hr>
+                    <br>
+                    <button type="button" class="btn btn-primary btn-lg text-center" style="width: 200px;">I want it!</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 @endsection
