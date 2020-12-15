@@ -88,7 +88,7 @@
     <div class="container titleListing mt-5 px-4">
         <div class="row">
             <div class="col-lg-1 col-sm-12 text-center">
-                <img src="../FAB-Ajijic/img/acceptIcon.png" style="width: 64px; height: auto;">
+                <img src="img/acceptIcon.png" style="width: 64px; height: auto;">
             </div>
             <div class="col-lg-7">
                 <hr>
@@ -172,7 +172,7 @@
     <div class="container titleListing mt-5 px-4">
         <div class="row">
             <div class="col-lg-1 col-sm-12 text-center">
-                <img src="../FAB-Ajijic/img/acceptIcon.png" style="width: 64px; height: auto;">
+                <img src="img/acceptIcon.png" style="width: 64px; height: auto;">
             </div>
             <div class="col-lg-5">
                 <hr>
