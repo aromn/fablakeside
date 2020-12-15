@@ -1,4 +1,33 @@
-@extends('layouts.header-footer-master') 
+@extends('layouts.master') 
+
+@section('NavBar')
+<nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link active" href="{{ route('home1') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('specialBusiness1') }}">Business Categories</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('ourTeam1') }}">Our Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+@endsection
 
 @section('section')
 
@@ -37,8 +66,6 @@
                     <a href="#" data-filter=".pets">PETS</a>
                     <a href="#" data-filter=".healthCare">HEALTH CARE</a>
                     <a href="#" data-filter=".autoSales">AUTO SALES</a>
-                    <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-                    <a href="{{ route('specialBusiness1') }}" data-filter=".more">MORE</a>
                 </div>
             </div>
         </div>
@@ -253,7 +280,7 @@
       <h1>ADD YOUR BUSINESS</h1>
       <h4>Your business name could be here!</h4>
       <br>
-      <a href="#" class="buttonList">Learn How</a>
+      <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
     </div>
 </div>
 
@@ -261,6 +288,7 @@
 <div class="container">
     <div class="row no-gutter imgRight">
       <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
+      
       <div class="col-md-6 col-lg-8">
         <div class="d-flex alig-items-center py-5">
           <div class="container">
@@ -273,7 +301,7 @@
                   convenient location. You can search for businesses by category or look up a specific business 
                   to view their own external page or their professionally managed webpage through our portal. 
                 </p>
-                <a href="#">Sing Up Your Business Today!</a>
+                <a href="{{ route('listBusiness1') }}">Sing Up Your Business Today!</a>
               </div>
             </div>
           </div>
