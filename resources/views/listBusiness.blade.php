@@ -320,5 +320,17 @@
   </div>
   <!--END INFO SECTION-->
 
+<!--INFO TEXT-->
+<div class="container text-center infoTextSectionLight">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 align-self-center">
+            <h3>
+                Although this is a little complicated, our goal by doing this is to keep everything 
+                transparent and fair. 
+            </h3>
+        </div>
+    </div>
+</div>
+
 
 @endsection
