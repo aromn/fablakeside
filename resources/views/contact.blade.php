@@ -97,4 +97,24 @@
   </div>
 </div>
 
+<!--INFO SECTION-->
+<div class="container ml-auto text-center">
+  <div class="row">
+    <div class="col-12 backImg-small">
+      <p>Call Us</p>
+      <a href="#"><h1>(+52) 33 1347 8461</h1></a>
+      </div>
+  </div>    
+</div>
+
+<!--ACTION IMAGE-->
+<div class="container text-center">
+  <div class="callActionSection">
+    <h1>ADD YOUR BUSINESS</h1>
+    <h4>Your business name could be here!</h4>
+    <br>
+    <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
+  </div>
+</div>
+
 @endsection
