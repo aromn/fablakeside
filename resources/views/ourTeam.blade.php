@@ -112,4 +112,11 @@
   </div>
 </div>
 
+<!--ACTION IMAGE-->
+<div class="container ml-auto text-center">
+  <div class="callActionSection" style="background-image: url('img/ourTeam-LogoSection.png');">
+    <img src="/img/logo_white.png">
+  </div>
+</div>
+
 @endsection
