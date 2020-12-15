@@ -31,4 +31,11 @@
 
 @section('section')
 
+<!--HERO IMAGE-->
+<div class="container ml-auto text-center">
+  <div class="backImg-small">
+    <h1>GET IN TOUCH</h1>
+  </div>
+</div>
+
 @endsection
