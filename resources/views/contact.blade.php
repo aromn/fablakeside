@@ -48,4 +48,53 @@
   </div>
 </div>
 
+<!--CONTACT FORM-->
+<div class="container py-5 align-items-center">
+  <div class="row imgRight no-gutter">
+    <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
+
+    <div class="col-md-6 col-lg-8">
+      <div class="d-flex alig-items-center py-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 col-lg-11 mx-auto">
+              <h3>Contact Us</h3>
+
+              <form>
+                <div class="form-label-group py-2">
+                  <input type="name" id="inputName" class="form-control" placeholder="Full Name" required autofocus>
+                </div>
+                <div class="form-label-group py-2">
+                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                </div>
+                <div class="form-label-group py-2">
+                  <input type="phone" id="inputPhone" class="form-control" placeholder="Phone Number" required autofocus>
+                </div>
+                <div class="form-label-group py-2">
+                  <textarea type="message" id="inputMessage" class="form-control" placeholder="Message" required rows="8"></textarea>
+                </div>
+                
+                <div class="py-2 text-center text-lg-right">
+                  
+                    <!--
+                    <div class="loading">Loading</div>
+                    <div class="error-message"></div>
+                    <div class="sent-message">Your message has been sent. Thank you!</div>
+                    -->
+                    <!--<a href="#">&nbsp; Send &nbsp;</a>-->
+                    
+                  <button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Send</button>
+                  
+                  
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 @endsection
