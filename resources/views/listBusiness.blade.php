@@ -268,5 +268,57 @@
     </div>
 </div>
 
+<!--INFO SECTION WITH IMAGE-->
+<div class="container py-5 align-items-center">
+    <div class="row imgRight no-gutter">
+      <div class="d-none d-md-flex col-md-4 col-lg-5 bg-image"></div>
+      <div class="col-md-6 col-lg-7">
+        <div class="d-flex alig-items-center py-5 px-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12 col-lg-12 mx-auto text-justify">
+                
+                <p>
+                    Once we have signed 100 businesses and officially launch we will offer 
+                    you the option to promote your business on our home page. 
+                </p>
+                <br>
+                <ul>
+                    <li>
+                        We will have 20 slots, arranged in rows of 4 with 5 rows total.
+                    </li>
+                    <li>
+                        We will sell 3 slots in each row $500 pesos one-time payment to be listed 
+                            in the first row, $100 pesos less for each subsequent row with the final 
+                            row costing $100 pesos.
+                    </li>
+                    <li>
+                        We will be offering every business the potential to win a free slot in 
+                        each row of the featured businesses each month.
+                    </li>
+                </ul>
+                <br>
+                <p>
+                    In order to support smaller businesses, we have 5 empty slots for featured 
+                    businesses each month.
+                </p>
+                <p>
+                    We will conduct our selection through excel's randomization tool, 
+                    with the top 5 business appearing on top gaining a free slot for the next 
+                    month in their corresponding position in rows 1-5 of our featured businesses. 
+                </p>
+                <p>
+                    Since we conduct the drawing a month ahead, this prevents business from 
+                    potentially paying for a slot and then receiving it for free.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--END INFO SECTION-->
+
 
 @endsection
