@@ -14,14 +14,14 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ route('specialBusiness1') }}">Business Categories</a>
           </li>
-          <li class="nav-item active">
-            <a class="nav-link active" href="{{ route('listBusiness1') }}">List Your Business</a>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('ourTeam1') }}">Our Team</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+          <li class="nav-item active">
+            <a class="nav-link active" href="{{ route('contact1') }}">Contact</a>
           </li>
         </ul>
       </div>
