@@ -68,5 +68,17 @@
     </div>
 </div>
 
+<!--INFO TEXT-->
+<div class="container text-center infoTextSection">
+    <div class="row">
+        <div class="col-lg-12 col-sm-12 align-self-center">
+            <h3>
+                Your business would be listed under a category that is specific to your business 
+                in our site's directory
+            </h3>
+        </div>
+    </div>
+</div>
+
 
 @endsection
