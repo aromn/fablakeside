@@ -44,6 +44,64 @@
 
 
 <body id="app-layout">
+
+ <!--MENU TOP BAR-->
+ <div class="container navbar-light bg-light rounded px-3">
+  <header class="blog-header px-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-2">
+        <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1.png') }}" style="width: 80px; height: auto;"></a>
+      </div>
+
+      <div class="col-8 text-center">
+
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('home1') }}">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link active" href="{{ route('specialBusiness1') }}">Business Categories</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('ourTeam1') }}">Our Team</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+      <div class="col-2 d-flex justify-content-end align-items-center">
+        <a class="link-secondary" href="{{ route('specialBusiness1') }}" aria-label="Search">
+          <svg 
+          xmlns="http://www.w3.org/2000/svg" 
+          width="20" height="20" 
+          class="mx-3" 
+          role="img" 
+          viewBox="0 0 24 24">
+              <title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/>
+              <path d="M21 21l-5.2-5.2"/>
+          </svg>
+        </a>
+        <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('home1') }}">ENG</a>
+        <a class="btn btn-sm btn-outline-secondary px-1" href="">ESP</a>
+      </div>
+    </div>      
+  </header>
+</div>
+<!-- end MENU TOP BAR-->
     
 <div class="container">
     <div class="row mt-4">
