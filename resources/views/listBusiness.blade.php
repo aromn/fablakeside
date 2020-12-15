@@ -47,7 +47,26 @@
     </div>
 </div>
 
-
+<!--PRESENTATION-->
+<div class="container pt-5 d-flex justify-content-center">
+    <div class="row align-items-center">
+        <div class="col-lg-4 col-sm-12 text-center">
+            <img src="img/ListPic.png" style="width: 80%;">
+        </div> 
+        <div class="col-lg-8 col-sm-12 text-center text-lg-left">
+              <div class="container-fluid">
+                  <div class="AlexName">
+                      <h2>Our Services & Prices</h2>
+                  </div>
+                  <div class="quoteText">
+                      <p>We provide various options and packages because we want to make this service 
+                          accessible to all businesses and we understand no two businesses and their 
+                          specific needs are exactly the same.</p>
+                  </div>
+              </div>
+        </div>
+    </div>
+</div>
 
 
 @endsection
