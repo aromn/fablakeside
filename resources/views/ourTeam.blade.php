@@ -33,10 +33,12 @@
 
 <!--HERO IMAGE-->
 <div class="container ml-auto text-center">
-  <div class="backImg-small">
-    <h1>Meet the Team</h1>
-    <p>Our People Are The Heart And Soul Of Our Business</p>
-  </div>
+  <div class="row">
+    <div class="col-12 backImg-small">
+      <h1>Meet the Team</h1>
+      <p>Our People Are The Heart And Soul Of Our Business</p>
+    </div>
+  </div>  
 </div>
 
 @endsection
