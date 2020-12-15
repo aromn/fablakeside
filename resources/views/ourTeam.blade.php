@@ -49,4 +49,28 @@
   </div>
 </div>
 
+<!--ALEX PRESENTATION-->
+<div class="container pt-5 d-flex justify-content-center">
+  <div class="row py-3 align-items-center">
+      <div class="col-lg-4 col-sm-12 text-center">
+          <img src="img/AlexPic.png" style="width: 80%;">
+      </div> 
+      <div class="col-lg-8 col-sm-12 text-center text-lg-left">
+            <div class="container-fluid">
+                <div class="AlexName">
+                    <h2>Alexander Searles</h2>
+                    <p>President at Ajijic Business Enterprises</p>
+                </div>
+                <div class="quoteText">
+                    <p>I founded this company as a way to help <br>
+                    local business connect with customers.</p>
+                </div>
+                <div class="quoteImg">
+                    <img class="quoteMarks" src="img/quoteMarks.png">
+                </div>
+            </div>
+      </div>
+  </div>
+</div>
+
 @endsection
