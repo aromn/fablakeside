@@ -112,21 +112,25 @@
   </div>
 </div>
 
-<!--SERACH BAR WITH CATEGORIES AND SUB CATEGORIES-->
-<div class="container">
-  <div class="row mt-4">
-      <form type="get" action="{{ url('/search') }}" style="width: 100%;">
-          <div id="custom-search-input" style="display: flex;">
-              <div class="input-group col-md-10" style="padding-left: 0">
-                  <input type="search" name="query" class="  search-query form-control" placeholder="Search" />
+<!--SEARCH BAR WITH CATEGORIES AND SUB CATEGORIES-->
+<div class="container pt-4">
+  <div class="row">
+    <div class="col-12">
+       <form type="get" action="{{ url('/search') }}">
+          <!--SEARCH BAR-->
+          <div id="custom-search-input" class="row py-2">
+              <div class="col-xs-12 col-sm-10 col-lg-10">
+                  <input type="search" name="query" class="search-query form-control" placeholder="Search"/>
               </div>
-              <div class="input-group col-md-4">
-                  <button class="btn btn-primary" style="width: 50%;" type="submit">Search
-                  <span class=" glyphicon glyphicon-search"></span>
-                  </button>
+              <div class="d-block d-sm-none">&nbsp;</div>
+              <div class="col-xs-12 col-sm-2 col-lg-2">
+                  <button class="btn btn-primary" type="submit" style="width: 100%">Search</button>
               </div>
           </div>
-          <div class="row mt-4">
+          <!-- END SEARCH BAR-->
+
+          <!-- MORE SPECIFIC SEARCH OPTIONS -->
+          <div class="row py-2">
               <div class="col-md-4">
                   <div class="form-group">
                       <select name="location" class="form-control" id="sel2">
@@ -138,24 +142,30 @@
                     </select>
                   </div>
               </div>
-          </div>
-          <div class="col-md-4">
-              <div class="form-group">
-                  <select name="category" class="form-control" id="categories">
-                      <option value="">Select a category</option>
-                      @foreach($categories as $category)
-                              <option value="{{ $category->id }}">{{ $category->name }}</option>
-                      @endforeach
-                </select>
-              </div>
-          </div>
-          <div class="col-md-4">
+
+              <div class="col-md-4">
+                <div class="form-group">
+                    <select name="category" class="form-control" id="categories">
+                        <option value="">Select a category</option>
+                        @foreach($categories as $category)
+                                <option value="{{ $category->id }}">{{ $category->name }}</option>
+                        @endforeach
+                  </select>
+                </div>
+            </div>
+
+            <div class="col-md-4">
               <div class="form-group">
                   <select name="subcategory" class="form-control" id="subcategories">
                       <option value="" default>Select a subcategory</option>
                   </select>
               </div>
           </div>
+
+        </div>
+        <!-- MORE SPECIFIC SEARCH OPTIONS -->
+          
+          
         <script>
             $('#categories').change(function(){
               if($(this).val() == ""){
@@ -185,11 +195,12 @@
              });
         });
         </script>
+
+
       </form>
+    </div>
   </div>
 </div>
-
-
 <!--SECTION SEARCH-->
 
 @yield('content')
