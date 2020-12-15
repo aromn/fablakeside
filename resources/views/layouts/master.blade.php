@@ -147,4 +147,49 @@
 		  });
     });
   </script>
+
+  <!--OPEN WINDOW OVER 1-->
+<script>
+  // Get the modal
+  let modal = document.getElementById("windowOver");
+  // Get the button that opens the modal
+  let btn = document.getElementById("moreInfo");
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("close")[0];
+  // When the user clicks the button, open the modal 
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+      modal.style.display = "none";
+  }
+  //When the user clicks outside the Windows, close the modal
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }    
+</script>
+<script>
+  //OPEN WINDOW OVER 2
+
+  let modalCustomSite = document.getElementById("windowOver-CustomSite");
+  let btnCustomSite = document.getElementById("moreInfo-CustomSite");
+  let spanCustomSite = document.getElementsByClassName("close-CustomSite")[0];
+
+  btnCustomSite.onclick = function() {
+      modalCustomSite.style.display = "block";
+  }
+
+  spanCustomSite.onclick = function() {
+      modalCustomSite.style.display = "none";
+  }
+
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modalCustomSite.style.display = "none";
+      }
+  }
+</script>
 </html>
