@@ -31,4 +31,14 @@
 
 @section('section')
 
+<!--HERO IMAGE-->
+<div class="container ml-auto text-center">
+    <div class="backImg-small">
+      <h1>Be part of the team</h1>
+      <p>and let a whole new buch of people to know your business</p>
+    </div>
+</div>
+
+
+
 @endsection
