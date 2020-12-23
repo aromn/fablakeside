@@ -57,15 +57,9 @@
                 <div id="filters" class="filters">
                     <a href="#" data-filter="*" class="active">ALL</a>
                     <a href="#" data-filter=".restaurants">RESTAURANTS</a>
-                    <a href="#" data-filter=".markets">MARKETS</a>
-                    <a href="#" data-filter=".entertainment">ENTERTAINMENT</a>
-                    <a href="#" data-filter=".arts">ARTS</a>
-                    <a href="#" data-filter=".shopping">SHOPPING</a>
-                    <a href="#" data-filter=".insurance">INSURANCE</a>
-                    <a href="#" data-filter=".house">HOUSE</a>
-                    <a href="#" data-filter=".pets">PETS</a>
-                    <a href="#" data-filter=".healthCare">HEALTH CARE</a>
-                    <a href="#" data-filter=".autoSales">AUTO SALES</a>
+                    <a href="#" data-filter=".retail">RETAIL</a>
+                    <a href="#" data-filter=".services">SERVICES</a>
+                    <a href="#" data-filter=".bars">BARS & CANTINAS</a>
                 </div>
             </div>
         </div>
@@ -100,7 +94,7 @@
             </div>
 
             <!--The Art House-->
-            <div class="item arts shopping col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="item retail shopping col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>The Art House</h3>
@@ -111,7 +105,7 @@
             </div>
 
             <!--Casita de Muñecas-->
-            <div class="item shopping col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="item retail col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Casita de Muñecas</h3>
@@ -127,7 +121,7 @@
             <!-- COLUMN 2 | 4 ITEMS-->
 
             <!--Professional Massages-->
-            <div class="item healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Professional Massages</h3>
@@ -138,7 +132,7 @@
             </div>
 
             <!--Le Club 4 / Oui Ou-->
-            <div class="item restaurants entertainment col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="item restaurants bars col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Le Club 4 / Oui Oui</h3>
@@ -149,7 +143,7 @@
             </div>
 
             <!--Rolo Hair-->
-            <div class="item healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Rolo Hair</h3>
@@ -160,7 +154,7 @@
             </div>
 
             <!--Fusion Tactical-->
-            <div class="item shopping col-sm-6 col-md-4 col-lg-3 mb-4">
+            <div class="item retail col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Fusion Tactical</h3>
@@ -187,7 +181,7 @@
         </div>
 
         <!-- Laundry -->
-        <div class="item markets house col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="item services house col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Laundry</h3>
@@ -198,7 +192,7 @@
         </div>
 
         <!-- Gardening Services -->
-        <div class="item house markets col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Gardening Services</h3>
@@ -209,7 +203,7 @@
         </div>
 
         <!-- Laundry Amigos -->
-        <div class="item house col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Laundry Amigos</h3>
@@ -235,7 +229,7 @@
         </div>
 
         <!-- Mojo Dental -->
-        <div class="item healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Mojo Dental</h3>
@@ -246,7 +240,7 @@
         </div>
 
         <!-- Casa Catrina -->
-        <div class="item shopping house col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="item retail col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Casa Catrina</h3>
@@ -257,7 +251,7 @@
         </div>
 
         <!-- Luxury Homes -->
-        <div class="item insurance house col-sm-6 col-md-4 col-lg-3 mb-4">
+        <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
             <a href="#" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Luxury Homes</h3>
