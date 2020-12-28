@@ -43,3 +43,5 @@ Route::get('ourTeam', function () {
 Route::get('contact', function () {
     return view('contact');
 })->name('contact1');
+
+Route::get('signup_business', 'App\Http\Controllers\ClientsController@signup')->name('contact.request');
