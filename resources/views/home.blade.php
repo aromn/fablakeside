@@ -289,13 +289,13 @@
             <div class="row">
               <div class="col-md-12 col-lg-11 mx-auto">
                 <h2>We Make it Easy for Both Businesses and Customers</h2>
-                <p>
+                <p class="pb-4">
                   Have you been frustrated by the lack of businesses with webpages around Lakeside? 
                   We list businesses and manage their pages to ensure they are up to date, and all in one 
                   convenient location. You can search for businesses by category or look up a specific business 
                   to view their own external page or their professionally managed webpage through our portal. 
                 </p>
-                <a href="{{ route('listBusiness1') }}">Sing Up Your Business Today!</a>
+                <a class="pb-4" href="{{ route('listBusiness1') }}">Sing Up Your Business Today!</a>
               </div>
             </div>
           </div>
