@@ -99,7 +99,7 @@
           <p>&copy; 2020 by Find-A-Business Ajijic</p>
         </div>
         <div class="col-sm-2 text-center align-self-center">
-          <a href="#"><span class="icon FaceIcon"></span></a>
+          <a href="https://www.facebook.com/FAB-Ajijic-Find-A-Business-Ajijic-113502843729599/?view_public_for=113502843729599"><span class="icon FaceIcon"></span></a>
         </div>
       </div>
     </div>
