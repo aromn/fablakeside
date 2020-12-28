@@ -351,26 +351,26 @@
     <div class="row">
         <div class="col-sm-12">
             <h3 class="text-center">Contact Us</h3>
-            <form>
+            <form action="{{ route('contact.request') }}">
                 <div class="row">
                    <div class="col-sm-12 col-lg-12 mt-3">
-                    <input type="name" id="inputName" class="form-control" placeholder="Full Name:" required autofocus>
+                    <input type="name" id="inputName" name="full_name" class="form-control" placeholder="Full Name:" required autofocus>
                    </div>
                 </div>
                 <div class="form-row mt-3">
                     <div class="form-group col-md-6 col-lg-6 col-sm-12">                    
-                        <input type="email" class="form-control" id="inputEmail" placeholder="Email:">
+                        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email:">
                     </div>
                     <div class="form-group col-md-6 col-lg-6 col-sm-12">                    
-                        <input type="phone" class="form-control" id="inputPhone" placeholder="Phone:">
+                        <input type="phone" name="phone" class="form-control" id="inputPhone" placeholder="Phone:">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-lg-12 mt-3">
-                        <select id="inputService" class="form-control">
+                        <select id="inputService" name="package" class="form-control">
                             <option selected>What service do You Need?</option>
-                            <option>Basic Listing Package</option>
-                            <option>Custom Site Construction and Maintenance</option>
+                            <option value="Basic Listing Package">Basic Listing Package</option>
+                            <option value="Custom Site Construction and Maintenance">Custom Site Construction and Maintenance</option>
                         </select>
                     </div>
                 </div>
@@ -380,30 +380,30 @@
                             <p class="p-2">What kind of products do you want sell?</p>
                             <hr>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <input class="form-check-input" type="radio" name="kind_of_products" id="gridRadios2" value="Digital Services or Products">
                                 <label class="form-check-label" for="gridRadios2">
                                 Digital Services or Products
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <input class="form-check-input" type="radio" name="kind_of_products" id="gridRadios2" value="Psycical Services or Products">
                                 <label class="form-check-label" for="gridRadios2">
                                 Psycical Services or Products
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <input class="form-check-input" type="radio" name="kind_of_products" id="gridRadios2" value="Services Consulting">
                                 <label class="form-check-label" for="gridRadios2">
                                 Services Consulting
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <input class="form-check-input" type="radio" name="" id="gridRadios2" value="">
                                 <label class="form-check-label" for="gridRadios2">
                                 Other
                                 </label>
                                                    
-                                    <input type="text" class="form-control" id="inputService" placeholder="What is It?">
+                                    <input name="other" type="text" class="form-control" id="inputService" placeholder="What is It?">
                                
                             </div>
                         </div>
@@ -415,7 +415,7 @@
                     </div>
                     <div class="form-group col-md-6 col-lg-5 col-sm-12 mt-3">
                         <label  for="inputMessage">Message:</label>
-                        <textarea type="message" id="inputMessage" class="form-control" placeholder="Message" required rows="7">
+                        <textarea name="message" type="message" id="inputMessage" class="form-control" placeholder="Message" required rows="7">
                         </textarea>
                         <!--
                       <div class="loading">Loading</div>
@@ -425,7 +425,7 @@
                       <!--<a href="#">&nbsp; Send &nbsp;</a>-->
                     
                     <div class="text-lg-right text-center">
-                        <button type="button" class="btn btn-primary btn-sm p-2 m-2" style="width: 200px;">Send</button>
+                        <button type="submit" class="btn btn-primary btn-sm p-2 m-2" style="width: 200px;">Send</button>
                     </div>
     
                     </div>
