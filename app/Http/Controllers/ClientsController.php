@@ -6,6 +6,7 @@ use App\Models\Clients;
 use Illuminate\Http\Request;
 use App\Models\Category;
 use DB;
+use Mail;
 
 class ClientsController extends Controller
 {
@@ -54,6 +55,41 @@ class ClientsController extends Controller
     public function show(Clients $clients)
     {
         //
+    }
+
+    /**
+     *  Post signup business contact form data.
+     *  
+     *  For testing purposes use the following return before Mail::send function...
+     *  return view('email.mail', $data);
+     */
+    public function signupRequest(Request $request)
+    {
+        
+        $to_name = 'Aldo Romn';
+        $to_email = 'aldoromnn@ajijicbusinessenterprises.org';
+        $data = array('name'=> $request->input('full_name'),
+                      'email' => $request->input('email'),
+                      'phone' => $request->input('phone'),
+                      'package' => $request->input('package'),
+                      'sp_type' => $request->input('sp_type'),
+                      'other' => $request->input('other'),
+                      'msg' =>  $request->input('msg')
+                );
+        
+        Mail::send('email.mail', $data, function($message) use ($to_name, $to_email) {
+            $message->to($to_email, $to_name)->subject('New email from FABLakeside.com');
+            $message->from('aldoromnn@ajijicbusinessenterprises.org', 'FABLakeside boot');
+        });
+
+        // check for failures
+        if (Mail::failures()) {
+            echo "We couldn't send you message, please go back and try again...";
+        }
+
+        // if mail was sent, then go back to last page.
+        return redirect()->back();
+
     }
 
     /**
