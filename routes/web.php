@@ -44,4 +44,4 @@ Route::get('contact', function () {
     return view('contact');
 })->name('contact1');
 
-Route::get('signup_business', 'App\Http\Controllers\ClientsController@signup')->name('contact.request');
+Route::get('signup_business', 'App\Http\Controllers\ClientsController@signupRequest')->name('contact.request');

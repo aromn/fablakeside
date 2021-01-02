@@ -367,8 +367,8 @@
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-lg-12 mt-3">
-                        <select id="inputService" name="package" class="form-control">
-                            <option selected>What service do You Need?</option>
+                        <select id="inputService" name="package" class="form-control" required="true">
+                            <option value="" selected>What service do You Need?</option>
                             <option value="Basic Listing Package">Basic Listing Package</option>
                             <option value="Custom Site Construction and Maintenance">Custom Site Construction and Maintenance</option>
                         </select>
@@ -380,30 +380,30 @@
                             <p class="p-2">What kind of products do you want sell?</p>
                             <hr>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="kind_of_products" id="gridRadios2" value="Digital Services or Products">
+                                <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2" value="Digital Services or Products">
                                 <label class="form-check-label" for="gridRadios2">
                                 Digital Services or Products
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="kind_of_products" id="gridRadios2" value="Psycical Services or Products">
+                                <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2" value="Psycical Services or Products">
                                 <label class="form-check-label" for="gridRadios2">
                                 Psycical Services or Products
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="kind_of_products" id="gridRadios2" value="Services Consulting">
+                                <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2" value="Services Consulting">
                                 <label class="form-check-label" for="gridRadios2">
                                 Services Consulting
                                 </label>
                             </div>
                             <div class="form-check p-2">
-                                <input class="form-check-input" type="radio" name="" id="gridRadios2" value="">
+                                <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2other" value="other">
                                 <label class="form-check-label" for="gridRadios2">
                                 Other
                                 </label>
                                                    
-                                    <input name="other" type="text" class="form-control" id="inputService" placeholder="What is It?">
+                                    <input style="display:none" name="other" type="text" class="form-control" id="inputServiceOther" placeholder="What is It?">
                                
                             </div>
                         </div>
@@ -415,8 +415,7 @@
                     </div>
                     <div class="form-group col-md-6 col-lg-5 col-sm-12 mt-3">
                         <label  for="inputMessage">Message:</label>
-                        <textarea name="message" type="message" id="inputMessage" class="form-control" placeholder="Message" required rows="7">
-                        </textarea>
+                        <textarea name="msg" type="msg" id="inputMessage" class="form-control" placeholder="Message" required rows="7"></textarea>
                         <!--
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
@@ -436,6 +435,15 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){ 
+        $("input[id='gridRadios2other']").click(function() {
+        
+            $('#inputServiceOther').css('display', 'block');
+            $('#inputServiceOther').attr("required", "true");
+        }); 
+});
+</script>
 
 
 @endsection
