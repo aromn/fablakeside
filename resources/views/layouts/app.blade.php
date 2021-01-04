@@ -50,7 +50,7 @@
   <header class="blog-header px-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
       <div class="col-2">
-        <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1.png') }}" style="width: 80px; height: auto;"></a>
+        <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
       </div>
 
       <div class="col-8 text-center">
