@@ -462,8 +462,17 @@ svg:hover{
 
    /****/
    .infoTextSectionLight{
-     color: #477B9D;
+    color: #477B9D;
     padding: 4%;
+  }
+
+  .infoTextSectionLighta{
+    color: #477B9D;
+    padding: 2%;
+  }
+
+  .team{
+    margin-bottom: 14%;
   }
 
   /***/
