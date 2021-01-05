@@ -107,10 +107,12 @@
     <div class="container endColor text-center copyRight">
       <div class="row">
         <div class="col-12">
-          <p>An Alex Searles and Ajijic Business Enterprises Ltd. Product</p>
+          <p style="margin-bottom: -2%;">An Alex Searles and Ajijic Business Enterprises Ltd. Product</p>
+          <p>Images By <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&search=Somniphobiac&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1">Somniphobiac - Own work,</a> CC BY-SA 4.0</p>
         </div>
       </div>
     </div>
+
   </footer>
 
   </body>
