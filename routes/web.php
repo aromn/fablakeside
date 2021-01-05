@@ -45,3 +45,4 @@ Route::get('contact', function () {
 })->name('contact1');
 
 Route::get('signup_business', 'App\Http\Controllers\ClientsController@signupRequest')->name('contact.request');
+Route::get('contact_us', 'App\Http\Controllers\ClientsController@contactRequest')->name('contact.us');
