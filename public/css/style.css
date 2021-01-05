@@ -364,8 +364,20 @@ svg:hover{
   font-size: 50px;
 }
 
-.callActionSectionDark a h3{
+.whatsapp{
   margin-top: 5%;
+}
+
+.whatsapp p{
+  font-size: 18px;
+}
+
+.whatsapp a{
+  font-size: 28px !important;
+  font-weight: bolder;
+}
+.callActionSectionDark a h3{
+  margin-top: 2%;
   color: #fafafa;
 }
 
