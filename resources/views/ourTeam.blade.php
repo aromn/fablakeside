@@ -143,7 +143,8 @@
                         <p style="font-weight: bold; color: #477B9D;">Back End and Software</p>
                     </div>
                     <div class="quoteText">
-                        <p>Cat ipsum dolor sit amet, jump launch to pounce upon little yarn mouse</p>
+                        <p>I have been working as a System Administrator/Consultant at Evalinux since 2016. 
+                          Besides, I work as a freelancer with clients around the world doing web/software developmente</p>
                     </div>
                     <!--
                     <div class="quoteImg">
