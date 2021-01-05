@@ -336,13 +336,22 @@
 <div class="container text-center">
     <div class="row callActionSectionDark" style="background-image: url('img/heroImageDark.png');">
         <div class="col-lg-12 col-sm-12 align-self-center">
-            <h1>ADD YOUR BUSINESS</h1>
+            <h1>SIGN UP TODAY!</h1>
             <h4>Your business name could be here!</h4>
             <br>
-            <a href="#" class="buttonList">Call Us and Join</a>
-            <br>
-            <a href="#"><h3>(+52) 33 1347 8461</h3></a>
+            <div>
+                <a href="#" class="buttonList">Call Us and Join</a>
             </div>
+            <br>
+            <hr>
+            <div class="whatsapp">
+                <h3>ANY QUESTIONS?</h3>
+                <p>Feel free to call us or message us on WhatsApp <br> and we will be happy to help you!</p>
+                <a href="#" class="buttonList">
+                    (+52) 33 1347 8461
+                </a>
+            </div>
+        </div>
     </div>
 </div>
 
