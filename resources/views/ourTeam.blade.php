@@ -112,6 +112,77 @@
   </div>
 </div>
 
+<!--LINE SPACE-->
+<div class="container">
+  <div class="row">
+      <hr>
+  </div>
+</div>
+
+  <!--ALDO AND ABIGAIL PRESENTATION-->
+  <div class="container pt-5 d-flex justify-content-center text-center team">
+    <div class="row align-items-center">
+      <div class="container infoTextSectionLighta">
+        <div class="row">
+          <div class="col-lg-12 col-sm-12 align-self-center">
+              <h2>MEET THE REST OF THE TEAM</h2>
+              <p style="color:#14253c">The best people formula for the best results!</p>
+          </div>
+      </div>
+      </div>
+        <!--ALDO-->
+        <div class="col-lg-6 col-sm-12">
+          <div class="col-12">
+            <div class="col-12 text-center">
+              <img src="img/aldo.png" style="width: 40%;">
+            </div> 
+            <div class="col-12 text-center">
+                <div class="container-fluid">
+                    <div class="AlexName">
+                        <h2>Aldo Romero</h2>
+                        <p style="font-weight: bold; color: #477B9D;">Back End and Software</p>
+                    </div>
+                    <div class="quoteText">
+                        <p>Cat ipsum dolor sit amet, jump launch to pounce upon little yarn mouse</p>
+                    </div>
+                    <!--
+                    <div class="quoteImg">
+                        <img class="quoteMarks" src="img/quoteMarks.png">
+                    </div>
+                    -->
+                </div>
+            </div>
+          </div>
+        </div>
+        <!--ABIGAIL-->
+        <div class="col-lg-6 col-sm-12">
+          <div class="col-12">
+            <div class="col-12 text-center">
+              <img src="img/abi.png" style="width: 40%;">
+            </div> 
+            <div class="col-12 text-center">
+                <div class="container-fluid">
+                    <div class="AlexName">
+                        <h2>Abigail Pérez</h2>
+                        <p style="font-weight: bold; color: #477B9D;">Front End and Designer</p>
+                    </div>
+                    <div class="quoteText">
+                        <p>I love design, web, games, apps. 
+                          I studied Fine Arts and IT five years ago, and I've been working on it since then.</p>
+                    </div>
+                    <!--
+                    <div class="quoteImg">
+                        <img class="quoteMarks" src="img/quoteMarks.png">
+                    </div>
+                    -->
+                </div>
+            </div>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+
 <!--ACTION IMAGE-->
 <div class="container ml-auto text-center">
   <div class="callActionSection" style="background-image: url('img/ourTeam-LogoSection.png');">
