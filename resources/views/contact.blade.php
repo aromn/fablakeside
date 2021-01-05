@@ -60,18 +60,18 @@
             <div class="col-md-12 col-lg-11 mx-auto">
               <h3>Contact Us</h3>
 
-              <form>
+              <form action="{{ route('contact.us') }}">
                 <div class="form-label-group py-2">
-                  <input type="name" id="inputName" class="form-control" placeholder="Full Name" required autofocus>
+                  <input type="name" id="inputName" name="full_name" class="form-control" placeholder="Full Name" required autofocus>
                 </div>
                 <div class="form-label-group py-2">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <input type="email" id="inputEmail" name="email" class="form-control" placeholder="Email address" required autofocus>
                 </div>
                 <div class="form-label-group py-2">
-                  <input type="phone" id="inputPhone" class="form-control" placeholder="Phone Number" required autofocus>
+                  <input type="phone" id="inputPhone" name="phone" class="form-control" placeholder="Phone Number" required autofocus>
                 </div>
                 <div class="form-label-group py-2">
-                  <textarea type="message" id="inputMessage" class="form-control" placeholder="Message" required rows="8"></textarea>
+                  <textarea type="message" id="inputMessage" name="msg" class="form-control" placeholder="Message" required rows="8"></textarea>
                 </div>
                 
                 <div class="py-2 text-center text-lg-right">
@@ -83,7 +83,7 @@
                     -->
                     <!--<a href="#">&nbsp; Send &nbsp;</a>-->
                     
-                  <button type="button" class="btn btn-primary btn-lg" style="width: 200px;">Send</button>
+                  <button type="submit" class="btn btn-primary btn-lg" style="width: 200px;">Send</button>
                   
                   
                 </div>

@@ -66,8 +66,8 @@ class ClientsController extends Controller
     public function signupRequest(Request $request)
     {
         
-        $to_name = 'Aldo Romn';
-        $to_email = 'aldoromnn@ajijicbusinessenterprises.org';
+        $to_name = 'FABLakeside Contact Area';
+        $to_email = 'ams@ajijicbusinessenterprises.org';
         $data = array('name'=> $request->input('full_name'),
                       'email' => $request->input('email'),
                       'phone' => $request->input('phone'),
@@ -78,6 +78,37 @@ class ClientsController extends Controller
                 );
         
         Mail::send('email.mail', $data, function($message) use ($to_name, $to_email) {
+            $message->to($to_email, $to_name)->subject('New email from FABLakeside.com');
+            $message->from('aldoromnn@ajijicbusinessenterprises.org', 'FABLakeside boot');
+        });
+
+        // check for failures
+        if (Mail::failures()) {
+            echo "We couldn't send you message, please go back and try again...";
+        }
+
+        // if mail was sent, then go back to last page.
+        return redirect()->back();
+
+    }
+
+    /**
+     *  Although this function is not related directly/explicitely with the clients
+     *  it resides here since there is no reason to create a controller just to use
+     *  one function to send the "Contact Us" message by now....
+     */
+    public function contactRequest(Request $request)
+    {
+        
+        $to_name = 'FABLakeside Contact Area';
+        $to_email = 'aldoromnn@ajijicbusinessenterprises.org';
+        $data = array('name'=> $request->input('full_name'),
+                      'email' => $request->input('email'),
+                      'phone' => $request->input('phone'),
+                      'msg' =>  $request->input('msg')
+                );
+        
+        Mail::send('email.contact', $data, function($message) use ($to_name, $to_email) {
             $message->to($to_email, $to_name)->subject('New email from FABLakeside.com');
             $message->from('aldoromnn@ajijicbusinessenterprises.org', 'FABLakeside boot');
         });
