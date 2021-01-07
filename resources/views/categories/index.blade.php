@@ -85,7 +85,7 @@
     <h1>ADD YOUR BUSINESS</h1>
     <h4>Your business name could be here!</h4>
     <br>
-    <a href="#" class="buttonList">Learn How</a>
+    <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
   </div>
 </div>
 <script type="text/javascript">
