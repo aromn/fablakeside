@@ -59,11 +59,21 @@
             <div class="container-fluid">
                 <div class="AlexName">
                     <h2>Alexander Searles</h2>
-                    <p>President at Ajijic Business Enterprises</p>
+                    <p>President of Ajijic Business Enterprises</p>
                 </div>
                 <div class="quoteText">
-                    <p>I founded this company as a way to help <br>
-                    local business connect with customers.</p>
+                    <p>I founded this company to help local business survive 
+                      and thrive in these difficult times. 
+                      We make it easier for customers to find the local business 
+                      they are seeking using an innovative 
+                      approach. By making business discoverable through category 
+                      and multiple sub-category listings, 
+                      we increase their customer exposure. Add that to our custom 
+                      designed business pages that take advantage
+                       of professional marketing knowledge and we have created a 
+                       recipe that results in more success for 
+                       local business and greater customer satisfaction, 
+                      all at a price every business can afford.</p>
                 </div>
                 <div class="quoteImg">
                     <img class="quoteMarks" src="img/quoteMarks.png">
@@ -86,7 +96,7 @@
         <p>
             The idea occurred to me while working on the Apollo 2020. 
             Program to help support local business during the COVID-19 epidemic. 
-            I thoroughly enjoyed getting to know all the business owners 
+            I thoroughly enjoyed getting to know all the businesses owners 
             I worked with and decided I should do something to help them during more normal times ass well.
         </p>
         <br>
@@ -94,7 +104,7 @@
             Coming from the U.S. I was used to being able to find almost everything about a business 
             online. A lot of businesses here don't have the time, money, or expertise to hire a 
             professional to manage their web pages, so I figured the best way to economically allow 
-            themaccess to this tool was bundling everything together on one web page.
+            them access to this tool was by bundling everything together on one web page.
         </p>
         <br>
         <p>
@@ -103,10 +113,16 @@
         </p>
         <br>
         <p>
-            In addition to this business, I also am working on a business to help local artist in
-            the community sell their products online in the U.S. <br>
-            I participate in multiple community organizations and sell real estate with Fenix Real 
-            Estate as well.
+          While this project is close to my heart, the true purpose if this project is to fund future 
+          initiatives in philanthropy to help our community be better prepared to tackle the challenges 
+          we face in the 21st century.
+          Under the umbrella of Ajijic Business Enterprises, we are launching multiple ventures to provide
+           affordable green solutions to everyday problems, ensure the lasting legacy of indigenous culture
+           ct and restore ejido lands, and clean up the lake to ensure that it can be enjoyed by future
+            generations. We are also partnering with the Instituto Tecnologico Superior de Chapala to provide
+             an intership track for students so that they can get hands on experience working for a blended 
+             operation with exposure to many different types and models of business, and we hope to fund future 
+             business owners looking for startup capital in the future.
         </p>
         <br>
   </div>
