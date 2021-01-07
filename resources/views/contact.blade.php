@@ -71,7 +71,7 @@
                   <input type="phone" id="inputPhone" name="phone" class="form-control" placeholder="Phone Number" required autofocus>
                 </div>
                 <div class="form-label-group py-2">
-                  <textarea type="message" id="inputMessage" name="msg" class="form-control" placeholder="Message" required rows="8"></textarea>
+                  <textarea type="message" id="inputMessage" name="msg" class="form-control" placeholder="" required rows="8"></textarea>
                 </div>
                 
                 <div class="py-2 text-center text-lg-right">
