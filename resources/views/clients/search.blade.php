@@ -16,7 +16,7 @@
 
     @foreach($clients as $client)
     <tr>
-    	<td>{{ $client->name}}</td>
+    	<td><a href="{{ $client->website }}">{{ $client->name}}</a></td>
     	<td>{{ $client->category }}</td>
     	<td>{{ $client->subcategory }}</td>
     	<td>{{ $client->location}}</td>
