@@ -47,16 +47,16 @@
    <div class="container navbar-light bg-light rounded px-3">
     <header class="blog-header px-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-2">
+        <div class="col-lg-2 d-sm-none  d-md-block">
           <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
         </div>
 
-        <div class="col-8 text-center">
+        <div class="col-sm-6 col-lg-8 text-center text-sm-left">
 
           @yield('NavBar')
 
         </div>
-        <div class="col-2 d-flex justify-content-end align-items-center">
+        <div class="col-sm-6 col-lg-2 d-flex justify-content-end align-items-center">
           <a class="link-secondary" href="{{ route('specialBusiness1') }}" aria-label="Search">
             <svg 
             xmlns="http://www.w3.org/2000/svg" 
