@@ -200,20 +200,20 @@ class ClientsController extends Controller
 
 	// Display all clients.
 	if($category == '' && $subcategory == '' && $location == '' && $search_text == '') {
-		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->get();
 	} // Query value.
 	elseif ($search_text != "" && $category == "" && $location == "" && $subcategory == "") {
-		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('business_name', 'like', '%'.$search_text.'%')
 				->get();
         } // Query value with location.
 	elseif ($search_text != "" && $category == "" && $location != "" && $subcategory == "") {
-		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('business_name', 'like', '%'.$search_text.'%')
@@ -222,7 +222,7 @@ class ClientsController extends Controller
         }
 	// Location filter with category and subcategory null.
 	elseif ($category == "" && $location != "" && $subcategory == "") {
-		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('location', 'LIKE', '%'.$location.'%')
@@ -230,7 +230,7 @@ class ClientsController extends Controller
 				->get();
         } // Category filter with location and subcategory null.
     	elseif($category != '' && $location == '' && $subcategory == '') {
-		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('category_id', '=', $category)
@@ -238,7 +238,7 @@ class ClientsController extends Controller
 				->get();
         } // Subcategory filter with category value and location  null.
         elseif ($category != "" && $location == "" && $subcategory != "") {
-		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('category_id', '=', $category)
@@ -247,7 +247,7 @@ class ClientsController extends Controller
 				->get();
         } // Lcation filter with category value and subcategory null.
         elseif ($category != "" && $location != "" && $subcategory == "") {
-		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('category_id', '=', $category)
@@ -256,7 +256,7 @@ class ClientsController extends Controller
 				->get();
         } // Lcation filter with category and subcategory value.
         elseif ($category != "" && $location != "" && $subcategory != "") {
-		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients =DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 				->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 				->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 				->where('category_id', '=', $category)
