@@ -73,7 +73,7 @@
 
             <!--Casa Linda Restaurante-->
             <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijicfoodandbev.com/casa-linda" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Casa Linda Restaurante</h3>
                         <span>See More</span>
@@ -84,7 +84,7 @@
 
             <!--Dely Very Dely-->
             <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijicfoodandbev.com/deli-very-deli" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Dely Very Dely</h3>
                         <span>See More</span>
@@ -95,7 +95,7 @@
 
             <!--The Art House-->
             <div class="item retail shopping col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijiclisted.com/the-art-house" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>The Art House</h3>
                         <span>See More</span>
@@ -106,7 +106,7 @@
 
             <!--Casita de Muñecas-->
             <div class="item retail col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijiclisted.com/casita-de-mu" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Casita de Muñecas</h3>
                         <span>See More</span>
@@ -122,7 +122,7 @@
 
             <!--Professional Massages-->
             <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijiclisted.com/professional-massages-of-lakeside" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Professional Massages</h3>
                         <span>See More</span>
@@ -144,7 +144,7 @@
 
             <!--Rolo Hair-->
             <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijiclisted.com/rolo-hair" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Rolo Hair</h3>
                         <span>See More</span>
@@ -155,7 +155,7 @@
 
             <!--Fusion Tactical-->
             <div class="item retail col-sm-6 col-md-4 col-lg-3 mb-4">
-                <a href="#" class="item-wrap fancybox">
+                <a href="https://www.fabajijiclisted.com/fusion-tactica" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Fusion Tactical</h3>
                         <span>See More</span>
@@ -171,7 +171,7 @@
 
         <!-- Media Luna -->
         <div class="item restaurants healthCare col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijicfoodandbev.com/media-luna" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Media Luna</h3>
                     <span>See More</span>
@@ -182,9 +182,9 @@
 
         <!-- Laundry -->
         <div class="item services house col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijiclisted.com/la-princesa" class="item-wrap fancybox">
                 <div class="work-info">
-                    <h3>Laundry</h3>
+                    <h3>Mi Princesa Laundry</h3>
                     <span>See More</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_5.jpg">
@@ -193,7 +193,7 @@
 
         <!-- Gardening Services -->
         <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijiclisted.com/andres-gardening" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Gardening Services</h3>
                     <span>See More</span>
@@ -204,7 +204,7 @@
 
         <!-- Laundry Amigos -->
         <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijiclisted.com/lavanderia-y-tintoreria-amigos" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Laundry Amigos</h3>
                     <span>See More</span>
@@ -219,7 +219,7 @@
 
         <!-- Meson de Don Quijote -->
         <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijicfoodandbev.com/meson-don-quijote" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Meson de Don Quijote</h3>
                     <span>See More</span>
@@ -230,7 +230,7 @@
 
         <!-- Mojo Dental -->
         <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijiclisted.com/mojo-dental" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Mojo Dental</h3>
                     <span>See More</span>
@@ -241,7 +241,7 @@
 
         <!-- Casa Catrina -->
         <div class="item retail col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.fabajijiclisted.com/casa-de-catrina" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Casa Catrina</h3>
                     <span>See More</span>
