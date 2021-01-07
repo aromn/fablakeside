@@ -11,7 +11,7 @@ class CategoryController extends Controller
 	{
         $categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
         $subcategories = 'App\Models\Category'::where('parent_id', '!=', 0)->get(); 
-		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, c1.name as category, c2.name as subcategory'))
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
 			->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
 			->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
 			->get();
