@@ -67,7 +67,7 @@ class ClientsController extends Controller
     {
         
         $to_name = 'FABLakeside Contact Area';
-        $to_email = 'ams@ajijicbusinessenterprises.org';
+        $to_email = 'contactsubmit@ajijicbusinessenterprises.org';
         $data = array('name'=> $request->input('full_name'),
                       'email' => $request->input('email'),
                       'phone' => $request->input('phone'),
@@ -79,7 +79,7 @@ class ClientsController extends Controller
         
         Mail::send('email.mail', $data, function($message) use ($to_name, $to_email) {
             $message->to($to_email, $to_name)->subject('New email from FABLakeside.com');
-            $message->from('aldoromnn@ajijicbusinessenterprises.org', 'FABLakeside boot');
+            $message->from('contactsubmit@ajijicbusinessenterprises.org', 'FABLakeside boot');
         });
 
         // check for failures
@@ -101,7 +101,7 @@ class ClientsController extends Controller
     {
         
         $to_name = 'FABLakeside Contact Area';
-        $to_email = 'aldoromnn@ajijicbusinessenterprises.org';
+        $to_email = 'contactsubmit@ajijicbusinessenterprises.org';
         $data = array('name'=> $request->input('full_name'),
                       'email' => $request->input('email'),
                       'phone' => $request->input('phone'),
@@ -110,7 +110,7 @@ class ClientsController extends Controller
         
         Mail::send('email.contact', $data, function($message) use ($to_name, $to_email) {
             $message->to($to_email, $to_name)->subject('New email from FABLakeside.com');
-            $message->from('aldoromnn@ajijicbusinessenterprises.org', 'FABLakeside boot');
+            $message->from('contactsubmit@ajijicbusinessenterprises.org', 'FABLakeside boot');
         });
 
         // check for failures
