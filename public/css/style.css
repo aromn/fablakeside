@@ -603,6 +603,7 @@ svg:hover{
     background-size: cover;
   }
 
+  .movilSpace{display: none;}
   
   /*
   * START
@@ -637,6 +638,12 @@ svg:hover{
     .contentWindow{font-size: medium;}
     .infoTextSection{padding: 8%;}
     .callActionSectionDark{padding: 10%;}
+
+    /**TEAM**/
+    .infoTextSectionLighta{padding: 10%;}
+    .movilSpace{display: block;}
+    .logoMovil{padding: 70% 2%;}
+    
   }
 
   /* Medium devices (tablets, 768px and down) */
