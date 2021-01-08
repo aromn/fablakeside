@@ -604,10 +604,46 @@ svg:hover{
   }
 
   
-
-
   /*
   * START
   * RESPONSIVE DESIGN STYLES
   * EXTRAS
   */
+
+  /* Small devices (phones, 568px and down) */
+  @media only screen and (max-width: 568px) {
+    
+    .brandLogo{display: none;}
+    .footer{
+      padding: 10%;
+    }
+    
+    /**HOME**/
+    .menuMovil{text-align: left !important;}
+    .menuPortfolio{margin-top: -20%;}
+    .textHome{margin-left: -5%;}
+    a{font-size: 18px; padding-top:4%;}
+    .buton {font-size: 15px;}
+    h2{font-size: 35px !important; line-height: 35px !important; margin-bottom: 12px !important;}
+    h5{font-size: 18px;}
+    h1{font-size: 40px !important; line-height: 40px; margin-bottom: 12px !important;}
+    ul{text-decoration: none; list-style: none !important;}
+  }
+
+  /* Medium devices (tablets, 768px and down) */
+  @media only screen and (max-width: 768px) {
+
+    .brandLogo{display: none;}
+    .footer{
+      padding-top: 12%;
+    }
+
+    /**HOME**/
+    .menuMovil{text-align: left !important;}
+    .menuPortfolio{margin-top: -20%;}
+    .textHome{margin-left: -5%;}
+    
+  }
+
+
+ 
