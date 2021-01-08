@@ -46,7 +46,7 @@
 <body id="app-layout">
 
  <!--MENU TOP BAR-->
- <div class="container navbar-light bg-light rounded px-3">
+ <div class="container navbar-light bg-light rounded px-3 menuMovil">
   <header class="blog-header px-3">
     <div class="row flex-nowrap justify-content-between align-items-center">
       <div class="col-2">
@@ -55,7 +55,7 @@
 
       <div class="col-8 text-center">
 
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg">
           <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
@@ -111,6 +111,11 @@
     </div>
   </div>
 </div>
+
+ <!-- BACK TO TOP -->
+ <a id="back-to-top" href="#" class="btn btn-sm back-to-top" role="button">
+  <img src="{{ asset('img/icons/upArrow.png') }}" style="width: 45%;">
+</a>
 
 <!--SEARCH BAR WITH CATEGORIES AND SUB CATEGORIES-->
 <div class="container pt-4">
@@ -229,6 +234,26 @@
     </div>
   </div>
 </footer>
+
+<!--BACK TO TOP FUNCTION-->
+<script>
+  $(document).ready(function(){
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
+    });
+  // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 400);
+      return false;
+    });
+  });
+</script>
 
 </body>
 </html>
