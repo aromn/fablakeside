@@ -56,20 +56,20 @@
         <table class="table table-clients">
           <thead class="thead-dark">
             <tr>
-              <th scope="col">Business name</th>
-              <th scope="col">Category</th>
-              <th scope="col">Subcategories</th>
-              <th scope="col">Location</th>
+              <th class="NameBusi" scope="col">Business name</th>
+              <th class="CategoBusi" scope="col">Category</th>
+              <th class="SubcategoBusi" scope="col">Subcategories</th>
+              <th class="LocationBusi" scope="col">Location</th>
             </tr>
           </thead>
 
           <tbody>
             @foreach($clients as $client)
               <tr>
-                <td><a href="{{ $client->website }}">{{ $client->name}}</a></td>
-                <td>{{ $client->category }}</td>
-                <td>{{ $client->subcategory }}</td>
-                <td>{{ $client->location}}</td>
+                <td class="NameBusi"><a href="{{ $client->website }}">{{ $client->name}}</a></td>
+                <td class="CategoBusi">{{ $client->category }}</td>
+                <td class="SubcategoBusi">{{ $client->subcategory }}</td>
+                <td class="LocationBusi">{{ $client->location}}</td>
               </tr>
             @endforeach
           </tbody>
