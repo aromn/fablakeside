@@ -1,7 +1,7 @@
 @extends('layouts.master') 
 
 @section('NavBar')
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg menuMovil">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,7 +18,7 @@
             <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link active" href="{{ route('ourTeam1') }}">Our Team</a>
+            <a class="nav-link active" href="{{ route('ourTeam1') }}">About Us</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
@@ -92,7 +92,7 @@
 
 <!--TEXT-->
 <div class="container p-5 text-justify">
-  <div class="row px-4">
+  <div class="row px-lg-4">
         <p>
             The idea occurred to me while working on the Apollo 2020. 
             Program to help support local business during the COVID-19 epidemic. 
@@ -136,11 +136,11 @@
 </div>
 
   <!--ALDO AND ABIGAIL PRESENTATION-->
-  <div class="container pt-5 d-flex justify-content-center text-center team">
+  <div class="container pt-5 px-sm-5 d-flex justify-content-center text-center team">
     <div class="row align-items-center">
       <div class="container infoTextSectionLighta">
         <div class="row">
-          <div class="col-lg-12 col-sm-12 align-self-center">
+          <div class="col-lg-12 col-sm-12 align-self-center teamMov">
               <h2>MEET THE REST OF THE TEAM</h2>
               <p style="color:#14253c">The best people formula for the best results!</p>
           </div>
@@ -171,6 +171,8 @@
             </div>
           </div>
         </div>
+        <!--ESPACIO EN MOVILES-->
+        <div class="movilSpace">&nbsp;</div>
         <!--ABIGAIL-->
         <div class="col-lg-6 col-sm-12">
           <div class="col-12">
@@ -203,7 +205,7 @@
 <!--ACTION IMAGE-->
 <div class="container ml-auto text-center">
   <div class="callActionSection" style="background-image: url('img/ourTeam-LogoSection.png');">
-    <img src="/img/logo_white.png">
+    <img src="/img/logo_white.png" style="width: 100%; height: auto;" class="logoMovil">
   </div>
 </div>
 
