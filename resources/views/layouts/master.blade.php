@@ -95,7 +95,7 @@
           <a href="{{ route('home1') }}"><div class="fabLakeSide mx-4"></div></a>
         </div>
         <div class="col-sm-8 text-center align-self-center py-2">
-          <a href="#"><h2>(+52) 33 1347 8461</h2></a>
+          <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h2>(+52) 33 1347 8461</h2></a>
           <p>&copy; 2020 by Find-A-Business Ajijic</p>
         </div>
         <div class="col-sm-2 text-center align-self-center">
