@@ -643,6 +643,9 @@ svg:hover{
     .infoTextSectionLighta{padding: 10%;}
     .movilSpace{display: block;}
     .logoMovil{padding: 70% 2%;}
+
+    /**CONTACT**/
+    .backImg-small{padding: 30% 15%; font-weight: bolder;}
     
   }
 
