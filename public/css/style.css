@@ -646,6 +646,10 @@ svg:hover{
 
     /**CONTACT**/
     .backImg-small{padding: 30% 15%; font-weight: bolder;}
+
+    /**BUSINESS CATEGORIES**/
+    .SubcategoBusi{display: none;}
+    .CategoBusi{display: none;}
     
   }
 
