@@ -1,7 +1,7 @@
 @extends('layouts.master') 
 
 @section('NavBar')
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg menuMovil">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,9 +33,11 @@
 
 <!--HERO IMAGE-->
 <div class="container ml-auto text-center">
-    <div class="backImg-small">
+    <div class="row">
+    <div class="backImg-small col-12">
       <h1>Be part of the team</h1>
       <p>and let a whole new buch of people to know your business</p>
+    </div>
     </div>
 </div>
 
@@ -50,7 +52,7 @@
 <!--PRESENTATION-->
 <div class="container pt-5 d-flex justify-content-center">
     <div class="row align-items-center">
-        <div class="col-lg-4 col-sm-12 text-center">
+        <div class="col-lg-4 col-sm-12 text-center movilCircle">
             <img src="img/ListPic.png" style="width: 80%;">
         </div> 
         <div class="col-lg-8 col-sm-12 text-center text-lg-left">
@@ -58,7 +60,7 @@
                   <div class="AlexName">
                       <h2>Our Services & Prices</h2>
                   </div>
-                  <div class="quoteText">
+                  <div class="quoteText text-sm-justify">
                       <p>We provide various options and packages because we want to make this service 
                           accessible to all businesses and we understand no two businesses and their 
                           specific needs are exactly the same.</p>
@@ -72,7 +74,7 @@
 <div class="container text-center infoTextSection">
     <div class="row">
         <div class="col-lg-12 col-sm-12 align-self-center">
-            <h3>
+            <h3 id="h3">
                 Your business would be listed under a category that is specific to your business 
                 in our site's directory
             </h3>
@@ -104,8 +106,8 @@
     -->
     <div class="container contentListing mt-5 mb-5 px-2 d-flex">
         <div class="row">
-            <div class="col-lg-8 col-sm-12 text-center text-lg-left">
-                <ul>
+            <div class="col-lg-8 col-sm-12">
+                <ul class="text-center text-lg-left" id="ul">
                     <li>
                         <p>One-time fee for site construction</p>
                     </li>
@@ -138,16 +140,19 @@
                 <div class="p-5 text-center contentWindow">
                     <span class="close">&times;</span>
                     <br>
-                    <h3>Basic Listing Package</h3>
+                    <h3 id="h3">Basic Listing Package</h3>
                     <hr>
                     <p>
                         Most businesses do not need a complicated,
                         multipage website or the costs associated with one.
                     </p>
                     <p>
-                        We will build you a custom 1-page site that is listed under a category that is specific 
-                        to your business in our site's directory for the bargain price of $200 pesos a month, 
-                        and you won't be charged 1 centavo before we sign 100 businesses to our site, because 
+                        We will build you a custom 1-page site that is listed under a category that is 
+                        specific 
+                        to your business in our site's directory for the bargain price of $200 pesos a 
+                        month, 
+                        and you won't be charged 1 centavo before we sign 100 businesses to our site, 
+                        because 
                         without the volume we really aren't providing you the service we sold you on. 
                     </p>
                     <p>
@@ -160,7 +165,7 @@
                     </p>
                     <hr>
                     <br>
-                    <button type="button" class="btn btn-primary btn-lg text-center" style="width: 200px;">I want it!</button>
+                    <a href="{{ route('listBusiness1') }}" class="buttonList">I want it</a>
                 </div>
             </div>
         </div>
@@ -189,7 +194,7 @@
     <div class="container contentListing mt-5 mb-5 px-4 d-flex">
         <div class="row ">
             <div class="col-lg-8 col-sm-12 text-center text-lg-left">
-                <ul>
+                <ul id="ul">
                     <li>
                         <p>One-time fee for site construction</p>
                     </li>
@@ -228,7 +233,7 @@
                 <div class="p-5 text-center contentWindow">
                     <span class="close-CustomSite">&times;</span>
                     <br>
-                    <h3>Custom Site Construction and Maintenance</h3>
+                    <h3 id="h3">Custom Site Construction and Maintenance</h3>
                     <hr>
                     <p>
                         In addition to a basic listing service, we also offer a service to build 
@@ -247,7 +252,7 @@
                     </p>
                     <hr>
                     <br>
-                    <button type="button" class="btn btn-primary btn-lg text-center" style="width: 200px;">I want it!</button>
+                    <a href="{{ route('listBusiness1') }}" class="buttonList">I want it</a>
                 </div>
             </div>
         </div>
@@ -272,26 +277,27 @@
 <div class="container py-5 align-items-center">
     <div class="row imgRight no-gutter">
       <div class="d-none d-md-flex col-md-4 col-lg-5 bg-image"></div>
-      <div class="col-md-6 col-lg-7">
-        <div class="d-flex alig-items-center py-5 px-5">
-          <div class="container">
+
+      <div class="col-sm-12 col-md-6 col-lg-7">
+        <div class="d-flex alig-items-center py-5 px-lg-5">
+          <div class="container textHome">
             <div class="row">
-              <div class="col-md-12 col-lg-12 mx-auto text-justify">
+              <div class="col-sm-12 col-md-12 col-lg-12 mx-auto text-justify">
                 
                 <p>
                     Once we have signed 100 businesses and officially launch we will offer 
                     you the option to promote your business on our home page. 
                 </p>
                 <br>
-                <ul>
+                <ul id="ul">
                     <li>
                         We will have 20 slots, arranged in rows of 4 with 5 rows total.
-                    </li>
+                    </li><br>
                     <li>
                         We will sell 3 slots in each row $500 pesos one-time payment to be listed 
                             in the first row, $100 pesos less for each subsequent row with the final 
                             row costing $100 pesos.
-                    </li>
+                    </li><br>
                     <li>
                         We will be offering every business the potential to win a free slot in 
                         each row of the featured businesses each month.
@@ -320,11 +326,14 @@
   </div>
   <!--END INFO SECTION-->
 
-<!--INFO TEXT-->
-<div class="container text-center infoTextSectionLight">
+
+
+
+  <!--INFO TEXT-->
+  <div class="container text-center infoTextSectionLight">
     <div class="row">
         <div class="col-lg-12 col-sm-12 align-self-center">
-            <h3>
+            <h3 id="h3" class="p-sm-4">
                 Although this is a little complicated, our goal by doing this is to keep everything 
                 transparent and fair. 
             </h3>
@@ -340,17 +349,16 @@
             <h4>Your business name could be here!</h4>
             <br>
             <div>
-                <a href="#" class="buttonList">Call Us and Join</a>
+                <a href="tel:+523313478461" class="buttonList">Call Us and Join</a>
             </div>
             <br>
             <hr>
             <div class="whatsapp">
                 <h3>ANY QUESTIONS?</h3>
                 <p>Feel free to call us or message us on WhatsApp <br> and we will be happy to help you!</p>
-                <a href="#" class="buttonList">
-                    (+52) 33 1347 8461
-                </a>
+                <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h3 id="h3">(+52) 33 1347 8461</h3></a>
             </div>
+            <div>&nbsp;</div>
         </div>
     </div>
 </div>
