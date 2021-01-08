@@ -47,7 +47,7 @@
    <div class="container navbar-light bg-light rounded px-3">
     <header class="blog-header px-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
-        <div class="col-lg-2 d-sm-none  d-md-block">
+        <div class="col-lg-2 d-none d-sm-block brandLogo">
           <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
         </div>
 

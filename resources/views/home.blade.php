@@ -1,7 +1,7 @@
 @extends('layouts.master') 
 
 @section('NavBar')
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg menuMovil">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,7 @@
 
 <!-- ======= SPECIAL BUSINESS SECTION ======= -->
 <section class="section site-portfolio">  
-    <div class="container">
+    <div class="container menuPortfolio">
 
         <!--CATEGORIES SELECTION-->
         <div class="row mb-5 align-items-center">
@@ -283,19 +283,19 @@
     <div class="row no-gutter imgRight">
       <div class="d-none d-md-flex col-md-4 col-lg-4 bg-image"></div>
       
-      <div class="col-md-6 col-lg-8">
+      <div class="col-sm-12 col-md-6 col-lg-8">
         <div class="d-flex alig-items-center py-5">
-          <div class="container">
+          <div class="container textHome">
             <div class="row">
-              <div class="col-md-12 col-lg-11 mx-auto">
-                <h2>We Make it Easy for Both Businesses and Customers</h2>
-                <p class="pb-4">
+              <div class="col-sm-12 col-md-12 col-lg-11 mx-auto">
+                <h2 class="text-center">We Make it Easy for Both Businesses and Customers</h2>
+                <p class="pb-4 text-justify">
                   Have you been frustrated by the lack of businesses with webpages around Lakeside? 
                   We list businesses and manage their pages to ensure they are up to date, and all in one 
                   convenient location. You can search for businesses by category or look up a specific business 
                   to view their own external page or their professionally managed webpage through our portal. 
                 </p>
-                <a class="pb-4" href="{{ route('listBusiness1') }}">Sing Up Your Business Today!</a>
+                <a class="pb-4 buton" href="{{ route('listBusiness1') }}">Sing Up Your Business Today!</a>
               </div>
             </div>
           </div>
