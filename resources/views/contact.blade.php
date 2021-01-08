@@ -1,7 +1,7 @@
 @extends('layouts.master') 
 
 @section('NavBar')
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg menuMovil">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -18,7 +18,7 @@
             <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('ourTeam1') }}">Our Team</a>
+            <a class="nav-link" href="{{ route('ourTeam1') }}">About Us</a>
           </li>
           <li class="nav-item active">
             <a class="nav-link active" href="{{ route('contact1') }}">Contact</a>
@@ -102,7 +102,7 @@
   <div class="row">
     <div class="col-12 backImg-small">
       <p>Call Us</p>
-      <a href="#"><h1>(+52) 33 1347 8461</h1></a>
+      <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h1>(+52) 33 1347 8461</h1></a>
       </div>
   </div>    
 </div>
