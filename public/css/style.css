@@ -624,10 +624,19 @@ svg:hover{
     .textHome{margin-left: -5%;}
     a{font-size: 18px; padding-top:4%;}
     .buton {font-size: 15px;}
-    h2{font-size: 35px !important; line-height: 35px !important; margin-bottom: 12px !important;}
-    h5{font-size: 18px;}
     h1{font-size: 40px !important; line-height: 40px; margin-bottom: 12px !important;}
+    h2{font-size: 35px !important; line-height: 35px !important; margin-bottom: 12px !important;}
+    
+    h5{font-size: 18px;}
     ul{text-decoration: none; list-style: none !important;}
+
+    /**LIST YOUT BUISNESS**/
+    .movilCircle{margin-bottom: 22px;}
+    #h3{font-size: 25px;}
+    #ul{ padding: 3%;}
+    .contentWindow{font-size: medium;}
+    .infoTextSection{padding: 8%;}
+    .callActionSectionDark{padding: 10%;}
   }
 
   /* Medium devices (tablets, 768px and down) */
