@@ -196,7 +196,7 @@
             <div class="col-lg-8 col-sm-12 text-center text-lg-left">
                 <ul id="ul">
                     <li>
-                        <p>One-time fee for site construction</p>
+                        <p>Custom 1 page site designed by our experts and included with membership in basic package</p>
                     </li>
                     <li>
                         <p>More robust Site</p>
