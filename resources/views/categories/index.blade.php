@@ -4,7 +4,7 @@
 
    
   <!--CATEGORIES MENU-->
-  <div class="">
+  <div class="" style="display: none;">
     <div class="container p-4">
       <div class="row align-items-center filters align-items-center">
         <div class="col-md-12 col-lg-12 text-center text-lg-center">
