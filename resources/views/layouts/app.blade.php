@@ -84,6 +84,7 @@
           </nav>
 
         </div>
+        
         <div class="col-sm-6 col-lg-2 d-flex justify-content-end align-items-center">
           <a class="link-secondary" href="{{ route('specialBusiness1') }}" aria-label="Search">
             <svg 
@@ -164,11 +165,11 @@
 
         <!--SEARCH BAR-->
         <div id="custom-search-input" class="row py-2">
-          <div class="col-xs-12 col-sm-10 col-lg-10">
+          <div class="col-xs-12 col-sm-12 col-lg-10">
               <input type="search" name="query" class="search-query form-control" placeholder="Search"/>
           </div>
           <div class="d-block d-sm-none">&nbsp;</div>
-          <div class="col-xs-12 col-sm-2 col-lg-2">
+          <div class="col-xs-12 col-sm-12 col-lg-2 text-sm-center search">
               <button class="btn btn-primary" type="submit" style="width: 100%">Search</button>
           </div>
       </div>
