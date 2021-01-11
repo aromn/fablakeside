@@ -91,14 +91,14 @@
   <footer>
     <div class="container footer">
       <div class="row">
-        <div class="col-sm-2 text-center align-self-center">
+        <div class="col-lg-2 col-md-12 col-sm-12 text-center align-self-center">
           <a href="{{ route('home1') }}"><div class="fabLakeSide mx-4"></div></a>
         </div>
-        <div class="col-sm-8 text-center align-self-center py-2">
+        <div class="col-lg-8 col-md-12 col-sm-12 text-center align-self-center py-2">
           <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h2>(+52) 33 1347 8461</h2></a>
           <p>&copy; 2020 by Find-A-Business Ajijic</p>
         </div>
-        <div class="col-sm-2 text-center align-self-center">
+        <div class="col-lg-2 col-md-12 col-sm-12 text-center align-self-center">
           <a href="https://www.facebook.com/FAB-Ajijic-Find-A-Business-Ajijic-113502843729599/?view_public_for=113502843729599"><span class="icon FaceIcon"></span></a>
         </div>
       </div>
