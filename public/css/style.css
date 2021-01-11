@@ -621,6 +621,7 @@ svg:hover{
     }
 
     .menuMovil{text-align: left !important;}
+    
 
   }
 
@@ -642,6 +643,9 @@ svg:hover{
     h1{font-size: 40px !important; line-height: 40px; margin-bottom: 12px !important;}
     h2{font-size: 35px !important; line-height: 35px !important; margin-bottom: 12px !important;}
     
+    .site-portfolio {margin-top: -20%;}
+
+
     h5{font-size: 18px;}
     ul{text-decoration: none; list-style: none !important;}
 
@@ -683,8 +687,24 @@ svg:hover{
     .textHome{margin-left: -5%;}
 
     .search{margin-top: 12px; align-items: center; align-self: center; text-align: center;}
+
+    section {margin-top: 40%;}
+    .categoriesSection{margin-top: 20%;}
+
+    .footer{
+      padding:4%;
+    }
     
   }
 
+  @media only screen and (max-width: 1024px){
+    .site-portfolio {margin-top: -9%;}
+
+    .brandLogo{display: none; position:absolute;}
+    .navbar-brand{display: none;}
+    .footer{
+      padding:4%;
+    }
+  }
 
  
