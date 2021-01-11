@@ -252,7 +252,7 @@
 
         <!-- Luxury Homes -->
         <div class="item services col-sm-6 col-md-4 col-lg-3 mb-4">
-            <a href="#" class="item-wrap fancybox">
+            <a href="https://www.luxuryhomesajijic.com/properties" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Luxury Homes</h3>
                     <span>See More</span>
