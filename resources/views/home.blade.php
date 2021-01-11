@@ -52,7 +52,7 @@
     <div class="container menuPortfolio">
 
         <!--CATEGORIES SELECTION-->
-        <div class="row mb-5 align-items-center">
+        <div class="row mb-5 align-items-center categoriesSection">
             <div class="col-md-12 col-lg-12 text-center text-lg-center">
                 <div id="filters" class="filters">
                     <a href="#" data-filter="*" class="active">ALL</a>
