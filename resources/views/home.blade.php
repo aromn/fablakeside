@@ -82,11 +82,11 @@
                 </a>
             </div>
 
-            <!--Dely Very Dely-->
+            <!--Deli Very Deli-->
             <div class="item restaurants col-sm-6 col-md-4 col-lg-3 mb-4">
                 <a href="https://www.fabajijicfoodandbev.com/deli-very-deli" class="item-wrap fancybox">
                     <div class="work-info">
-                        <h3>Dely Very Dely</h3>
+                        <h3>Deli-Very Deli</h3>
                         <span>See More</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_13.jpeg">
