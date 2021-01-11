@@ -611,10 +611,24 @@ svg:hover{
   * EXTRAS
   */
 
+  /* Extra Small devices (phones, 411 and down)*/
+  @media only screen and (max-width: 280px) {
+
+    .brandLogo{display: none; position:absolute;}
+    .navbar-brand{display: none;  position:absolute;}
+    .footer{
+      padding: 10%;
+    }
+
+    .menuMovil{text-align: left !important;}
+
+  }
+
   /* Small devices (phones, 568px and down) */
   @media only screen and (max-width: 568px) {
     
-    .brandLogo{display: none;}
+    .brandLogo{display: none; position:absolute;}
+    .navbar-brand{display: none;}
     .footer{
       padding: 10%;
     }
@@ -656,15 +670,19 @@ svg:hover{
   /* Medium devices (tablets, 768px and down) */
   @media only screen and (max-width: 768px) {
 
-    .brandLogo{display: none;}
+    .brandLogo{display: none; position:absolute;}
+    .navbar-brand{display: none;}
     .footer{
       padding-top: 12%;
     }
 
     /**HOME**/
     .menuMovil{text-align: left !important;}
+    .buttonTablet{margin-left: -50% !important; margin-right: 35%;}
     .menuPortfolio{margin-top: -20%;}
     .textHome{margin-left: -5%;}
+
+    .search{margin-top: 12px; align-items: center; align-self: center; text-align: center;}
     
   }
 
