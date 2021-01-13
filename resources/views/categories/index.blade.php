@@ -85,10 +85,10 @@
   <!--HOME ACTION IMAGE-->
 <div class="container ml-auto text-center">
   <div class="callActionSection" style="background-image: url('img/infoSectionImg.png');">
-    <h1>ADD YOUR BUSINESS</h1>
-    <h4>Your business name could be here!</h4>
+    <h1>{{ __('general.add_your_business') }}</h1>
+      <h4>{{ __('general.your_business_name_msg') }}</h4>
     <br>
-    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">Learn How</a>
+    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">{{ __('general.learn_how') }}</a>
   </div>
 </div>
 <script type="text/javascript">
