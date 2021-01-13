@@ -28,6 +28,12 @@ return [
 	'have_you_been_frustrated' => "Have you been frustrated by the lack of businesses with webpages around Lakeside? We list businesses and manage their pages to ensure they are up to date, and all in one convenient location. You can search for businesses by category or look up a specific business to view their own external page or their professionally managed webpage through our portal.",
 	'sign_up_today'			=> "Sing Up Your Business Today!",
 
+	/* Layout app */
+	'select_location'			=> "Select a location",
+	'select_category'			=> "Select a category",
+	'select_subcategory'		=> "Select a subcategory",
+	'search_for_business'		=> "SEARCH FOR THE BEST BUSINESS FOR YOU",
+
 	/* Footer */
 	'product_by' 				=> "An Alex Searles and Ajijic Business Enterprises Ltd. Product",
 	'images_by'					=> "Images by"

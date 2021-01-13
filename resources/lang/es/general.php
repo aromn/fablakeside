@@ -29,6 +29,12 @@ return [
 	'have_you_been_frustrated' => "¿Se ha sentido frustrado por la falta de empresas con páginas web en el área del Lago de Chapala? Enumeramos empresas y administramos sus páginas web para asegurarnos de que estén actualizadas y todo en una ubicación conveniente. Puede buscar empresas por categoría o buscar una empresa específica para ver su propia página externa o su página web administrada profesionalmente a través de nuestro portal.",
 	'sign_up_today'			=> "¡Registre su negocio hoy!",
 
+	/* Layout app */
+	'select_location'			=> "Selecciona un lugar",
+	'select_category'			=> "Selecciona una categoría",
+	'select_subcategory'		=> "Selecciona una subcategoría",
+	'search_for_business'		=> "BUSCA EL MEJOR NEGOCIO PARA TI",
+
 	/* Footer */
 	'product_by' 				=> "Un producto de Alex Searles and Ajijic Business Enterprises Ltd.",
 	'images_by'					=> "Imagenes provistas por"
