@@ -9,19 +9,19 @@
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <a class="nav-link active" href="{{ route('home1') }}">Home</a>
+            <a class="nav-link active" href="{{ route('home1', app()->getLocale()) }}">{{ __('general.home') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('specialBusiness1') }}">Business Categories</a>
+            <a class="nav-link" href="{{ route('specialBusiness1', app()->getLocale()) }}">{{ __('general.business_categories') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
+            <a class="nav-link" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.list_your_business') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('ourTeam1') }}">About Us</a>
+            <a class="nav-link" href="{{ route('ourTeam1', app()->getLocale()) }}">{{ __('general.about_us') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+            <a class="nav-link" href="{{ route('contact1', app()->getLocale()) }}">{{ __('general.contact') }}</a>
           </li>
         </ul>
       </div>
@@ -35,7 +35,7 @@
 <div class="container ml-auto text-center heroImg">
     <div class="backImg">
       <h1>FIND A BUSINESS AJIJIC</h1>
-      <p>Webpage Management for Business Owners <br> and One-Stop Portal Costumers</p>
+      <p>{{ __('general.webpage_description') }} <br> {{ __('general.webpage_description2') }}</p>
     </div>
 </div>
 
@@ -43,7 +43,7 @@
 <div class="container subtitle w-75 shadow align-self-center">
     <div class="text-center py-2">
       <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-      <h5>SEARCH FOR <a href="{{ route('specialBusiness1') }}" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
+      <h5>{{ __('general.search_for') }} <a href="{{ route('specialBusiness1', app()->getLocale()) }}" class="subtitle-link">{{ __('general.best_business') }}</a> {{ __('general.for_you') }}</h5>
     </div>
 </div>
 
@@ -76,7 +76,7 @@
                 <a href="https://www.fabajijicfoodandbev.com/casa-linda" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Casa Linda Restaurante</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_0.jpg">
                 </a>
@@ -87,7 +87,7 @@
                 <a href="https://www.fabajijicfoodandbev.com/deli-very-deli" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Deli-Very Deli</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_13.jpeg">
                 </a>
@@ -98,7 +98,7 @@
                 <a href="https://www.fabajijiclisted.com/the-art-house" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>The Art House</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_12.jpg">
                 </a>
@@ -109,7 +109,7 @@
                 <a href="https://www.fabajijiclisted.com/casita-de-mu" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Casita de Muñecas</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_11.jpg">
                 </a>
@@ -125,7 +125,7 @@
                 <a href="https://www.fabajijiclisted.com/professional-massages-of-lakeside" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Professional Massages</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_10.jpg">
                 </a>
@@ -136,7 +136,7 @@
                 <a href="#" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Le Club 4 / Oui Oui</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_14.jpeg">
                 </a>
@@ -147,7 +147,7 @@
                 <a href="https://www.fabajijiclisted.com/rolo-hair" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Rolo Hair</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_9.jpg">
                 </a>
@@ -158,7 +158,7 @@
                 <a href="https://www.fabajijiclisted.com/fusion-tactica" class="item-wrap fancybox">
                     <div class="work-info">
                         <h3>Fusion Tactical</h3>
-                        <span>See More</span>
+                        <span>{{ __('general.see_more') }}</span>
                     </div>
                     <img class="img-fluid" src="img/principalBusinessImg/img_8.jpg">
                 </a>
@@ -174,7 +174,7 @@
             <a href="https://www.fabajijicfoodandbev.com/media-luna" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Media Luna</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_7.jpg">
             </a>
@@ -185,7 +185,7 @@
             <a href="https://www.fabajijiclisted.com/la-princesa" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Mi Princesa Laundry</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_5.jpg">
             </a>
@@ -196,7 +196,7 @@
             <a href="https://www.fabajijiclisted.com/andres-gardening" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Gardening Services</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_6.jpg">
             </a>
@@ -207,7 +207,7 @@
             <a href="https://www.fabajijiclisted.com/lavanderia-y-tintoreria-amigos" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Laundry Amigos</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_15.jpeg">
             </a>
@@ -222,7 +222,7 @@
             <a href="https://www.fabajijicfoodandbev.com/meson-don-quijote" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Meson de Don Quijote</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_4.jpg">
             </a>
@@ -233,7 +233,7 @@
             <a href="https://www.fabajijiclisted.com/mojo-dental" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Mojo Dental</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_3.jpg">
             </a>
@@ -244,7 +244,7 @@
             <a href="https://www.fabajijiclisted.com/casa-de-catrina" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Casa Catrina</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_2.jpg">
             </a>
@@ -255,7 +255,7 @@
             <a href="https://www.luxuryhomesajijic.com/properties" class="item-wrap fancybox">
                 <div class="work-info">
                     <h3>Luxury Homes</h3>
-                    <span>See More</span>
+                    <span>{{ __('general.see_more') }}</span>
                 </div>
                 <img class="img-fluid" src="img/principalBusinessImg/img_1.jpg">
             </a>
@@ -271,10 +271,10 @@
 <!--HOME ACTION IMAGE-->
 <div class="container ml-auto text-center">
     <div class="callActionSection" style="background-image: url('img/infoSectionImg.png');">
-      <h1>ADD YOUR BUSINESS</h1>
-      <h4>Your business name could be here!</h4>
+      <h1>{{ __('general.add_your_business') }}</h1>
+      <h4>{{ __('general.your_business_name_msg') }}</h4>
       <br>
-      <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
+      <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">{{ __('general.learn_how') }}</a>
     </div>
 </div>
 
@@ -288,14 +288,11 @@
           <div class="container textHome">
             <div class="row">
               <div class="col-sm-12 col-md-12 col-lg-11 mx-auto">
-                <h2 class="text-center">We Make it Easy for Both Businesses and Customers</h2>
+                <h2 class="text-center">{{ __('general.we_make_it_easy_msg') }}</h2>
                 <p class="pb-4 text-justify">
-                  Have you been frustrated by the lack of businesses with webpages around Lakeside? 
-                  We list businesses and manage their pages to ensure they are up to date, and all in one 
-                  convenient location. You can search for businesses by category or look up a specific business 
-                  to view their own external page or their professionally managed webpage through our portal. 
+                  {{ __('general.have_you_been_frustrated') }}
                 </p>
-                <a class="pb-4 buton" href="{{ route('listBusiness1') }}">Sing Up Your Business Today!</a>
+                <a class="pb-4 buton" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.sign_up_today') }}</a>
               </div>
             </div>
           </div>

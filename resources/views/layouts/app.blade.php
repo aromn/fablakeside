@@ -51,7 +51,7 @@
     <header class="blog-header px-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-lg-2 d-none d-sm-block brandLogo">
-          <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
+          <a class="navbar-brand" href="{{ route('home1', app()->getLocale()) }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
         </div>
 
         <div class="col-sm-6 col-lg-8 text-center text-sm-left">
@@ -64,19 +64,19 @@
               <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home1') }}">Home</a>
+                    <a class="nav-link" href="{{ route('home1', app()->getLocale()) }}">Home</a>
                   </li>
                   <li class="nav-item active">
-                    <a class="nav-link active" href="{{ route('specialBusiness1') }}">Business Categories</a>
+                    <a class="nav-link active" href="{{ route('specialBusiness1', app()->getLocale()) }}">Business Categories</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('listBusiness1') }}">List Your Business</a>
+                    <a class="nav-link" href="{{ route('listBusiness1', app()->getLocale()) }}">List Your Business</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('ourTeam1') }}">About Us</a>
+                    <a class="nav-link" href="{{ route('ourTeam1', app()->getLocale()) }}">About Us</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+                    <a class="nav-link" href="{{ route('contact1', app()->getLocale()) }}">Contact</a>
                   </li>
                 </ul>
               </div>
@@ -86,7 +86,7 @@
         </div>
         
         <div class="col-sm-6 col-lg-2 d-flex justify-content-end align-items-center">
-          <a class="link-secondary" href="{{ route('specialBusiness1') }}" aria-label="Search">
+          <a class="link-secondary" href="{{ route('specialBusiness1', app()->getLocale()) }}" aria-label="Search">
             <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="20" height="20" 
@@ -97,7 +97,7 @@
                 <path d="M21 21l-5.2-5.2"/>
             </svg>
           </a>
-          <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('home1') }}">ENG</a>
+          <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('home1', app()->getLocale()) }}">ENG</a>
           <a class="btn btn-sm btn-outline-secondary px-1" href="">ESP</a>
         </div>
       </div>      
@@ -219,7 +219,7 @@
   <div class="container footer">
     <div class="row">
       <div class="col-sm-2 text-center align-self-center">
-        <a href="{{ route('home1') }}"><div class="fabLakeSide mx-4"></div></a>
+        <a href="{{ route('home1', app()->getLocale()) }}"><div class="fabLakeSide mx-4"></div></a>
       </div>
       <div class="col-sm-8 text-center align-self-center py-2">
         <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h2>(+52) 33 1347 8461</h2></a>
