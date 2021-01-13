@@ -16,7 +16,7 @@
 <div class="container subtitle w-75 shadow align-self-center">
   <div class="text-center py-2">
     <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-    <h5>SEARCH FOR <a href="{{ route('specialBusiness1') }}" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
+    <h5>SEARCH FOR <a href="{{ route('specialBusiness1', app()->getLocale()) }}" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
   </div>
 </div>
 
@@ -186,7 +186,7 @@
     <h1>ADD YOUR BUSINESS</h1>
     <h4>Your business name could be here!</h4>
     <br>
-    <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
+    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">Learn How</a>
   </div>
 </div>
 
