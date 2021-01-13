@@ -101,10 +101,31 @@ return [
 	'location'					=> "Lugar",
 
 	/* === About Us page */
+	'meet_the_team'				=> "CONOCE AL EQUIPO",
+	'our_people'				=> "Nuestra gente es el corazón y el alma de nuestro negocio",
 
+	// Alex
+	'president_of'				=> "Presidente de Ajijic Business Enterprises",
+	'first_text'				=> "Fundé esta empresa para ayudar a las empresas locales a sobrevivir y prosperar en estos tiempos difíciles. Hacemos que sea más fácil para los clientes encontrar el negocio local que buscan utilizando un enfoque innovador. Al hacer que los negocios sean reconocibles a través de listados de categorías y subcategorías múltiples, aumentamos la exposición de sus clientes. Agregue eso a nuestras páginas comerciales diseñadas a medida que aprovechan el conocimiento de marketing profesional y hemos creado una receta que resulta en más éxito para las empresas locales y una mayor satisfacción del cliente, todo a un precio que todas las empresas pueden pagar.",
+	'second_text' 				=> "Se me ocurrió la idea mientras trabajaba en el programa Apollo 2020. Programa para ayudar a apoyar a las empresas locales durante la epidemia de COVID-19. Disfruté mucho conociendo a todos los dueños de negocios con los que trabajé y decidí que debería hacer algo para ayudarlos durante tiempos más normales.",
+	'third_text'				=> "
+Al ser de los EE. UU., Estaba acostumbrado a poder encontrar casi todo sobre una empresa en línea. Muchas empresas aquí no tienen el tiempo, el dinero o la experiencia para contratar a un profesional para que administre sus páginas web, así que pensé que la mejor manera de permitirles económicamente el acceso a esta herramienta era agrupando todo en una página web.",
+	'fourth_text'				=> "Ahora, en lugar de que cada empresa individual tenga que luchar por un alto rango en los motores de búsqueda, al agrupar nuestros recursos, podemos asegurarnos de que todos tengan un lugar en la parte superior a través de este sitio.",
+	'fifth_text' 				=> "Si bien este proyecto está cerca de mi corazón, el verdadero propósito de este proyecto es financiar iniciativas futuras en filantropía para ayudar a nuestra comunidad a estar mejor preparada para enfrentar los desafíos que enfrentamos en el siglo XXI. Bajo el paraguas de Ajijic Business Enterprises, estamos lanzando múltiples empresas para brindar soluciones ecológicas asequibles a los problemas cotidianos, garantizar el legado duradero de la cultura indígena ct y restaurar las tierras ejidales, y limpiar el lago para garantizar que las generaciones futuras puedan disfrutarlo. . También nos estamos asociando con el Instituto Tecnológico Superior de Chapala para proporcionar una pista de pasantías para los estudiantes para que puedan obtener experiencia práctica trabajando para una operación combinada con exposición a muchos tipos y modelos diferentes de negocios, y esperamos financiar a futuros propietarios de negocios. buscando capital inicial en el futuro.",
+
+	'meet_the_rest'				=> "CONOCE AL RESTO DEL EQUIPO",
+	'the_best_people'			=> "La mejor fórmula de personas para obtener los mejores resultados!",
+
+	// Aldo
+	'backend_dev'				=> "Desarrollador Backend",
+	'description_aldo'			=> "Trabajo como administrador de sistemas / consultor en Evalinux desde 2016. Además, trabajo como freelancer con clientes de todo el mundo haciendo desarrollo web y de software.",
+
+	// Abigail
+	'front_designer'			=> "Diseñadora y desarrolladora frontend",
+	'description_abi'			=> "Me encanta el diseño, la web, los juegos, las aplicaciones. Estudié Bellas Artes e Informática hace cinco años y he estado trabajando en ello desde entonces.",
 	/* === Contact page*/
 	'get_in_touch' 				=> "PONTE EN CONTACTO",
-	
+
 	/* Footer */
 	'product_by' 				=> "Un producto de Alex Searles and Ajijic Business Enterprises Ltd.",
 	'images_by'					=> "Imagenes provistas por"

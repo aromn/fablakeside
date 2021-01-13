@@ -124,7 +124,28 @@ return [
 	'location'					=> "Location",
 
 	/* === About Us page */
-	
+	'meet_the_team'				=> "MEET THE TEAM",
+	'our_people'				=> "Our People Are The Heart And Soul Of Our Business",
+
+	// Alex
+	'president_of'				=> "President of Ajijic Business Enterprises",
+	'first_text'				=> "I founded this company to help local business survive and thrive in these difficult times. We make it easier for customers to find the local business they are seeking using an innovative approach. By making business discoverable through category and multiple sub-category listings, we increase their customer exposure. Add that to our custom designed business pages that take advantage of professional marketing knowledge and we have created a recipe that results in more success for local business and greater customer satisfaction, all at a price every business can afford.",
+	'second_text' 				=> "The idea occurred to me while working on the Apollo 2020. Program to help support local business during the COVID-19 epidemic. I thoroughly enjoyed getting to know all the businesses owners I worked with and decided I should do something to help them during more normal times ass well.",
+	'third_text'				=> "Coming from the U.S. I was used to being able to find almost everything about a business online. A lot of businesses here don't have the time, money, or expertise to hire a professional to manage their web pages, so I figured the best way to economically allow them access to this tool was by bundling everything together on one web page.",
+	'fourth_text'				=> "Now, instead of each individual business having to try to fight for a high search engine rank, by pooling our resources, we can ensure everyone has a place at the top through this site.",
+	'fifth_text' 				=> "While this project is close to my heart, the true purpose if this project is to fund future initiatives in philanthropy to help our community be better prepared to tackle the challenges we face in the 21st century. Under the umbrella of Ajijic Business Enterprises, we are launching multiple ventures to provide affordable green solutions to everyday problems, ensure the lasting legacy of indigenous culture ct and restore ejido lands, and clean up the lake to ensure that it can be enjoyed by future generations. We are also partnering with the Instituto Tecnologico Superior de Chapala to provide an intership track for students so that they can get hands on experience working for a blended operation with exposure to many different types and models of business, and we hope to fund future business owners looking for startup capital in the future.",
+
+	'meet_the_rest'				=> "MEET THE REST OF THE TEAM",
+	'the_best_people'			=> "The best people formula for the best results!",
+
+	// Aldo
+	'backend_dev'				=> "Backend developer",
+	'description_aldo'			=> "I have been working as a System Administrator/Consultant at Evalinux since 2016. Besides, I work as a freelancer with clients around the world doing web/software development.",
+
+	// Abigail
+	'front_designer'			=> "Frontend dev & Designer",
+	'description_abi'			=> "I love design, web, games, apps. I studied Fine Arts and IT five years ago, and I've been working on it since then.",
+
 	/* === Contact page*/
 	'get_in_touch' 				=> "GET IN TOUCH",
 
