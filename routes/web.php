@@ -26,7 +26,7 @@ Route::group(['prefix' => '{language}'], function () {
 	Route::get('/business_categories/{category_id}/{subcategory_id?}', 'App\Http\Controllers\ClientsController@clientsByCategory');
 
 	Route::resource("clients", ClientsController::class);
-	Route::get('/search', 'App\Http\Controllers\ClientsController@search');
+	Route::get('/search', 'App\Http\Controllers\ClientsController@search')->name('search');
 
 	/* Routes to HTML Pages */
 
