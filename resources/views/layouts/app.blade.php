@@ -97,8 +97,8 @@
                 <path d="M21 21l-5.2-5.2"/>
             </svg>
           </a>
-          <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('home1', app()->getLocale()) }}">ENG</a>
-          <a class="btn btn-sm btn-outline-secondary px-1" href="">ESP</a>
+          <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('specialBusiness1', 'en') }}">ENG</a>
+          <a class="btn btn-sm btn-outline-secondary px-1" href="{{ route('specialBusiness1', 'es') }}">ESP</a>
         </div>
       </div>      
     </header>
@@ -110,7 +110,7 @@
 <div class="container ml-auto text-center">
   <div class="row">
     <div class="col-12 backImg-small">
-      <h1>SEARCH FOR THE BEST BUSINESS FOR YOU</h1>
+      <h1>{{ __('general.search_for_business') }}</h1>
     </div>
   </div>
 </div>
@@ -132,7 +132,7 @@
               <div class="col-md-4">
                   <div class="form-group">
                       <select name="location" class="form-control" id="sel2">
-                          <option value="">Select a location</option>
+                          <option value="">{{ __('general.select_location') }}</option>
                           <option value="Ajijic">Ajijic</option>
                           <option value="Chapala">Chapala</option>
                           <option value="Ixtlahuacan">Ixtlahuacán de los M.</option>
@@ -144,7 +144,7 @@
               <div class="col-md-4">
                 <div class="form-group">
                     <select name="category" class="form-control" id="categories">
-                        <option value="">Select a category</option>
+                        <option value="">{{ __('general.select_category') }}</option>
                         @foreach($categories as $category)
                                 <option value="{{ $category->id }}">{{ $category->name }}</option>
                         @endforeach
@@ -155,7 +155,7 @@
             <div class="col-md-4">
               <div class="form-group">
                   <select name="subcategory" class="form-control" id="subcategories">
-                      <option value="" default>Select a subcategory</option>
+                      <option value="" default>{{ __('general.select_subcategory') }}</option>
                   </select>
               </div>
           </div>
@@ -170,7 +170,7 @@
           </div>
           <div class="d-block d-sm-none">&nbsp;</div>
           <div class="col-xs-12 col-sm-12 col-lg-2 text-sm-center search">
-              <button class="btn btn-primary" type="submit" style="width: 100%">Search</button>
+              <button class="btn btn-primary" type="submit" style="width: 100%">{{ __('general.search') }}</button>
           </div>
       </div>
       <!-- END SEARCH BAR-->
@@ -234,8 +234,8 @@
   <div class="container endColor text-center copyRight">
     <div class="row">
       <div class="col-12">
-        <p style="margin-bottom: -2%;">An Alex Searles and Ajijic Business Enterprises Ltd. Product</p>
-        <p>Images By <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&search=Somniphobiac&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1">Somniphobiac - Own work,</a> CC BY-SA 4.0</p>
+        <p style="margin-bottom: -2%;">{{ __('general.product_by') }}</p>
+        <p>{{ __('general.images_by') }} <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&search=Somniphobiac&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1">Somniphobiac - Own work,</a> CC BY-SA 4.0</p>
       </div>
     </div>
   </div>
