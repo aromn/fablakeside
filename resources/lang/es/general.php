@@ -35,6 +35,12 @@ return [
 	'select_subcategory'		=> "Selecciona una subcategoría",
 	'search_for_business'		=> "BUSCA EL MEJOR NEGOCIO PARA TI",
 
+	/* Search results */
+	'business_name' 			=> "Nombre del negocio",
+	'category'					=> "Categoría",
+	'subcategory'				=> "Subcategoría",
+	'location'					=> "Lugar",
+
 	/* Footer */
 	'product_by' 				=> "Un producto de Alex Searles and Ajijic Business Enterprises Ltd.",
 	'images_by'					=> "Imagenes provistas por"
