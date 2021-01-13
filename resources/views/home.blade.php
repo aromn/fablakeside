@@ -292,7 +292,7 @@
                 <p class="pb-4 text-justify">
                   {{ __('general.have_you_been_frustrated') }}
                 </p>
-                <a class="pb-4 buton" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.sign_up_today') }}</a>
+                <a class="pb-4 buton" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.sign_up_your_business') }}</a>
               </div>
             </div>
           </div>
