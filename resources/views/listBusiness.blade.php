@@ -8,20 +8,20 @@
       </button>
       <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('home1') }}">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="{{ route('specialBusiness1') }}">Business Categories</a>
-          </li>
           <li class="nav-item active">
-            <a class="nav-link active" href="{{ route('listBusiness1') }}">List Your Business</a>
+            <a class="nav-link active" href="{{ route('home1', app()->getLocale()) }}">{{ __('general.home') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('ourTeam1') }}">About Us</a>
+            <a class="nav-link" href="{{ route('specialBusiness1', app()->getLocale()) }}">{{ __('general.business_categories') }}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('contact1') }}">Contact</a>
+            <a class="nav-link" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.list_your_business') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('ourTeam1', app()->getLocale()) }}">{{ __('general.about_us') }}</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ route('contact1', app()->getLocale()) }}">{{ __('general.contact') }}</a>
           </li>
         </ul>
       </div>
@@ -35,8 +35,8 @@
 <div class="container ml-auto text-center">
     <div class="row">
     <div class="backImg-small col-12">
-      <h1>Be part of the team</h1>
-      <p>and let a whole new buch of people to know your business</p>
+      <h1>{{ __('general.be_part') }}</h1>
+      <p>{{ __('general.be_part2') }}</p>
     </div>
     </div>
 </div>
@@ -45,7 +45,7 @@
 <div class="container subtitle w-75 shadow align-self-center">
     <div class="text-center py-2">
       <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-      <h5>SEARCH FOR <a href="{{ route('specialBusiness1') }}" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
+      <h5>{{ __('general.search_for') }} <a href="{{ route('specialBusiness1', app()->getLocale()) }}" class="subtitle-link">{{ __('general.best_business') }}</a> {{ __('general.for_you') }}</h5>
     </div>
 </div>
 
@@ -53,17 +53,15 @@
 <div class="container pt-5 d-flex justify-content-center">
     <div class="row align-items-center">
         <div class="col-lg-4 col-sm-12 text-center movilCircle">
-            <img src="img/ListPic.png" style="width: 80%;">
+            <img src="/img/ListPic.png" style="width: 80%;">
         </div> 
         <div class="col-lg-8 col-sm-12 text-center text-lg-left">
               <div class="container-fluid">
                   <div class="AlexName">
-                      <h2>Our Services & Prices</h2>
+                      <h2>{{ __('general.our_services_title') }}</h2>
                   </div>
                   <div class="quoteText text-sm-justify">
-                      <p>We provide various options and packages because we want to make this service 
-                          accessible to all businesses and we understand no two businesses and their 
-                          specific needs are exactly the same.</p>
+                      <p>{{ __('general.our_services_text') }}</p>
                   </div>
               </div>
         </div>
@@ -75,8 +73,7 @@
     <div class="row">
         <div class="col-lg-12 col-sm-12 align-self-center">
             <h3 id="h3">
-                Your business would be listed under a category that is specific to your business 
-                in our site's directory
+                {{ __('general.your_business_would') }}
             </h3>
         </div>
     </div>
@@ -90,14 +87,14 @@
     <div class="container titleListing mt-5 px-4">
         <div class="row">
             <div class="col-lg-1 col-sm-12 text-center">
-                <img src="img/acceptIcon.png" style="width: 64px; height: auto;">
+                <img src="/img/acceptIcon.png" style="width: 64px; height: auto;">
             </div>
             <div class="col-lg-7">
                 <hr>
             </div>
             <div class="col-lg-4 col-sm-12 text-center text-lg-right">
-                <h3>Basic Listing Package</h3>
-                <p>We will build you</p>
+                <h3>{{ __('general.basic_package') }}</h3>
+                <p>{{ __('general.we_will_build_you') }}</p>
             </div>
         </div>
     </div>
@@ -109,25 +106,24 @@
             <div class="col-lg-8 col-sm-12">
                 <ul class="text-center text-lg-left" id="ul">
                     <li>
-                        <p>One-time fee for site construction</p>
+                        <p>{{ __('general.one_time_fee') }}</p>
                     </li>
                     <li>
-                        <p>Custom 1 page site</p>
+                        <p>{{ __('general.custom_1_page') }}</p>
                     </li>
                     <li>
-                        <p>Listing and Basic maintenece</p>
+                        <p>{{ __('general.listing_and_basic') }}</p>
                     </li>
                     <li>
-                        <p>You can list your business under 1 to 3 categories*</p>
+                        <p>{{ __('general.1_to_3_categories') }}</p>
                     </li>
                 </ul>
                 <p style="font-size: 12px;">
-                    *Businesses that signed up with the Apollo 2020 program prior to June 15th, 
-                    2020 will receive their first 3 months free
+                    {{ __('general.apollo_2020') }}
                 </p>
             </div>
             <div class="col-lg-4 col-sm-12 text-lg-right text-center align-self-end">
-                <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo">More Info</button>
+                <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo">{{ __('general.more_info') }}</button>
             </div>
         </div>
     </div>
@@ -140,32 +136,24 @@
                 <div class="p-5 text-center contentWindow">
                     <span class="close">&times;</span>
                     <br>
-                    <h3 id="h3">Basic Listing Package</h3>
+                    <h3 id="h3">{{ __('general.basic_package') }}</h3>
                     <hr>
                     <p>
-                        Most businesses do not need a complicated,
-                        multipage website or the costs associated with one.
+                        {{ __('general.most_businesses') }}
                     </p>
                     <p>
-                        We will build you a custom 1-page site that is listed under a category that is 
-                        specific 
-                        to your business in our site's directory for the bargain price of $200 pesos a 
-                        month, 
-                        and you won't be charged 1 centavo before we sign 100 businesses to our site, 
-                        because 
-                        without the volume we really aren't providing you the service we sold you on. 
+                        {{ __('general.description') }}
+                       
                     </p>
                     <p>
-                        If you can't pick just one category to list under we can help you there too. 
+                        {{ __('general.if_you_cant') }}
                     </p>
                     <p>
-                        List under two categories for 350 a month or three for 500 a month. 
-                        (Businesses that signed up with the Apollo 2020 program prior to June 15th, 
-                        2020 will receive their first 3 months free).
+                        {{ __('general.list_under') }}
                     </p>
                     <hr>
                     <br>
-                    <a href="{{ route('listBusiness1') }}" class="buttonList">I want it</a>
+                    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">{{ __('general.i_want_it') }}</a>
                 </div>
             </div>
         </div>
@@ -177,14 +165,14 @@
     <div class="container titleListing mt-5 px-4">
         <div class="row">
             <div class="col-lg-1 col-sm-12 text-center">
-                <img src="img/acceptIcon.png" style="width: 64px; height: auto;">
+                <img src="/img/acceptIcon.png" style="width: 64px; height: auto;">
             </div>
             <div class="col-lg-5">
                 <hr>
             </div>
             <div class="col-lg-6 col-sm-12 text-center text-lg-right">
-                <h3>Custom Site Construction and Maintenance</h3>
-                <p>We will build you</p>
+                <h3>{{ __('general.custom_site') }}</h3>
+                <p>{{ __('general.we_will_build_you') }}</p>
             </div>
         </div>
     </div>
@@ -196,31 +184,30 @@
             <div class="col-lg-8 col-sm-12 text-center text-lg-left">
                 <ul id="ul">
                     <li>
-                        <p>Custom 1 page site designed by our experts and included with membership in basic package</p>
+                        <p>{{ __('general.custom_1_page_package2') }}</p>
                     </li>
                     <li>
-                        <p>More robust Site</p>
+                        <p>{{ __('general.more_robust_site') }}</p>
                     </li>
                     <li>
-                        <p>You need more than 1 page site? You got it</p>
+                        <p>{{ __('general.you_need_more') }}</p>
                     </li>
                     <li>
-                        <p>Perfect for stores who want to sell online</p>
+                        <p>{{ __('general.perfect_for') }}</p>
                     </li>
                     <li>
-                        <p>Monthly Maintenance</p>
+                        <p>{{ __('general.monthly_maintenance') }}</p>
                     </li>
                     <li>
-                        <p>You can list your business under 1 to 3 categories*</p>
+                        <p>{{ __('general.1_to_3_categories') }}</p>
                     </li>
                     <p style="font-size: 12px;">
-                        *Businesses that signed up with the Apollo 2020 program prior to June 15th, 
-                        2020 will receive their first 3 months free
+                        {{ __('general.apollo_2020') }}
                     </p>
                 </ul>
             </div>
             <div class="col-lg-4 col-sm-12 text-center align-self-end">
-                <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo-CustomSite">More Info</button>
+                <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo-CustomSite">{{ __('general.more_info') }}</button>
             </div>
         </div>
     </div>
@@ -233,26 +220,21 @@
                 <div class="p-5 text-center contentWindow">
                     <span class="close-CustomSite">&times;</span>
                     <br>
-                    <h3 id="h3">Custom Site Construction and Maintenance</h3>
+                    <h3 id="h3">{{ __('general.custom_site') }}</h3>
                     <hr>
                     <p>
-                        In addition to a basic listing service, we also offer a service to build 
-			a more robust custom website for you if your needs are greater than we can 
-			provide on one single page. 
+                        {{ __('general.in_addition_to') }}
                     </p>
                     <p>
-                        If you are a store interested in selling online or a medical practitioner 
-			who wants to provide the customers with the proper brand image before they even 
-			step into your office, this might be something for you.  
+                        {{ __('general.if_you_are') }}
                     </p>
                     <p>
-                        We will custom build your webpage, host it on our site, and maintain it 
-			for $500 pesos a month (construction fees are an extra, one-time fee and 
-			vary depending on what you need from your webpage and the time it will take to construct).
+                        {{ __('general.we_will_custom_build') }}
+                        
                     </p>
                     <hr>
                     <br>
-                    <a href="{{ route('listBusiness1') }}" class="buttonList">I want it</a>
+                    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">{{ __('general.i_want_it') }}I want it</a>
                 </div>
             </div>
         </div>
@@ -263,11 +245,10 @@
     <div class="row">
         <div class="col-lg-12 col-sm-12 align-self-center">
             <h2>
-                Featured Listing Fee
+                {{ __('general.featured_fee') }}
             </h2>
             <p>
-                500 pesos one-time payment to be listed in the first row, 
-                100 pesos less for each subsequent row with the final row costing 100 pesos.
+                {{ __('general.500_pesos') }}
             </p>
         </div>
     </div>
@@ -285,37 +266,29 @@
               <div class="col-sm-12 col-md-12 col-lg-12 mx-auto text-justify">
                 
                 <p>
-                    Once we have signed 100 businesses and officially launch we will offer 
-                    you the option to promote your business on our home page. 
+                    {{ __('general.100_signed') }}
                 </p>
                 <br>
                 <ul id="ul">
                     <li>
-                        We will have 20 slots, arranged in rows of 4 with 5 rows total.
+                        {{ __('general.20_slots_we_have') }}
                     </li><br>
                     <li>
-                        We will sell 3 slots in each row $500 pesos one-time payment to be listed 
-                            in the first row, $100 pesos less for each subsequent row with the final 
-                            row costing $100 pesos.
+                        {{ __('general.3_slots_to_sell') }}
                     </li><br>
                     <li>
-                        We will be offering every business the potential to win a free slot in 
-                        each row of the featured businesses each month.
+                        {{ __('general.free_slot') }}
                     </li>
                 </ul>
                 <br>
                 <p>
-                    In order to support smaller businesses, we have 5 empty slots for featured 
-                    businesses each month.
+                    {{ __('general.smaller_businesses') }}
                 </p>
                 <p>
-                    We will conduct our selection through excel's randomization tool, 
-                    with the top 5 business appearing on top gaining a free slot for the next 
-                    month in their corresponding position in rows 1-5 of our featured businesses. 
+                    {{ __('general.conduct_our_election') }}
                 </p>
                 <p>
-                    Since we conduct the drawing a month ahead, this prevents business from 
-                    potentially paying for a slot and then receiving it for free.
+                    {{ __('general.conduct_the_drawing') }}
                 </p>
               </div>
             </div>
@@ -334,8 +307,7 @@
     <div class="row">
         <div class="col-lg-12 col-sm-12 align-self-center">
             <h3 id="h3" class="p-sm-4">
-                Although this is a little complicated, our goal by doing this is to keep everything 
-                transparent and fair. 
+                {{ __('general.transparent_and_fair') }}
             </h3>
         </div>
     </div>
@@ -343,19 +315,19 @@
 
 <!--ACTION IMAGE-->
 <div class="container text-center">
-    <div class="row callActionSectionDark" style="background-image: url('img/heroImageDark.png');">
+    <div class="row callActionSectionDark" style="background-image: url('/img/heroImageDark.png');">
         <div class="col-lg-12 col-sm-12 align-self-center">
-            <h1>SIGN UP TODAY!</h1>
-            <h4>Your business name could be here!</h4>
+            <h1>{{ __('general.sign_up_today') }}</h1>
+            <h4>{{ __('general.your_business_name_msg') }}</h4>
             <br>
             <div>
-                <a href="tel:+523313478461" class="buttonList">Call Us and Join</a>
+                <a href="tel:+523313478461" class="buttonList">{{ __('general.call_us') }}</a>
             </div>
             <br>
             <hr>
             <div class="whatsapp">
-                <h3>ANY QUESTIONS?</h3>
-                <p>Feel free to call us or message us on WhatsApp <br> and we will be happy to help you!</p>
+                <h3>{{ __('general.any_questions') }}</h3>
+                <p>{{ __('general.feel_free_to_call') }}</p>
                 <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h3 id="h3">(+52) 33 1347 8461</h3></a>
             </div>
             <div>&nbsp;</div>
@@ -367,60 +339,60 @@
 <div class="container mt-5">
     <div class="row">
         <div class="col-sm-12">
-            <h3 class="text-center">Contact Us</h3>
-            <form action="{{ route('contact.request') }}">
+            <h3 class="text-center">{{ __('general.contact_us') }}</h3>
+            <form action="{{ route('contact.request', app()->getLocale()) }}">
                 <div class="row">
                    <div class="col-sm-12 col-lg-12 mt-3">
-                    <input type="name" id="inputName" name="full_name" class="form-control" placeholder="Full Name:" required autofocus>
+                    <input type="name" id="inputName" name="full_name" class="form-control" placeholder="{{ __('general.full_name') }}:" required autofocus>
                    </div>
                 </div>
                 <div class="form-row mt-3">
                     <div class="form-group col-md-6 col-lg-6 col-sm-12">                    
-                        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email:">
+                        <input type="email" name="email" class="form-control" id="inputEmail" placeholder="{{ __('general.email') }}:">
                     </div>
                     <div class="form-group col-md-6 col-lg-6 col-sm-12">                    
-                        <input type="phone" name="phone" class="form-control" id="inputPhone" placeholder="Phone:">
+                        <input type="phone" name="phone" class="form-control" id="inputPhone" placeholder="{{ __('general.phone') }}:">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-12 col-lg-12 mt-3">
                         <select id="inputService" name="package" class="form-control" required="true">
-                            <option value="" selected>What service do You Need?</option>
-                            <option value="Basic Listing Package">Basic Listing Package</option>
-                            <option value="Custom Site Construction and Maintenance">Custom Site Construction and Maintenance</option>
+                            <option value="" selected>{{ __('general.what_service') }}</option>
+                            <option value="Basic Listing Package">{{ __('general.basic_package') }}</option>
+                            <option value="Custom Site Construction and Maintenance">{{ __('general.custom_site') }}</option>
                         </select>
                     </div>
                 </div>
                 <div class="form-row mt-3">
                     <div class="form-group col-md-6 col-lg-6 col-sm-12 mt-3">
                         <div class="form-check">
-                            <p class="p-2">What kind of products do you want sell?</p>
+                            <p class="p-2">{{ __('general.what_product') }}</p>
                             <hr>
                             <div class="form-check p-2">
                                 <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2" value="Digital Services or Products">
                                 <label class="form-check-label" for="gridRadios2">
-                                Digital Services or Products
+                                {{ __('general.digital_services_products') }}
                                 </label>
                             </div>
                             <div class="form-check p-2">
                                 <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2" value="Psycical Services or Products">
                                 <label class="form-check-label" for="gridRadios2">
-                                Psycical Services or Products
+                                {{ __('general.physical_services_products') }}
                                 </label>
                             </div>
                             <div class="form-check p-2">
                                 <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2" value="Services Consulting">
                                 <label class="form-check-label" for="gridRadios2">
-                                Services Consulting
+                                {{ __('general.services_consulting') }}
                                 </label>
                             </div>
                             <div class="form-check p-2">
                                 <input class="form-check-input" type="radio" name="sp_type" id="gridRadios2other" value="other">
                                 <label class="form-check-label" for="gridRadios2">
-                                Other
+                                {{ __('general.other') }}
                                 </label>
                                                    
-                                    <input style="display:none" name="other" type="text" class="form-control" id="inputServiceOther" placeholder="What is It?">
+                                    <input style="display:none" name="other" type="text" class="form-control" id="inputServiceOther" placeholder="{{ __('general.what_is_it') }}?">
                                
                             </div>
                         </div>
@@ -431,8 +403,8 @@
                         </div>                        
                     </div>
                     <div class="form-group col-md-6 col-lg-5 col-sm-12 mt-3">
-                        <label  for="inputMessage">Message:</label>
-                        <textarea name="msg" type="msg" id="inputMessage" class="form-control" placeholder="Message" required rows="7"></textarea>
+                        <label  for="inputMessage">{{ __('general.message') }}:</label>
+                        <textarea name="msg" type="msg" id="inputMessage" class="form-control" placeholder="{{ __('general.message') }}" required rows="7"></textarea>
                         <!--
                       <div class="loading">Loading</div>
                       <div class="error-message"></div>
@@ -441,7 +413,7 @@
                       <!--<a href="#">&nbsp; Send &nbsp;</a>-->
                     
                     <div class="text-lg-right text-center">
-                        <button type="submit" class="btn btn-primary btn-sm p-2 m-2" style="width: 200px;">Send</button>
+                        <button type="submit" class="btn btn-primary btn-sm p-2 m-2" style="width: 200px;">{{ __('general.send') }}</button>
                     </div>
     
                     </div>
