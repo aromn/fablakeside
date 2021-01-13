@@ -100,6 +100,11 @@ return [
 	'subcategory'				=> "Subcategoría",
 	'location'					=> "Lugar",
 
+	/* === About Us page */
+
+	/* === Contact page*/
+	'get_in_touch' 				=> "PONTE EN CONTACTO",
+	
 	/* Footer */
 	'product_by' 				=> "Un producto de Alex Searles and Ajijic Business Enterprises Ltd.",
 	'images_by'					=> "Imagenes provistas por"

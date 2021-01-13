@@ -123,6 +123,11 @@ return [
 	'subcategory'				=> "Subcategory",
 	'location'					=> "Location",
 
+	/* === About Us page */
+	
+	/* === Contact page*/
+	'get_in_touch' 				=> "GET IN TOUCH",
+
 	/* Footer */
 	'product_by' 				=> "An Alex Searles and Ajijic Business Enterprises Ltd. Product",
 	'images_by'					=> "Images by"
