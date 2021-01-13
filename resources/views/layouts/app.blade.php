@@ -63,20 +63,20 @@
               </button>
               <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
                 <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="{{ route('home1', app()->getLocale()) }}">Home</a>
-                  </li>
                   <li class="nav-item active">
-                    <a class="nav-link active" href="{{ route('specialBusiness1', app()->getLocale()) }}">Business Categories</a>
+                    <a class="nav-link active" href="{{ route('home1', app()->getLocale()) }}">{{ __('general.home') }}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('listBusiness1', app()->getLocale()) }}">List Your Business</a>
+                    <a class="nav-link" href="{{ route('specialBusiness1', app()->getLocale()) }}">{{ __('general.business_categories') }}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('ourTeam1', app()->getLocale()) }}">About Us</a>
+                    <a class="nav-link" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.list_your_business') }}</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="{{ route('contact1', app()->getLocale()) }}">Contact</a>
+                    <a class="nav-link" href="{{ route('ourTeam1', app()->getLocale()) }}">{{ __('general.about_us') }}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contact1', app()->getLocale()) }}">{{ __('general.contact') }}</a>
                   </li>
                 </ul>
               </div>
@@ -93,7 +93,7 @@
             class="mx-3" 
             role="img" 
             viewBox="0 0 24 24">
-                <title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/>
+                <title>{{ __('general.search') }}</title><circle cx="10.5" cy="10.5" r="7.5"/>
                 <path d="M21 21l-5.2-5.2"/>
             </svg>
           </a>
@@ -124,7 +124,7 @@
 <div class="container pt-4">
   <div class="row">
     <div class="col-12">
-       <form type="get" action="{{ url('/search') }}">
+       <form type="get" action="{{ route('search', app()->getLocale()) }}">
           
 
           <!-- MORE SPECIFIC SEARCH OPTIONS -->
@@ -166,7 +166,7 @@
         <!--SEARCH BAR-->
         <div id="custom-search-input" class="row py-2">
           <div class="col-xs-12 col-sm-12 col-lg-10">
-              <input type="search" name="query" class="search-query form-control" placeholder="Search"/>
+              <input type="search" name="query" class="search-query form-control" placeholder="{{ __('general.search') }}"/>
           </div>
           <div class="d-block d-sm-none">&nbsp;</div>
           <div class="col-xs-12 col-sm-12 col-lg-2 text-sm-center search">
