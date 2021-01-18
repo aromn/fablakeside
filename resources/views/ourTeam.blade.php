@@ -6,8 +6,8 @@
 <div class="container ml-auto text-center">
   <div class="row">
     <div class="col-12 backImg-small">
-      <h1>Meet the Team</h1>
-      <p>Our People Are The Heart And Soul Of Our Business</p>
+      <h1>{{ __('general.meet_the_team') }}</h1>
+      <p>{{ __('general.our_people') }}</p>
     </div>
   </div>  
 </div>
@@ -16,7 +16,7 @@
 <div class="container subtitle w-75 shadow align-self-center">
   <div class="text-center py-2">
     <!--THIS ONE GOES TO THE ALL BUSINESS SEARCH PAGE-->
-    <h5>SEARCH FOR <a href="{{ route('specialBusiness1', app()->getLocale()) }}" class="subtitle-link">THE BEST BUSINESS</a> FOR YOU</h5>
+    <h5>{{ __('general.search_for') }} <a href="{{ route('specialBusiness1', app()->getLocale()) }}" class="subtitle-link">{{ __('general.best_business') }}</a> {{ __('general.for_you') }}</h5>
   </div>
 </div>
 
@@ -24,27 +24,16 @@
 <div class="container pt-5 d-flex justify-content-center">
   <div class="row py-3 align-items-center">
       <div class="col-lg-4 col-sm-12 text-center">
-          <img src="img/AlexPic.png" style="width: 80%;">
+          <img src="/img/AlexPic.png" style="width: 80%;">
       </div> 
       <div class="col-lg-8 col-sm-12 text-center text-lg-left">
             <div class="container-fluid">
                 <div class="AlexName">
                     <h2>Alexander Searles</h2>
-                    <p>President of Ajijic Business Enterprises</p>
+                    <p>{{ __('general.president_of') }}</p>
                 </div>
                 <div class="quoteText">
-                    <p>I founded this company to help local business survive 
-                      and thrive in these difficult times. 
-                      We make it easier for customers to find the local business 
-                      they are seeking using an innovative 
-                      approach. By making business discoverable through category 
-                      and multiple sub-category listings, 
-                      we increase their customer exposure. Add that to our custom 
-                      designed business pages that take advantage
-                       of professional marketing knowledge and we have created a 
-                       recipe that results in more success for 
-                       local business and greater customer satisfaction, 
-                      all at a price every business can afford.</p>
+                    <p>{{ __('general.first_text') }}</p>
                 </div>
                 <div class="quoteImg">
                     <img class="quoteMarks" src="img/quoteMarks.png">
@@ -65,35 +54,19 @@
 <div class="container p-5 text-justify">
   <div class="row px-lg-4">
         <p>
-            The idea occurred to me while working on the Apollo 2020. 
-            Program to help support local business during the COVID-19 epidemic. 
-            I thoroughly enjoyed getting to know all the businesses owners 
-            I worked with and decided I should do something to help them during more normal times ass well.
+            {{ __('general.second_text') }}
         </p>
         <br>
         <p>
-            Coming from the U.S. I was used to being able to find almost everything about a business 
-            online. A lot of businesses here don't have the time, money, or expertise to hire a 
-            professional to manage their web pages, so I figured the best way to economically allow 
-            them access to this tool was by bundling everything together on one web page.
+            {{ __('general.third_text') }}
         </p>
         <br>
         <p>
-            Now, instead of each individual business having to try to fight for a high search engine 
-            rank, by pooling our resources, we can ensure everyone has a place at the top through this site.
+            {{ __('general.fourth_text') }}
         </p>
         <br>
         <p>
-          While this project is close to my heart, the true purpose if this project is to fund future 
-          initiatives in philanthropy to help our community be better prepared to tackle the challenges 
-          we face in the 21st century.
-          Under the umbrella of Ajijic Business Enterprises, we are launching multiple ventures to provide
-           affordable green solutions to everyday problems, ensure the lasting legacy of indigenous culture
-           ct and restore ejido lands, and clean up the lake to ensure that it can be enjoyed by future
-            generations. We are also partnering with the Instituto Tecnologico Superior de Chapala to provide
-             an intership track for students so that they can get hands on experience working for a blended 
-             operation with exposure to many different types and models of business, and we hope to fund future 
-             business owners looking for startup capital in the future.
+          {{ __('general.fifth_text') }}
         </p>
         <br>
   </div>
@@ -112,8 +85,8 @@
       <div class="container infoTextSectionLighta">
         <div class="row">
           <div class="col-lg-12 col-sm-12 align-self-center teamMov">
-              <h2>MEET THE REST OF THE TEAM</h2>
-              <p style="color:#14253c">The best people formula for the best results!</p>
+              <h2>{{ __('general.meet_the_rest') }}</h2>
+              <p style="color:#14253c">{{ __('general.the_best_people') }}</p>
           </div>
       </div>
       </div>
@@ -121,17 +94,16 @@
         <div class="col-lg-6 col-sm-12">
           <div class="col-12">
             <div class="col-12 text-center">
-              <img src="img/aldo.png" style="width: 40%;">
+              <img src="/img/aldo.png" style="width: 40%;">
             </div> 
             <div class="col-12 text-center">
                 <div class="container-fluid">
                     <div class="AlexName">
                         <h2>Aldo Romero</h2>
-                        <p style="font-weight: bold; color: #477B9D;">Backend developer</p>
+                        <p style="font-weight: bold; color: #477B9D;">{{ __('general.backend_dev') }}</p>
                     </div>
                     <div class="quoteText">
-                        <p>I have been working as a System Administrator/Consultant at Evalinux since 2016. 
-                          Besides, I work as a freelancer with clients around the world doing web/software development.</p>
+                        <p>{{ __('general.description_aldo') }}</p>
                     </div>
                     <!--
                     <div class="quoteImg">
@@ -148,17 +120,16 @@
         <div class="col-lg-6 col-sm-12">
           <div class="col-12">
             <div class="col-12 text-center">
-              <img src="img/abi.png" style="width: 40%;">
+              <img src="/img/abi.png" style="width: 40%;">
             </div> 
             <div class="col-12 text-center">
                 <div class="container-fluid">
                     <div class="AlexName">
                         <h2>Abigail Pérez</h2>
-                        <p style="font-weight: bold; color: #477B9D;">Front End and Designer</p>
+                        <p style="font-weight: bold; color: #477B9D;">{{ __('general.front_designer') }}</p>
                     </div>
                     <div class="quoteText">
-                        <p>I love design, web, games, apps. 
-                          I studied Fine Arts and IT five years ago, and I've been working on it since then.</p>
+                        <p>{{ __('general.description_abi') }}</p>
                     </div>
                     <!--
                     <div class="quoteImg">
@@ -183,10 +154,10 @@
 <!--LIST YOUR BUSINESS-->
 <div class="container text-center">
   <div class="callActionSection">
-    <h1>ADD YOUR BUSINESS</h1>
-    <h4>Your business name could be here!</h4>
+    <h1>{{ __('general.add_your_business') }}</h1>
+    <h4>{{ __('general.your_business_name_msg') }}</h4>
     <br>
-    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">Learn How</a>
+    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">{{ __('general.learn_how') }}</a>
   </div>
 </div>
 
