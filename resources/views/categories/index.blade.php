@@ -84,7 +84,7 @@
 
   <!--HOME ACTION IMAGE-->
 <div class="container ml-auto text-center">
-  <div class="callActionSection" style="background-image: url('img/infoSectionImg.png');">
+  <div class="callActionSection" style="background-image: url('/img/infoSectionImg.png');">
     <h1>{{ __('general.add_your_business') }}</h1>
       <h4>{{ __('general.your_business_name_msg') }}</h4>
     <br>
