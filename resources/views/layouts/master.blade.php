@@ -92,8 +92,8 @@
                 <path d="M21 21l-5.2-5.2"/>
             </svg>
           </a>
-          <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('home1', 'en') }}">ENG</a>
-          <a class="btn btn-sm btn-outline-secondary px-1" href="{{ route('home1', 'es') }}">ESP</a>
+          <a class="btn btn-sm btn-outline-primary px-1 lang-en" href="{{ route(\Request::route()->getName(), 'en') }}">ENG</a>
+          <a class="btn btn-sm btn-outline-secondary px-1 lang-es" href="{{ route(\Request::route()->getName(), 'es') }}">ESP</a>
         </div>
       </div>      
     </header>
@@ -157,6 +157,19 @@
   <!--BACK TO TOP FUNCTION-->
   <script>
     $(document).ready(function(){
+      if (window.location.toString().includes("/en/") || window.location.toString().includes("/en")) {
+        $('.lang-es').removeClass('btn-outline-primary');
+        $('.lang-es').addClass('btn-outline-secondary');
+        $('.lang-en').removeClass('btn-outline-secondary');
+        $('.lang-en').addClass('btn-outline-primary');
+      } 
+      else if (window.location.toString().includes("/es/") || window.location.toString().includes("/es")) {
+        $('.lang-en').removeClass('btn-outline-primary');
+        $('.lang-en').addClass('btn-outline-secondary');
+        $('.lang-es').removeClass('btn-outline-secondary');
+        $('.lang-es').addClass('btn-outline-primary');
+      } 
+      
 	    $(window).scroll(function () {
 			  if ($(this).scrollTop() > 50) {
 				  $('#back-to-top').fadeIn();
