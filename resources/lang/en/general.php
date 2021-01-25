@@ -46,7 +46,7 @@ return [
 	// Package 1
 	'basic_package'				=> "Basic Listing Package",
 	'one_time_fee'				=> "One-time fee for site construction",
-	'custom_1_page'				=> "Custom 1 page site",
+	'custom_1_page'				=> "Custom website",
 	'listing_and_basic'			=> "Listing and Basic maintenece",
 	'most_businesses'			=> "Most businesses do not need a complicated, multipage website or the costs associated with one.",
 	'description'				=> " We will build you a custom 1-page site that is listed under a category that is 
@@ -63,9 +63,10 @@ return [
 	
 	// Package 2
 	'custom_site'				=> "Custom Site Construction and Maintenance",
-	'custom_1_page_package2'	=> "Custom 1 page site designed by our experts and included with membership in basic package",
+	'custom_1_page_package2'	=> "Custom website designed by our experts and included with membership in basic package",
 	'more_robust_site'			=> "More robust Site",
 	'you_need_more'				=> "You need more than 1 page site? You got it",
+	'comes_with'				=> "Comes with directory listing page which redirects to your custom webpage",
 	'perfect_for'				=> "Perfect for stores who want to sell online",
 	'monthly_maintenance'		=> "Monthly Maintenance",
 	'in_addition_to'			=> "In addition to a basic listing service, we also offer a service to build 

@@ -53,6 +53,7 @@ return [
 	'custom_1_page_package2'	=> "Sitio personalizado de 1 página diseñado por nuestros expertos e incluido con la membresía en el paquete básico",
 	'more_robust_site'			=> "Sitio más robusto",
 	'you_need_more'				=> "¿Necesita más de una página? La tienes",
+	'comes_with'				=> "Viene con una página de lista de directorios que redirige a su página web personalizada",
 	'perfect_for'				=> "Perfecto para tiendas que quieren vender en línea.",
 	'monthly_maintenance'		=> "Mantenimeinto mensual",
 
