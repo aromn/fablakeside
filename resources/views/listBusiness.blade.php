@@ -89,9 +89,6 @@
                         <p>{{ __('general.1_to_3_categories') }}</p>
                     </li>
                 </ul>
-                <p style="font-size: 12px;">
-                    {{ __('general.apollo_2020') }}
-                </p>
             </div>
             <div class="col-lg-4 col-sm-12 text-lg-right text-center align-self-end">
                 <button type="button" class="btn btn-primary btn-lg" style="width: 200px;" id="moreInfo">{{ __('general.more_info') }}</button>
@@ -118,9 +115,6 @@
                     </p>
                     <p>
                         {{ __('general.if_you_cant') }}
-                    </p>
-                    <p>
-                        {{ __('general.list_under') }}
                     </p>
                     <hr>
                     <br>
@@ -172,9 +166,6 @@
                     <li>
                         <p>{{ __('general.1_to_3_categories') }}</p>
                     </li>
-                    <p style="font-size: 12px;">
-                        {{ __('general.apollo_2020') }}
-                    </p>
                 </ul>
             </div>
             <div class="col-lg-4 col-sm-12 text-center align-self-end">
@@ -197,7 +188,7 @@
                         {{ __('general.in_addition_to') }}
                     </p>
                     <p>
-                        {{ __('general.if_you_are') }}
+                        {{ __('general.if_you_are_a') }}
                     </p>
                     <p>
                         {{ __('general.we_will_custom_build') }}
