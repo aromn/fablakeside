@@ -203,7 +203,7 @@
     </div>
 
 <!--INFO TEXT-->
-<div class="container text-center infoTextSection">
+{{-- <div class="container text-center infoTextSection">
     <div class="row">
         <div class="col-lg-12 col-sm-12 align-self-center">
             <h2>
@@ -214,7 +214,7 @@
             </p>
         </div>
     </div>
-</div>
+</div> --}}
 
 <!--INFO SECTION WITH IMAGE-->
 <div class="container py-5 align-items-center">
