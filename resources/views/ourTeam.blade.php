@@ -36,7 +36,7 @@
                     <p>{{ __('general.first_text') }}</p>
                 </div>
                 <div class="quoteImg">
-                    <img class="quoteMarks" src="img/quoteMarks.png">
+                    <img class="quoteMarks" src="/img/quoteMarks.png">
                 </div>
             </div>
       </div>
@@ -146,7 +146,7 @@
 
 <!--ACTION IMAGE-->
 <div class="container ml-auto text-center">
-  <div class="callActionSection" style="background-image: url('img/ourTeam-LogoSection.png');">
+  <div class="callActionSection" style="background-image: url('/img/ourTeam-LogoSection.png');">
     <img src="/img/logo_white.png" style="width: 100%; height: auto;" class="logoMovil">
   </div>
 </div>
