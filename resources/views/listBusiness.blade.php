@@ -155,7 +155,7 @@
                         <p>{{ __('general.more_robust_site') }}</p>
                     </li>
                     <li>
-                        <p>{{ __('general.you_need_more') }}</p>
+                        <p>{{ __('general.comes_with') }}</p>
                     </li>
                     <li>
                         <p>{{ __('general.perfect_for') }}</p>
