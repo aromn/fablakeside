@@ -48,28 +48,52 @@
     <header class="blog-header px-3">
       <div class="row flex-nowrap justify-content-between align-items-center">
         <div class="col-lg-2 d-none d-sm-block brandLogo">
-          <a class="navbar-brand" href="{{ route('home1') }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
+          <a class="navbar-brand" href="{{ route('home1', app()->getLocale()) }}"><img src="{{ asset('img/logo1a.png') }}" style="width: 100%; height: auto;"></a>
         </div>
 
         <div class="col-sm-6 col-lg-8 text-center text-sm-left">
-
-          @yield('NavBar')
+          <nav class="navbar navbar-expand-lg menuMovil">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-md-center" id="navbarResponsive" >
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link active" href="{{ route('home1', app()->getLocale()) }}">{{ __('general.home') }}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('specialBusiness1', app()->getLocale()) }}">{{ __('general.business_categories') }}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('listBusiness1', app()->getLocale()) }}">{{ __('general.list_your_business') }}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('ourTeam1', app()->getLocale()) }}">{{ __('general.about_us') }}</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{{ route('contact1', app()->getLocale()) }}">{{ __('general.contact') }}</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
         </div>
         <div class="col-sm-6 col-lg-2 d-flex justify-content-end align-items-center">
-          <a class="link-secondary" href="{{ route('specialBusiness1') }}" aria-label="Search">
+          <a class="link-secondary" href="{{ route('specialBusiness1', app()->getLocale()) }}" aria-label="{{ __('general.search') }}">
             <svg 
             xmlns="http://www.w3.org/2000/svg" 
             width="20" height="20" 
             class="mx-3" 
             role="img" 
             viewBox="0 0 24 24">
-                <title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/>
+                <title>{{ __('general.search') }}</title><circle cx="10.5" cy="10.5" r="7.5"/>
                 <path d="M21 21l-5.2-5.2"/>
             </svg>
           </a>
-          <a class="btn btn-sm btn-outline-primary px-1" href="{{ route('home1') }}">ENG</a>
-          <a class="btn btn-sm btn-outline-secondary px-1" href="">ESP</a>
+          <a class="btn btn-sm btn-outline-primary px-1 lang-en" href="{{ route(\Request::route()->getName(), 'en') }}">ENG</a>
+          <a class="btn btn-sm btn-outline-secondary px-1 lang-es" href="{{ route(\Request::route()->getName(), 'es') }}">ESP</a>
         </div>
       </div>      
     </header>
@@ -92,7 +116,7 @@
     <div class="container footer">
       <div class="row">
         <div class="col-lg-2 col-md-12 col-sm-12 text-center align-self-center">
-          <a href="{{ route('home1') }}"><div class="fabLakeSide mx-4"></div></a>
+          <a href="{{ route('home1', app()->getLocale()) }}"><div class="fabLakeSide mx-4"></div></a>
         </div>
         <div class="col-lg-8 col-md-12 col-sm-12 text-center align-self-center py-2">
           <a href="https://api.whatsapp.com/send?phone=523313478461&text=Hello!%20I%20want%20more%20info%20about%20Listing%20my%20Business%20%0A%2F%2F%2F%0AHola!%20Me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n%20sobre%20inscribir%20mi%20negocio"><h2>(+52) 33 1347 8461</h2></a>
@@ -107,8 +131,8 @@
     <div class="container endColor text-center copyRight">
       <div class="row">
         <div class="col-12">
-          <p style="margin-bottom: -2%;">An Alex Searles and Ajijic Business Enterprises Ltd. Product</p>
-          <p>Images By <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&search=Somniphobiac&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1">Somniphobiac - Own work,</a> CC BY-SA 4.0</p>
+          <p style="margin-bottom: -2%;">{{ __('general.product_by') }}</p>
+          <p>{{ __('general.images_by') }} <a href="https://commons.wikimedia.org/w/index.php?title=Special:Search&search=Somniphobiac&ns0=1&ns6=1&ns12=1&ns14=1&ns100=1&ns106=1">Somniphobiac - Own work,</a> CC BY-SA 4.0</p>
         </div>
       </div>
     </div>
@@ -133,6 +157,19 @@
   <!--BACK TO TOP FUNCTION-->
   <script>
     $(document).ready(function(){
+      if (window.location.toString().includes("/en/") || window.location.toString().includes("/en")) {
+        $('.lang-es').removeClass('btn-outline-primary');
+        $('.lang-es').addClass('btn-outline-secondary');
+        $('.lang-en').removeClass('btn-outline-secondary');
+        $('.lang-en').addClass('btn-outline-primary');
+      } 
+      else if (window.location.toString().includes("/es/") || window.location.toString().includes("/es")) {
+        $('.lang-en').removeClass('btn-outline-primary');
+        $('.lang-en').addClass('btn-outline-secondary');
+        $('.lang-es').removeClass('btn-outline-secondary');
+        $('.lang-es').addClass('btn-outline-primary');
+      } 
+      
 	    $(window).scroll(function () {
 			  if ($(this).scrollTop() > 50) {
 				  $('#back-to-top').fadeIn();

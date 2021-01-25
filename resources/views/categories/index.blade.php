@@ -56,10 +56,10 @@
         <table class="table table-clients">
           <thead class="thead-dark">
             <tr>
-              <th class="NameBusi" scope="col">Business name</th>
-              <th class="CategoBusi" scope="col">Category</th>
-              <th class="SubcategoBusi" scope="col">Subcategories</th>
-              <th class="LocationBusi" scope="col">Location</th>
+              <th class="NameBusi" scope="col">{{ __('general.business_name') }}</th>
+              <th class="CategoBusi" scope="col">{{ __('general.category') }}</th>
+              <th class="SubcategoBusi" scope="col">{{ __('general.subcategory') }}</th>
+              <th class="LocationBusi" scope="col">{{ __('general.location') }}</th>
             </tr>
           </thead>
 
@@ -84,11 +84,11 @@
 
   <!--HOME ACTION IMAGE-->
 <div class="container ml-auto text-center">
-  <div class="callActionSection" style="background-image: url('img/infoSectionImg.png');">
-    <h1>ADD YOUR BUSINESS</h1>
-    <h4>Your business name could be here!</h4>
+  <div class="callActionSection" style="background-image: url('/img/infoSectionImg.png');">
+    <h1>{{ __('general.add_your_business') }}</h1>
+      <h4>{{ __('general.your_business_name_msg') }}</h4>
     <br>
-    <a href="{{ route('listBusiness1') }}" class="buttonList">Learn How</a>
+    <a href="{{ route('listBusiness1', app()->getLocale()) }}" class="buttonList">{{ __('general.learn_how') }}</a>
   </div>
 </div>
 <script type="text/javascript">

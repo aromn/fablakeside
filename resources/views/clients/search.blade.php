@@ -6,10 +6,10 @@
 		<table class="table">
   <thead class="thead-dark">
     <tr>
-      <th class="NameBusi" scope="col">Business name</th>
-      <th class="CategoBusi" scope="col">Category</th>
-      <th class="SubcategoBusi" scope="col">Subcategories</th>
-      <th class="LocationBusi" scope="col">Location</th>
+      <th class="NameBusi" scope="col">{{ __('general.business_name') }}</th>
+      <th class="CategoBusi" scope="col">{{ __('general.category') }}</th>
+      <th class="SubcategoBusi" scope="col">{{ __('general.subcategory') }}</th>
+      <th class="LocationBusi" scope="col">{{ __('general.location') }}</th>
     </tr>
   </thead>
   <tbody>
