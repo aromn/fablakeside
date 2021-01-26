@@ -209,7 +209,7 @@
           });
 
           $.ajax({
-              url: 'subcategories/' + $(this).val(),
+              url: '/subcategories/' + $(this).val(),
               type: 'GET',
               success: function(e){
                 $('#subcategories').removeAttr("disabled");
