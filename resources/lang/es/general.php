@@ -28,6 +28,7 @@ return [
 	'we_make_it_easy_msg'	=> "Lo hacemos fácil para negocios y clientes",
 	'have_you_been_frustrated' => "¿Se ha sentido frustrado por la falta de empresas con páginas web en el área del Lago de Chapala? Enumeramos empresas y administramos sus páginas web para asegurarnos de que estén actualizadas y todo en una ubicación conveniente. Puede buscar empresas por categoría o buscar una empresa específica para ver su propia página externa o su página web administrada profesionalmente a través de nuestro portal.",
 	'sign_up_today'			=> "¡Registre su negocio hoy!",
+	'sign_up_your_business'			=> "¡Registre su negocio hoy!",
 
 	/* === List Your Business page === */
 	'be_part'					=> "Se parte del equipo",

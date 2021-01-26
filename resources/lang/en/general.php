@@ -26,7 +26,7 @@ return [
 	'learn_how'				=> "Learn how",
 	'we_make_it_easy_msg'	=> "We Make it Easy for Both Businesses and Customers", 
 	'have_you_been_frustrated' => "Have you been frustrated by the lack of businesses with webpages around Lakeside? We list businesses and manage their pages to ensure they are up to date, and all in one convenient location. You can search for businesses by category or look up a specific business to view their own external page or their professionally managed webpage through our portal.",
-	'sign_up_your_business'			=> "Sing Up Your Business Today!",
+	'sign_up_your_business'			=> "Sign Up Your Business Today!",
 
 	/* === List Your Business page === */
 
