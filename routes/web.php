@@ -13,15 +13,24 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+	Route::get('subcategories/{id}', 'App\Http\Controllers\CategoryController@subcategories');
 Route::redirect('/', '/en');
 
 Route::group(['prefix' => '{language}'], function () {
 	Route::get('/', function () {
-	    return view('home');
+		
+		$categories = 'App\Models\Category'::with("childs")->where('parent_id', 0)->get(); 
+        $subcategories = 'App\Models\Category'::where('parent_id', '!=', 0)->get(); 
+		$clients = DB::table('clients')->select(DB::raw('business_name as name, location, category_id, subcategory_id, website, c1.name as category, c2.name as subcategory'))
+			->leftJoin('categories as c1', 'c1.id', 'clients.category_id')
+			->leftJoin('categories as c2', 'c2.id', 'clients.subcategory_id')
+			->get();
+		
+		return view("home", ['categories' => $categories, 'subcategories' => $subcategories, 'clients' => $clients]);
 	})->name('home1');
 
 	Route::get('/clients', 'App\Http\Controllers\ClientsController@index');
-	Route::get('subcategories/{id}', 'App\Http\Controllers\CategoryController@subcategories');
+
 	Route::get('/business_categories', 'App\Http\Controllers\CategoryController@index')->name('specialBusiness1');
 	Route::get('/business_categories/{category_id}/{subcategory_id?}', 'App\Http\Controllers\ClientsController@clientsByCategory');
 
