@@ -175,7 +175,6 @@
       </div>
       <!-- END SEARCH BAR-->
           
-          
         <script>
 
           $(document).ready(function(){
@@ -215,12 +214,23 @@
                 $('#subcategories').removeAttr("disabled");
                 $('#subcategories').append('<option value="">Select a subcategory</option>');
                   $.each(e, function(index, value){
-                      console.log(value);
+                      //console.log(value);
                               $('#subcategories').append('<option value="' + value.id + '">' + value.name + '</option>');
                   });
               }
              });
         });
+          <?php  if (isset($_GET['category']) && $_GET['category'] != NULL) { ?>
+            $('#categories').val(<?php echo $_GET['category']; ?>).change();
+          <?php } ?>
+          <?php  if (isset($_GET['subcategory']) && $_GET['subcategory'] != NULL) { ?>
+            console.log(<?php echo $_GET['subcategory']; ?>);
+            setTimeout(function(){ $('#subcategories').val(<?php echo $_GET['subcategory'] ?>); }, 200);
+            
+          <?php } ?>
+          <?php  if (isset($_GET['location']) && $_GET['location'] != NULL) { ?>
+            $('#sel2').val(<?php echo "'" . $_GET['location'] . "'"?>).change();
+          <?php } ?>
         </script>
 
 
