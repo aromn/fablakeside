@@ -31,7 +31,7 @@ return [
 	/* === List Your Business page === */
 
 	'be_part'					=> "Be part of the team",
-	'be_part2'					=> "and let a whole new buch of people to know your business",
+	'be_part2'					=> "and let a whole new bunch of people discover your business",
 	'our_services_title'		=> "Our Services & Prices",
 	'our_services_text'			=> "We provide various options and packages because we want to make this service accessible to all businesses and we understand no two businesses and their specific needs are exactly the same.",
 	'your_business_would'		=> "Your business would be listed under a category that is specific to your business in our site's directory",
@@ -49,7 +49,7 @@ return [
 	'custom_1_page'				=> "Custom website",
 	'listing_and_basic'			=> "Listing and Basic maintenece",
 	'most_businesses'			=> "Most businesses do not need a complicated, multipage website or the costs associated with one.",
-	'description'				=> " We will build you a custom 1-page site that is listed under a category that is specific to your business in our site's directory for the bargain price of $300 pesos a month, and you won't be charged 1 centavo before we sign 100 businesses to our site, because without the volume we really aren't providing you the service we sold you on.",
+	'description'				=> "We will build you a custom 1-page site that is listed under a category that is specific to your business in our site's directory for the bargain price of $300 pesos a month, and you won't be charged 1 centavo before we sign 100 businesses to our site, because without the volume we really aren't providing you the service we sold you on.",
 	'if_you_cant'				=> "If you can't pick just one category to list under we can help you there too. ",
 	'list_under'				=> "List under two categories for 350 a month or three for 500 a month. 
                         (Businesses that signed up with the Apollo 2020 program prior to June 15th, 
