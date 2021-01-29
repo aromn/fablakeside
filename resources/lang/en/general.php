@@ -34,7 +34,7 @@ return [
 	'be_part2'					=> "and let a whole new bunch of people discover your business",
 	'our_services_title'		=> "Our Services & Prices",
 	'our_services_text'			=> "We provide various options and packages because we want to make this service accessible to all businesses and we understand no two businesses and their specific needs are exactly the same.",
-	'your_business_would'		=> "Your business would be listed under a category that is specific to your business in our site's directory",
+	'your_business_would'		=> "Your business will be listed under a category that is specific to your business in our site's directory",
 
 	// common text
 	'we_will_build_you'			=> "We will build you",
