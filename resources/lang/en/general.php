@@ -49,13 +49,7 @@ return [
 	'custom_1_page'				=> "Custom website",
 	'listing_and_basic'			=> "Listing and Basic maintenece",
 	'most_businesses'			=> "Most businesses do not need a complicated, multipage website or the costs associated with one.",
-	'description'				=> " We will build you a custom 1-page site that is listed under a category that is 
-                        specific 
-                        to your business in our site's directory for the bargain price of $200 pesos a 
-                        month, 
-                        and you won't be charged 1 centavo before we sign 100 businesses to our site, 
-                        because 
-                        without the volume we really aren't providing you the service we sold you on. ",
+	'description'				=> " We will build you a custom 1-page site that is listed under a category that is specific to your business in our site's directory for the bargain price of $300 pesos a month, and you won't be charged 1 centavo before we sign 100 businesses to our site, because without the volume we really aren't providing you the service we sold you on.",
 	'if_you_cant'				=> "If you can't pick just one category to list under we can help you there too. ",
 	'list_under'				=> "List under two categories for 350 a month or three for 500 a month. 
                         (Businesses that signed up with the Apollo 2020 program prior to June 15th, 
