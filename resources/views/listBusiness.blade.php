@@ -216,65 +216,6 @@
     </div>
 </div> --}}
 
-<!--INFO SECTION WITH IMAGE-->
-<div class="container py-5 align-items-center">
-    <div class="row imgRight no-gutter">
-      <div class="d-none d-md-flex col-md-4 col-lg-5 bg-image"></div>
-
-      <div class="col-sm-12 col-md-6 col-lg-7">
-        <div class="d-flex alig-items-center py-5 px-lg-5">
-          <div class="container textHome">
-            <div class="row">
-              <div class="col-sm-12 col-md-12 col-lg-12 mx-auto text-justify">
-                
-                <p>
-                    {{ __('general.100_signed') }}
-                </p>
-                <br>
-                <ul id="ul">
-                    <li>
-                        {{ __('general.20_slots_we_have') }}
-                    </li><br>
-                    <li>
-                        {{ __('general.3_slots_to_sell') }}
-                    </li><br>
-                    <li>
-                        {{ __('general.free_slot') }}
-                    </li>
-                </ul>
-                <br>
-                <p>
-                    {{ __('general.smaller_businesses') }}
-                </p>
-                <p>
-                    {{ __('general.conduct_our_election') }}
-                </p>
-                <p>
-                    {{ __('general.conduct_the_drawing') }}
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--END INFO SECTION-->
-
-
-
-
-  <!--INFO TEXT-->
-  <div class="container text-center infoTextSectionLight">
-    <div class="row">
-        <div class="col-lg-12 col-sm-12 align-self-center">
-            <h3 id="h3" class="p-sm-4">
-                {{ __('general.transparent_and_fair') }}
-            </h3>
-        </div>
-    </div>
-</div>
-
 <!--ACTION IMAGE-->
 <div class="container text-center">
     <div class="row callActionSectionDark" style="background-image: url('/img/heroImageDark.png');">
