@@ -42,12 +42,16 @@ return [
 	'more_info'					=> 'Más información',
 	'1_to_3_categories'			=> "Puedes listar tu negocio de 1 a 3 categorias*",
 	'apollo_2020'				=> "*Las empresas que se inscribieron en el programa Apollo 2020 antes del 15 de junio de 2020 recibirán sus primeros 3 meses gratis",
+	'i_want_it'					=> "Lo quiero",
 
 	// Package 1
 	'basic_package'				=> "Paquete de Listado básico",
 	'one_time_fee'				=> "Tarifa única de 600 pesos para la construcción personalizada de una landing page",
 	'custom_1_page'				=> "Sitio de 1 página personalizada",
 	'listing_and_basic'			=> "Listado y mantenimiento básico",
+	'most_businesses'			=> "La mayoría de las empresas no necesitan un sitio web complicado de varias páginas ni los costos asociados con uno.",
+	'description'				=> "Le construiremos un sitio personalizado de 1 página que se incluye en una categoría que es específica para su negocio en el directorio de nuestro sitio por el precio de ganga de $ 300 pesos al mes, y no se le cobrará 1 centavo antes de que firmemos 100 negocios. a nuestro sitio, porque sin el volumen realmente no le estamos brindando el servicio que le vendimos.",
+	'if_you_cant'				=> "Si no puede elegir solo una categoría para enumerarla, también podemos ayudarlo.",
 	
 	// Package 2
 	'custom_site'				=> "Construcción y mantenimiento de sitios personalizados",
