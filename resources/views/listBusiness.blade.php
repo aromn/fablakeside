@@ -223,8 +223,20 @@
             <h1>{{ __('general.sign_up_today') }}</h1>
             <h4>{{ __('general.your_business_name_msg') }}</h4>
             <br>
-            <div>
-                <a href="tel:+523313478461" class="buttonList">{{ __('general.call_us') }}</a>
+            <div class="row">
+                <div class="col-lg text-center">
+                    <a href="tel:+523313478461" class="buttonList">{{ __('general.call_us') }}</a>  
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-lg text-center">
+                    <p>{{ __('general.or') }}</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg text-center">
+                    <a href="#contact-form" class="buttonList">{{ __('general.sign_up_today') }}</a>
+                </div>
             </div>
             <br>
             <hr>
@@ -239,7 +251,7 @@
 </div>
 
 <!--CONTACT FULL FORM-->
-<div class="container mt-5">
+<div class="container mt-5" id="contact-form">
     <div class="row">
         <div class="col-sm-12">
             <h3 class="text-center">{{ __('general.contact_us') }}</h3>
