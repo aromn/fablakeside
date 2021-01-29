@@ -45,7 +45,7 @@ return [
 
 	// Package 1
 	'basic_package'				=> "Paquete de Listado básico",
-	'one_time_fee'				=> "Tarifa única para la construcción del sitio",
+	'one_time_fee'				=> "Tarifa única de 600 pesos para la construcción personalizada de una landing page",
 	'custom_1_page'				=> "Sitio de 1 página personalizada",
 	'listing_and_basic'			=> "Listado y mantenimiento básico",
 	

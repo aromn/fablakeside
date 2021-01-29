@@ -45,7 +45,7 @@ return [
 
 	// Package 1
 	'basic_package'				=> "Basic Listing Package",
-	'one_time_fee'				=> "One-time fee for site construction",
+	'one_time_fee'				=> "One-time fee of 600 pesos for your own customized landing page",
 	'custom_1_page'				=> "Custom website",
 	'listing_and_basic'			=> "Listing and Basic maintenece",
 	'most_businesses'			=> "Most businesses do not need a complicated, multipage website or the costs associated with one.",
