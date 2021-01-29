@@ -87,6 +87,7 @@ return [
 	'transparent_and_fair'		=> "Although this is a little complicated, our goal by doing this is to keep everything transparent and fair.",
 	'sign_up_today'				=> "SIGN UP TODAY!",
 	'call_us'					=> "Call Us and Join",
+	'or'						=> 'or',
 	'any_questions'				=> "ANY QUESTIONS?",
 	'feel_free_to_call'			=> "Feel free to call us or message us on WhatsApp and we will be happy to help you!",
 	

@@ -76,6 +76,7 @@ return [
 	'transparent_and_fair'		=> "Aunque esto es un poco complicado, nuestro objetivo al hacer esto es mantener todo transparente y justo.",
 	'sign_up_today'				=> "¡REGÍSTRATE HOY!",
 	'call_us'					=> "Llámanos y únete",
+	'or'						=> "ó",
 	'any_questions'				=> "¿ALGUNA PREGUNTA?",
 	'feel_free_to_call'			=> "¡No dude en llamarnos o enviarnos un mensaje en WhatsApp y estaremos encantados de ayudarle!",
 	
