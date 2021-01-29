@@ -35,7 +35,7 @@ return [
 	'be_part2'					=> "y hazle saber al mundo sobre tu negocio",
 	'our_services_title'		=> "Nuestros servicios y precios",
 	'our_services_text'			=> "Ofrecemos varias opciones y paquetes porque queremos que este servicio sea accesible para todas las empresas y entendemos que no hay dos empresas y sus necesidades específicas son exactamente las mismas.",
-	'your_business_would'		=> "Su negocio figuraría en una categoría específica de su negocio en el directorio de nuestro sitio.",
+	'your_business_will'		=> "Su negocio figurará en una categoría específica de su negocio en el directorio de nuestro sitio.",
 
 	// common text
 	'we_will_build_you'			=> "Construiremos para ti",
